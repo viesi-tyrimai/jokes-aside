@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kas ateitų į Vilniaus sostą? · Scenarijaus analizė 2026–2031</title>
+<title>Kas ateitu i Vilniaus sosta? - scenarijaus analize 2026-2031</title>
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
 <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
@@ -233,6 +233,27 @@ table.mx tbody tr:hover td, table.mx tbody tr:hover th{background:var(--surface-
 .sigrow p b{color:var(--ink); font-weight:600}
 @media(max-width:600px){.sigrow{grid-template-columns:1fr; gap:5px}}
 
+/* ---------- glossary ---------- */
+.gloss{display:flex; flex-direction:column; gap:0; border:1px solid var(--line); border-radius:3px; overflow:hidden; background:var(--surface)}
+.grow{display:grid; grid-template-columns:56px 1fr; gap:18px; padding:16px 18px; border-bottom:1px solid var(--line-soft)}
+.grow:last-child{border-bottom:0}
+.grow:target{background:var(--accent-soft)}
+.gstep{display:flex; flex-direction:column; gap:7px; padding-top:4px}
+.gstep .n{font-family:"IBM Plex Mono",monospace; font-size:.74rem; color:var(--accent); font-variant-numeric:tabular-nums; letter-spacing:.03em}
+.gstep .lvl{height:3px; background:var(--surface-2); border-radius:1px; overflow:hidden}
+.gstep .lvl i{display:block; height:100%; background:var(--accent)}
+.gterm{display:flex; flex-wrap:wrap; align-items:baseline; gap:9px; margin-bottom:6px}
+.gterm h4{font-family:Newsreader,serif; font-size:1.08rem; font-weight:600; color:var(--ink); margin:0}
+.grow p{font-size:.92rem; color:var(--ink-2)}
+.grow p b{color:var(--ink); font-weight:600}
+.grow .apply{margin-top:8px; font-size:.84rem; color:var(--muted)}
+.grow .apply b{color:var(--ink-2); font-weight:600}
+@media(max-width:600px){
+  .grow{grid-template-columns:1fr; gap:9px}
+  .gstep{flex-direction:row; align-items:center; gap:12px}
+  .gstep .lvl{flex:1}
+}
+
 /* ---------- sources ---------- */
 details.src{border:1px solid var(--line); border-radius:3px; background:var(--surface); padding:0}
 details.src summary{
@@ -266,6 +287,7 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
       <div class="note">
         <strong>Svarbu.</strong> Nėra jokių viešų duomenų, kad arkiv. Grušas būtų perkeliamas ar trauktųsi. Tai — prielaida, ne žinia. Vyskupų skyrimas saugomas popiežiškąja paslaptimi, todėl bet kokia kandidatų analizė remiasi tik viešai matomais kvalifikacijos rodikliais ir Šventojo Sosto elgsenos dėsningumais. Skyriuje apie 2026 m. rugpjūčio krizę kalbama tik apie institucinius sprendimus ir viešus pareiškimus; teismo procesas dar nebaigtas ir galioja nekaltumo prezumpcija.
       </div>
+      <p class="xs">Nesusigaudote pareigų pavadinimuose? <a href="#savokos" style="color:var(--accent)">Sąvokų kopėčios</a> — nuo rektoriaus iki kardinolo — puslapio pabaigoje.</p>
     </div>
     <div class="hero-figure">
       <span class="eyebrow">Bazinė tikimybė</span>
@@ -538,6 +560,177 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
     <p>Trys papildomos silpnybės. Pirma: kalbų mokėjimas — kritinis Vilniaus kriterijus — Lietuvos vyskupų viešose biografijose beveik nedokumentuojamas, todėl lenkų kalbos ašis vertinta prielaidomis, kurias gali paneigti vienas telefono skambutis kurijai. Antra: Vienos precedentas rodo, kad kandidatu gali būti ir vyskupo šventimų neturintis kunigas, o tokių Vilniaus arkivyskupijoje yra šimtai — modelis mato tik matomuosius. Trečia: prefektas Iannone 2026 m. liepą viešai pripažino, kad kunigai vis dažniau vyskupystės tiesiog atsisako. Atsisakymas terną perbraižo, o iš išorės atrodo kaip nepaaiškinamas pasirinkimas.</p>
     <p>Ir ketvirta, svarbiausia: <b>ši analizė turi galiojimo laiką, matuojamą savaitėmis.</b> Nuo bylų perdavimo teismui iki šio teksto praėjo dvidešimt dienų. Kelne nuo skandalo eskalacijos iki apaštališkosios vizitacijos praėjo daugiau nei dveji metai — taigi 2026 m. rugpjūčio 31 d. padėtis dar nieko nenulemia. Bet kuris iš „Ką stebėti“ skyriaus signalų šiuos skaičius perbraižo, o vienas — Romos sprendimas perimti tyrimą — perbraižo juos iš esmės.</p>
     <p>Ir dar viena riba, ne metodinė. Šioje analizėje minimi gyvi žmonės, kurie apie savo kandidatūras niekur nekalbėjo ir kurių niekas kandidatais neskelbė. Visi vertinimai remiasi tik viešai paskelbtais faktais apie jų pareigas, išsilavinimą ir darbus.</p>
+  </div>
+</section>
+
+<section id="savokos">
+  <div class="sec-head col">
+    <span class="eyebrow">Sąvokos</span>
+    <h2>Kas ką iš tikrųjų reiškia</h2>
+    <p class="lede small">Bažnytinių pareigų pavadinimai klaidina, nes viena eile surašomi trys visiškai skirtingi dalykai. Šventimų laipsnių yra tik trys — diakonas, kunigas, vyskupas. Visa kita yra arba <b>pareigos</b>, kurias galima gauti ir prarasti, arba <b>garbės titulas</b>. Penki šio sąrašo įrašai apskritai nėra pareigos — tai įstaigos, organai arba teisinė kategorija; jie pažymėti. Žemiau — nuo mažiausio realaus svorio iki didžiausio.</p>
+  </div>
+
+  <div class="col">
+    <div class="gloss">
+    <div class="grow" id="g-rektorius">
+      <div class="gstep">
+        <span class="n">01</span>
+        <span class="lvl"><i style="width:7%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Rektorius</h4><span class="chip">kurijos ir ugdymo pareigos</span></div>
+        <p>Vadovas įstaigos, kuri nėra parapija. Lietuvoje žodis vartojamas dviem skirtingomis reikšmėmis. <b>Seminarijos rektorius</b> vadovauja būsimų kunigų ugdymui ir turi svarų balsą sprendžiant, kas apskritai bus įšventintas. <b>Bažnyčios rektorius</b> — kunigas, prižiūrintis šventovę, kuri neturi parapijos statuso.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Kun. M. Bernotavičius — Vilniaus šv. Juozapo kunigų seminarijos rektorius. Kun. A. Šuškevič — lenkakalbių Juodšilių bažnyčios rektorius. Tos pačios pareigos, skirtingas svoris.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-kancleris">
+      <div class="gstep">
+        <span class="n">02</span>
+        <span class="lvl"><i style="width:14%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Kancleris</h4><span class="chip">kurijos pareigos</span></div>
+        <p>Vyskupijos raštinės vadovas ir notaras. Per jo rankas eina kiekvienas vyskupijos dokumentas: jis juos rengia, tvirtina parašu ir saugo archyve — taip pat ir slaptajame, kuriame laikomos bylos apie sunkiausius nusižengimus.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Būtent todėl kanclerio pareigos po 2026 m. rugpjūčio yra ne pranašumas, o maksimali institucinė ekspozicija: kas ką ir kada užregistravo, sužinoma iš jo archyvo.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-tribunolas">
+      <div class="gstep">
+        <span class="n">03</span>
+        <span class="lvl"><i style="width:21%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Tribunolas</h4><span class="chip">įstaiga, o ne asmuo</span></div>
+        <p>Vyskupijos bažnytinis teismas. Daugiausia sprendžia santuokos galiojimo bylas, rečiau — kanonines bausmes. Svarbi išlyga: <b>sunkiausios kunigų nusikaltimų nepilnamečiams bylos vietiniam tribunolui nepriklauso</b> — jos keliauja tiesiai į Tikėjimo mokymo dikasteriją Romoje.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Darbas tribunole yra reta ir sunkiai pakeičiama kanoninė kompetencija, todėl matricoje jis sveria.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-kunigu-taryba">
+      <div class="gstep">
+        <span class="n">04</span>
+        <span class="lvl"><i style="width:29%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Kunigų taryba</h4><span class="chip">patariamasis organas</span></div>
+        <p>Vyskupijos kunigų „senatas“: dalį narių išsirenka patys kunigai, dalį paskiria vyskupas. Taryba tik pataria — sprendžia vyskupas ir gali su ja nesutikti. Sostui atsilaisvinus taryba savaime nustoja veikusi.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Naudinga kaip matomumo rodiklis: narystė joje rodo, kad kunigą pripažįsta savi, bet valdžios ji neduoda.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-konsultoriu-kolegija">
+      <div class="gstep">
+        <span class="n">05</span>
+        <span class="lvl"><i style="width:36%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Konsultorių kolegija</h4><span class="chip">organas su realia galia</span></div>
+        <p>Šešių–dvylikos kunigų grupė, kurią vyskupas penkeriems metams pasirenka iš kunigų tarybos. Skirtumas nuo tarybos esminis: be konsultorių sutikimo vyskupas negali atlikti stambesnių turtinių veiksmų, o <b>sostui atsilaisvinus būtent ši kolegija per aštuonias dienas išrenka vyskupijos administratorių</b>, kuris valdo vyskupiją, kol Roma paskirs naują vyskupą.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Vakansijos akimirką tai galingiausias organas Vilniuje. Septyni kunigai — ne Roma ir ne generalvikaras — nusprendžia, kas valdys arkivyskupiją pereinamuoju laikotarpiu.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-generalvikaras">
+      <div class="gstep">
+        <span class="n">06</span>
+        <span class="lvl"><i style="width:43%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Generalvikaras</h4><span class="chip">kurijos pareigos</span></div>
+        <p>Antras žmogus vyskupijoje. Turi tokią pačią vykdomąją valdžią kaip vyskupas visoje vyskupijoje — išskyrus tai, ką vyskupas aiškiai pasilieka sau. Kiekvienas skundas, kiekvienas kunigo perkėlimas iš parapijos į parapiją, kiekvienas kurijos sprendimas eina per jį.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Vilniuje generalvikaras yra vysk. A. Poniškaitis, kartu esantis ir augziliaras. Dėl to jis vienu metu yra ir arčiausiai sosto, ir labiausiai eksponuotas.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-augziliaras">
+      <div class="gstep">
+        <span class="n">07</span>
+        <span class="lvl"><i style="width:50%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Augziliaras</h4><span class="chip">vyskupo šventimai</span></div>
+        <p>Vyskupas padėjėjas. Turi tikrus vyskupo šventimus ir titulinę vyskupiją — seniai išnykusią, egzistuojančią tik popieriuje. Vyskupijos, kurioje dirba, jis nevaldo: padeda ordinarui ir paprastai skiriamas generalvikaru. <b>Teisės paveldėti sostą neturi.</b></p>
+        <p class="apply"><b>Šiame puslapyje.</b> Vilniuje augziliaras dabar vienintelis, o antroji vieta tuščia nuo 2024 m. birželio.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-koadjutorius">
+      <div class="gstep">
+        <span class="n">08</span>
+        <span class="lvl"><i style="width:57%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Koadjutorius</h4><span class="chip">šventimai ir paveldėjimo teisė</span></div>
+        <p>Tas pat, kas augziliaras, su viena esmine išimtimi: <b>koadjutorius sostą paveldi automatiškai</b> tą pačią akimirką, kai jis atsilaisvina. Jokių rinkimų, jokio atskiro Romos sprendimo, jokio pereinamojo administratoriaus.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Todėl koadjutoriaus paskyrimas yra stipriausias įmanomas ženklas, kad perėjimas jau ruošiamas. Vilnius koadjutoriaus neturi; jei gautų, visa šio puslapio lentelė netektų prasmės, nes atsakymas jau būtų paskelbtas.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-ordinaras">
+      <div class="gstep">
+        <span class="n">09</span>
+        <span class="lvl"><i style="width:64%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Ordinaras</h4><span class="chip">teisinė kategorija, o ne rangas</span></div>
+        <p>Žodis turi dvi reikšmes, ir jos nuolat painiojamos. Kasdienėje kalboje ordinaras — <b>vyskupijai faktiškai vadovaujantis vyskupas</b>, priešpriešinamas augziliarui, kuris nevadovauja, ir emeritui, kuris jau pasitraukė. Kanonų teisėje tai platesnė kategorija: ordinarais laikomi ir generalvikaras bei vyskupo vikarai, nes jie turi tą pačią įprastinę vykdomąją valdžią.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Praktinė reikšmė tokia: kai bažnytiniame dokumente parašyta „ordinaras“, kalbama apie tą, kas gali priimti sprendimą, nebūtinai apie patį vyskupą. Vysk. A. Jurevičius yra Telšių ordinaras. Vysk. A. Poniškaitis Vilniaus ordinaras nėra — bet kaip generalvikaras kanonine prasme ordinaru laikomas.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-vyskupas">
+      <div class="gstep">
+        <span class="n">10</span>
+        <span class="lvl"><i style="width:71%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Vyskupas</h4><span class="chip">vyskupijos valdytojas</span></div>
+        <p>Vyskupijos ganytojas, turintis joje visą valdžią — įstatymų leidžiamąją, teisminę ir vykdomąją. Skiria popiežius. Sulaukęs 75-erių vyskupas privalo įteikti atsistatydinimo pareiškimą, bet priimti jį ar ne, sprendžia popiežius.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Šventimų požiūriu augziliaras, koadjutorius, ordinaras, arkivyskupas, nuncijus ir kardinolas yra lygiai tiek pat vyskupai. Skiriasi tik pareigos.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-lvk">
+      <div class="gstep">
+        <span class="n">11</span>
+        <span class="lvl"><i style="width:79%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Vyskupų konferencija</h4><span class="chip">nacionalinis organas</span></div>
+        <p>Visų šalies vyskupų nuolatinis susirinkimas; Lietuvoje — Lietuvos vyskupų konferencija (LVK), atkurta 1988 m. Ji derina bendrus reikalus, leidžia nacionalines normas (pavyzdžiui, 2022 m. gaires dėl elgesio su nepilnamečiais) ir kalba Bažnyčios vardu viešojoje erdvėje. Pirmininką vyskupai išsirenka patys. Svarbi riba: <b>konferencija nėra vyskupų viršininkas</b> — ji negali nei paskirti, nei atleisti vyskupo, nei įsakinėti jam jo paties vyskupijoje. Kiekvienas vyskupas atsakingas tiesiogiai popiežiui.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Dėl to LVK pirmininkavimas yra atskiras prizas, nepriklausantis nuo to, kas gaus Vilnių. Ketvirtoji Grušo kadencija baigiasi 2027 m. lapkritį — tai vienas iš skyriuje „Ką stebėti“ nurodytų tikrinimo taškų.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-arkivyskupas">
+      <div class="gstep">
+        <span class="n">12</span>
+        <span class="lvl"><i style="width:86%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Arkivyskupas</h4><span class="chip">arkivyskupijos valdytojas</span></div>
+        <p>Arkivyskupijos vyskupas. Paprastai kartu yra ir metropolitas — bažnytinės provincijos galva. Dažnas nesusipratimas: <b>metropolitas kitų provincijos vyskupų nevaldo ir jiems neįsakinėja</b>; jo galia yra priežiūros ir atstovavimo, ne valdymo. Šventimų laipsnis — tas pats kaip paprasto vyskupo.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Lietuvoje yra dvi arkivyskupijos: Vilniaus ir Kauno. Būtent todėl metropolitas iš vienos į kitą praktiškai neperkeliamas — tai būtų judesys į šoną, ne aukštyn.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-nuncijus">
+      <div class="gstep">
+        <span class="n">13</span>
+        <span class="lvl"><i style="width:93%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Nuncijus</h4><span class="chip">popiežiaus atstovas</span></div>
+        <p>Popiežiaus nuolatinis atstovas šalyje: kartu ambasadorius valstybei ir Šventojo Sosto akys vietinėje Bažnyčioje. Beveik visada yra arkivyskupas, bet titulinės vyskupijos — savos vyskupijos jis nevaldo ir vietinei hierarchijai nepriklauso. Skiriant naują vyskupą jo vaidmuo lemiamas: nuncijus konfidencialiai surenka atsiliepimus, sudaro trijų pavardžių sąrašą (<em>terną</em>) ir prideda savo vertinimą (<em>votum</em>). Roma renkasi beveik visada iš to sąrašo.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Nuo 2024 m. rugsėjo Lietuvos nuncijus yra arkiv. Georgas Gänsweinas. Konkrečiu klausimu — kas ateis į Vilnių — jo įtaka didesnė nei bet kurio Lietuvos vyskupo, nors Lietuvos Bažnyčios hierarchijoje jis apskritai nefigūruoja.</p>
+      </div>
+    </div>
+    <div class="grow" id="g-kardinolas">
+      <div class="gstep">
+        <span class="n">14</span>
+        <span class="lvl"><i style="width:100%"></i></span>
+      </div>
+      <div>
+        <div class="gterm"><h4>Kardinolas</h4><span class="chip">titulas, o ne šventimų laipsnis</span></div>
+        <p>Popiežiaus paskirtas artimiausias Bažnyčios patarėjas. Svarbiausia funkcija — rinkti popiežių konklavoje; balsuoti gali nesulaukę 80 metų. Daugelis kardinolų vadovauja Romos kurijos dikasterijoms. <b>Kardinolo skrybėlė nėra ketvirtasis šventimų laipsnis</b>: kardinolas yra vyskupas, kuriam suteiktos papildomos pareigos ir garbė.</p>
+        <p class="apply"><b>Šiame puslapyje.</b> Prie vyskupijos titulas nepririštas. Kard. R. Makrickas jokios vyskupijos nevaldo — jis Švč. M. Marijos Didžiosios bazilikos Romoje arkikunigis.</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="note" style="margin-top:20px">
+      <strong>Kodėl ši eilė nėra tvarkaraštis.</strong> Formalus rangas ir faktinė galia sutampa tik iš dalies. Generalvikaras be vyskupo šventimų kasdien nusprendžia daugiau nei augziliaras, kuris šventimus turi. Konsultorių kolegija — septyni eiliniai Vilniaus kunigai — sosto atsilaisvinimo akimirką turi daugiau įtakos nei bet kuris atskiras pareigūnas. Ir atvirkščiai: kardinolo titulas gali nereikšti jokios valdžios konkrečioje vyskupijoje. O žmogus, kurio įtaka šiam konkrečiam klausimui didžiausia — nuncijus, — Lietuvos Bažnyčios hierarchijoje apskritai nefigūruoja. Skiriant vyskupą Roma žiūri ne į rangą, o į tai, ką žmogus faktiškai valdė ir kiek laiko.
+    </div>
   </div>
 </section>
 
