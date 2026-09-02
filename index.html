@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kas ateitu i Vilniaus sosta? - scenarijaus analize 2026-2031</title>
+<title>Vilniaus sostas, Baznycia bei valdzia ir kunigu registras - The Critical</title>
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
 <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
 <meta name="referrer" content="no-referrer">
-<meta name="description" content="Scenarijaus analize: kas galetu tapti Vilniaus arkivyskupu, jei sostas atsilaisvintu iki 2031 m.">
+<meta name="description" content="Kas ateitu i Vilniaus sosta; Baznycios ir politines valdzios santykis 1918-2026; visu Lietuvos kunigu registras ir karjeru anomalijos.">
 <meta name="author" content="The Critical">
 <style>
   :root { color-scheme: light dark; }
@@ -233,6 +233,21 @@ table.mx tbody tr:hover td, table.mx tbody tr:hover th{background:var(--surface-
 .sigrow p b{color:var(--ink); font-weight:600}
 @media(max-width:600px){.sigrow{grid-template-columns:1fr; gap:5px}}
 
+/* ---------- view switcher ---------- */
+.vswitch{
+  display:flex; gap:2px; background:var(--surface-2); border:1px solid var(--line);
+  border-radius:3px; padding:2px; margin:0 0 30px; width:fit-content; max-width:100%;
+}
+.vswitch button{
+  font:inherit; font-size:.82rem; letter-spacing:.01em; border:0; cursor:pointer;
+  background:transparent; color:var(--ink-2); padding:8px 16px; border-radius:2px;
+  white-space:nowrap; transition:background .15s, color .15s;
+}
+.vswitch button:hover{color:var(--ink)}
+.vswitch button[aria-current="true"]{background:var(--surface); color:var(--accent); font-weight:600; box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.vswitch button:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
+@media(max-width:600px){.vswitch{width:100%} .vswitch button{flex:1; padding:8px 10px; font-size:.76rem}}
+
 /* ---------- glossary ---------- */
 .gloss{display:flex; flex-direction:column; gap:0; border:1px solid var(--line); border-radius:3px; overflow:hidden; background:var(--surface)}
 .grow{display:grid; grid-template-columns:56px 1fr; gap:18px; padding:16px 18px; border-bottom:1px solid var(--line-soft)}
@@ -275,6 +290,14 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
 
 <div class="wrap">
 
+<nav class="vswitch" role="tablist" aria-label="Puslapio dalys">
+  <button type="button" data-view="sostas" aria-current="true">Kas ateitų į Vilniaus sostą</button>
+  <button type="button" data-view="galia" aria-current="false">Bažnyčia ir valdžia · 1918–2026</button>
+  <button type="button" data-view="priests" aria-current="false">Visi Lietuvos kunigai · 751</button>
+</nav>
+
+<div id="view-sostas">
+
 <header class="mast">
   <div class="mast-top">
     <span class="stamp">Scenarijaus analizė · 2026–2031</span>
@@ -283,7 +306,7 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
   <div class="mast-grid">
     <div class="stack">
       <h1>Kas ateitų į <em>Vilniaus sostą</em>?</h1>
-      <p class="lede">Arkiv. Gintaras Grušas Vilniui vadovauja nuo 2013 m., o iki kanoninio atsistatydinimo amžiaus jam dar dešimtmetis. Vis dėlto sostas gali atsilaisvinti anksčiau — perkėlimu į Romos kuriją arba pasitraukimu. 2026 m. rugpjūčio 11 d., kai dvi baudžiamosios bylos prieš Vilniaus arkivyskupijos kunigus pasiekė teismą, antrasis kelias nustojo būti teorinis. Šis puslapis modeliuoja, kas tokiu atveju būtų realūs kandidatai, ir kodėl būtent jie.</p>
+      <p class="lede">Vilniaus arkivyskupo sostas yra vienintelė vieta Lietuvos Bažnyčioje, kurioje ji reguliariai stovi šalia valstybės: valstybinių švenčių ir laidotuvių liturgija, kariuomenės ordinariatas, nunciatūra ir vyskupų konferencijos sekretoriatas — visa tai Vilniuje. Arkiv. Gintaras Grušas jam vadovauja nuo 2013 m., o iki kanoninio atsistatydinimo amžiaus turi dar dešimtmetį. Vis dėlto sostas gali atsilaisvinti anksčiau — perkėlimu į Romą arba pasitraukimu, ir 2026 m. rugpjūčio 11 d., dviem baudžiamosioms byloms pasiekus teismą, antrasis kelias nustojo būti teorinis. Toliau — kas tokiu atveju būtų realūs kandidatai, ir kodėl būtent jie.</p>
       <div class="note">
         <strong>Svarbu.</strong> Nėra jokių viešų duomenų, kad arkiv. Grušas būtų perkeliamas ar trauktųsi. Tai — prielaida, ne žinia. Vyskupų skyrimas saugomas popiežiškąja paslaptimi, todėl bet kokia kandidatų analizė remiasi tik viešai matomais kvalifikacijos rodikliais ir Šventojo Sosto elgsenos dėsningumais. Skyriuje apie 2026 m. rugpjūčio krizę kalbama tik apie institucinius sprendimus ir viešus pareiškimus; teismo procesas dar nebaigtas ir galioja nekaltumo prezumpcija.
       </div>
@@ -444,7 +467,7 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
   <div class="sec-head col">
     <span class="eyebrow">Prognozė</span>
     <h2>Devyniolika kandidatų ir tikimybių pasiskirstymas</h2>
-    <p class="lede small">Tikimybės sąlyginės: skaičiuojama darant prielaidą, kad sostas <em>jau</em> atsilaisvino. Trečiasis rodinys — atskiras dešimties kunigų ir vienuolių be vyskupo šventimų sąrašas; jų bendra dalis 13,9 %. Spustelėkite pavardę — atsivers profilis.</p>
+    <p class="lede small">Tikimybės sąlyginės: skaičiuojama darant prielaidą, kad sostas <em>jau</em> atsilaisvino. Rodinys „Tik kunigai ir vienuoliai“ — atskiras dešimties asmenų be vyskupo šventimų sąrašas; jų bendra dalis 7,1 %, o su kun. R. Doveika, kuris yra ir pagrindiniame sąraše, — 10,1 %. Spustelėkite pavardę — atsivers profilis.</p>
   </div>
 
   <div class="toolbar">
@@ -453,7 +476,7 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
       <button type="button" data-sort="score" aria-pressed="false">Pagal atitikties balą</button>
       <button type="button" data-sort="priests" aria-pressed="false">Tik kunigai ir vienuoliai</button>
     </div>
-    <span class="xs" id="sortHint">Įskaitytas ir „kitas kandidatas“ likutis — 8,1 %.</span>
+    <span class="xs" id="sortHint">Įskaitytas ir „kitas kandidatas“ likutis — 15,9 %.</span>
   </div>
 
   <div class="plist" id="plist"></div>
@@ -462,7 +485,7 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
     <strong>Kodėl balas ir tikimybė nesutampa.</strong> Atitikties balas matuoja tik profilio kokybę. Tikimybė papildomai įvertina struktūrinius filtrus, kurių matrica nemato. Trys iš jų traukia žemyn: metropolitas iš vienos Lietuvos metropolijos į kitą praktiškai neperkeliamas (todėl arkiv. Kėvalas krenta nuo antros vietos balų lentelėje iki 4 %), šešiolika metų augziliaru išbuvęs vyskupas laikomas kurijos, o ne ordinaro profilio žmogumi (vysk. Poniškaitis), o kardinolas, einantis Švč. M. Marijos Didžiosios bazilikos arkikunigio pareigas, į Vilnių eitų hierarchiškai „žemyn“ (kard. Makrickas). Vienas traukia aukštyn: <b>vysk. Bužauskas turi žemiausią balą lentelėje ir vis tiek stovi trečias</b>, nes Kauno arkivyskupijos augziliaro postas nuo 1991 m. baigėsi paaukštinimu penkis kartus iš penkių. Matrica mato profilį, ne kanalą.
   </div>
   <div class="note" style="margin-top:12px; border-color:var(--accent); background:var(--accent-soft)">
-    <strong>Kas iš tikrųjų rikiuoja šią lentelę.</strong> Ne romėniškas svoris, o vienas empirinis dėsningumas. Patikrinus, kas faktiškai gavo sostą dvylikoje krizės ištiktų vyskupijų — Čilėje, Lenkijoje, Airijoje, JAV ir Vokietijoje — modelis kartojasi beveik be išimčių: <b>sostą gauna jau konsekruotas tos pačios šalies vyskupas iš kitos vyskupijos.</b> Ne tos vyskupijos vietinis kunigas, ne nuncijus, ne kurijos pareigūnas ir ne užsienietis. Todėl viršuje stovi Jurevičius, Trijonis, Bužauskas ir Vodopjanovas.<br><br>Antras veiksnys veikia priešinga kryptimi ir smogia Vilniaus žmonėms: bet koks nepriklausomas tyrimas apima ir kandidato tarnybos metus, todėl <b>vidinis kandidatas iš pranašumo virsta rizika</b>. Dėl to Poniškaitis stovi apačioje, o Trijonio septyneri metai Vilniaus augziliaru jo nekelia į pirmą vietą, nors profiliu jis lentelės viršūnėje.
+    <strong>Kas iš tikrųjų rikiuoja šią lentelę.</strong> Ne romėniškas svoris, o vienas empirinis dėsningumas. Patikrinus, kas faktiškai gavo sostą dvylikoje krizės ištiktų vyskupijų — Čilėje, Lenkijoje, Airijoje, JAV ir Vokietijoje — modelis kartojasi beveik be išimčių: <b>sostą gauna jau konsekruotas tos pačios šalies vyskupas iš kitos vyskupijos.</b> Ne tos vyskupijos vietinis kunigas, ne nuncijus, ne kurijos pareigūnas ir ne užsienietis. Todėl viršuje stovi trys veikiantys Lietuvos ordinarai — Jurevičius, Trijonis ir Vodopjanovas. <b>Bužauskas šiai taisyklei nepriklauso</b>: jis augziliaras, o ne ordinaras, ir aukštai stovi dėl kito dalyko — Kauno augziliaro kanalo, kuris nuo 1991 m. veikė penkis kartus iš penkių.<br><br>Antras veiksnys veikia priešinga kryptimi ir smogia Vilniaus žmonėms: bet koks nepriklausomas tyrimas apima ir kandidato tarnybos metus, todėl <b>vidinis kandidatas iš pranašumo virsta rizika</b>. Dėl to Poniškaitis stovi apačioje, o Trijonio septyneri metai Vilniaus augziliaru jo nekelia į pirmą vietą, nors profiliu jis lentelės viršūnėje.
   </div>
 </section>
 
@@ -496,7 +519,7 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
   <div class="col stack">
     <h3>Dvi pavardės, kurios yra testas, o ne prognozė</h3>
     <p>Goštautas ir Jankūnas į sąrašą pateko ne kaip prognozės, o kaip patikrinimai — abu rodo, kur baigiasi modelio galia. Pradėkime nuo pirmojo. Br. kun. Jokūbas Marija Goštautas OP čia yra ne dėl to, kad būtų tikėtinas. Už jį kalba tai, ko neturi beveik niekas: Vilniaus dominikonų vienuolyno prioras, dėstytojas Vilniaus kunigų seminarijoje, nuolatinis autorius nacionalinėje katalikų žiniasklaidoje ir — svarbiausia — <b>2026 m. rugpjūčio 17 d. „Bernardinuose“ paskelbtas tekstas „Skandalas mirčiai ir atgimimui“</b>, kuriame krizė aiškinama per iškreiptus galios santykius, tylos kultūrą ir Bažnyčios reputacijos prioritetą prieš sužeistuosius. Jo metafora — Bažnyčia kaip ligoninė, kurioje žmonės suserga toje pačioje vietoje, kur turėtų pasveikti — yra bene stipriausia formuluotė, kurią Lietuvos Bažnyčia rado apie savo pačios būklę. Tai sisteminė analizė, o ne gynyba, ir ji ateina iš vidaus.</p>
-    <p>Prieš jį kalba struktūra, ir kalba negailestingai. 2031 m. jam bus <b>41 metai ir dešimt metų kunigystės</b> — o faktinė Lietuvos skyrimų kreivė kyla, ir paskutinis skyrimas buvo 50,6 metų. Jis niekada nedirbo vyskupijos administracijoje: nebuvo nei kancleris, nei generalvikaras, nei tribunolo narys — o 2012–2026 m. imtyje <b>nė vienas vyskupas nebuvo paskirtas be bent vienos tokios pareigybės</b>. Studijų Romoje ar pareigų Šventojo Sosto įstaigose nerasta. Nuo 2026 m. rudens jis, LVK sprendimu, trejiems metams tampa Paryžiaus lietuvių kapelionu — t. y. fiziškai išvyksta iš Vilniaus tuo laikotarpiu, kai sprendimas galėtų būti priimamas. Ir galiausiai: nuncijaus, viešai vadinančio vokiškąjį Sinodinį kelią „klystkeliu“, <em>votum</em> jaunam reformistiniam vienuoliui yra mažai tikėtinas.</p>
+    <p>Prieš jį kalba struktūra, ir kalba negailestingai. 2031 m. jam bus <b>41 metai ir dešimt metų kunigystės</b> — o faktinė Lietuvos skyrimų kreivė kyla, ir paskutinis skyrimas buvo 50,6 metų. Jis niekada nedirbo vyskupijos administracijoje: nebuvo nei kancleris, nei generalvikaras, nei tribunolo narys — o 2012–2026 m. imtyje <b>nė vienas vyskupas nebuvo paskirtas be bent vienos tokios pareigybės</b>. Studijų Romoje ar pareigų Šventojo Sosto įstaigose nerasta. Nuo 2026 m. rudens jis, LVK sprendimu, trejiems metams tampa Paryžiaus lietuvių kapelionu. Ši pareigybė <b>nėra rezidencinė</b> — praktiškai tai kelių dienų vizitas maždaug kartą per mėnesį, o nuolatinė bazė lieka Vilniuje, taigi iš vietinės apyvartos jis neiškrenta. Prognozei tai veikiau nedidelis pliusas nei minusas: LVK lygio pasitikėjimas ir matomumas už Lietuvos ribų. Ir galiausiai: nuncijaus, viešai vadinančio vokiškąjį Sinodinį kelią „klystkeliu“, <em>votum</em> jaunam reformistiniam vienuoliui yra mažai tikėtinas.</p>
     <p>Sąžininga išvada: <b>0,5 % 2031 m. horizonte — ir realiai kur kas daugiau po 2035-ųjų.</b> Jo natūrali trajektorija yra ne Vilniaus sostas, o augziliaras arba mažesnė vyskupija dešimtmečio pabaigoje. Jei kada nors norėsis atsekti, kada jis tapo kandidatu, atskaitos taškas bus ne prioro pareigos, o tas rugpjūčio tekstas.</p>
     <p>Jankūnas yra priešingas atvejis. Jei Goštautui trūksta metų ir administracinės biografijos, tai Jankūnui trūksta <b>vietos</b>: jo profilis — daktaratas, tarptautinė knyga, Vatikano pastebėjimas ir tarpvyskupijinis kunigų autoritetas — yra tikras, bet visas priklauso Panevėžio vyskupijai ir sinodiniam procesui, o ne Vilniui. Penkiolika metų vienoje kaimo parapijoje be jokių valdymo pareigų yra per plona biografija sostui, kurį reikės tvarkyti po krizės. Realistiškas jo horizontas — <b>augziliaras arba mažesnės vyskupijos ordinaras 2030-ųjų dešimtmetyje</b>, ir tai visai tikėtina; Vilnius 2031 m. — beveik ne.</p>
 <h3>Ką iš tikrųjų reiškia „juodoji gulbė“ šiame modelyje</h3>
@@ -537,15 +560,43 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
       <strong>Du dažni teiginiai, kurių duomenys nepatvirtina.</strong> Pirmas: kad Vilniaus augziliaro postas yra aklavietė. Tunaitis jame išbuvo 19 metų, Poniškaitis sėdi šešioliktus — bet <b>Jonas Boruta SJ</b> buvo Vilniaus augziliaras 1997–2002 m. ir po to tapo Telšių vyskupu ordinaru, o Trijonis iš čia išėjo į Šiaulius. Nuo 1991 m. Vilniuje buvo keturi augziliarai; iš trijų, kurių kelias baigtas, <b>du buvo perkelti</b>. Tikslus apibūdinimas ne „aklavietė", o <b>lėtas ir nepatikimas kanalas</b>: vidutiniškai 5,5 metų, palyginti su 4,8 metų Kaune ir be nė vienos išimties ten.<br><br>Antras: kad Vilnius turi tik sostą, o institucijos yra Kaune. Registro duomenys sako kitaip — <b>Laisvos visuomenės institutas registruotas Vilniuje</b> (M. K. Paco g. 4), <b>Lietuvos krikščionių darbuotojų profesinė sąjunga — taip pat Vilniuje</b> (Savičiaus g. 13), o <b>LVK sekretoriatas yra Vilniuje</b> (S. Skapo g. 4). Skirtumas tarp renginio vietos ir buveinės čia esminis: dvi iš keturių organizacijų, kurios viešai siejamos su Kaunu, ten neregistruotos.
     </div>
 
+    <h3>Ko šis ginčas iš tikrųjų vertas</h3>
+    <p>Prieš skaičiuojant asociacijas ir leidyklas verta pasakyti tai, kas svarbiausia ir dažniausiai praleidžiama: <b>Vilnius yra valstybės sostinė, ir dėl to Vilniaus arkivyskupo sostas yra vienintelė vieta Lietuvos Bažnyčioje, kur ji reguliariai susitinka su valstybe.</b> Tai ne simbolis ir ne paprotys, o teritorinės jurisdikcijos pasekmė. Kanonas 390 draudžia vyskupui atlikti pontifikalines apeigas svetimoje vyskupijoje be vietos ordinaro sutikimo; Prezidentūra, Seimas, Vyriausybė, Arkikatedra, Aušros Vartai, Antakalnio ir Rasų kapinės yra Vilniaus arkivyskupijos teritorijoje. Todėl valstybės liturgija priklauso Vilniaus arkivyskupui pagal teisę, o ne pagal pakvietimą.</p>
+    <p>Tai matyti iš pačių valstybinių programų. Kultūros ministerijos skelbiamuose <b>Vasario 16-osios, Kovo 11-osios, Liepos 6-osios ir Sausio 13-osios</b> minėjimų tvarkaraščiuose šv. Mišios Vilniaus arkikatedroje yra atskira eilutė, rengėja įvardyta <b>Vilniaus arkivyskupija</b>, o transliuoja LRT televizija. Analogiškos eilutės su Kauno arkivyskupija valstybinėse programose nėra. Prie to prisideda prezidento inauguracijos Mišios ir valstybinės laidotuvės: 2018 m. Adolfo Ramanausko-Vanago, 2019 m. 1863–1864 m. sukilimo vadų — pastarosiose dalyvavo Lietuvos ir Lenkijos prezidentai.</p>
+    <div class="note" style="border-color:var(--accent); background:var(--accent-soft)">
+      <strong>Kad tai reali, o ne apeiginė galia, geriausiai rodo vienas atvejis.</strong> Kai 2010 m. mirė Algirdas Brazauskas, Mišios už jį arkikatedroje buvo aukojamos, bet <b>karsto į šventovę įnešti neleista</b>. 1993 m. tas pats sostas išrinktą prezidentą į šventovę įleido pro šonines duris. Vilniaus arkivyskupo sprendimas dėl arkikatedros durų tiesiogiai nulėmė valstybinių laidotuvių eigą — ir tai vienintelis dokumentuotas atvejis Lietuvoje, kai bažnytinis sprendimas taip veikė valstybės ceremoniją.
+      <br><br>Antras svertas mažiau matomas ir visiškai realus: <b>Lietuvos kariuomenės ordinariatas</b>, vienintelė visą šalį apimanti, ne teritorinė jurisdikcija Lietuvos Bažnyčioje. Jo kurija Vilniuje, Šv. Ignoto g. 6, o administratorius nuo 2013 m. — pats Vilniaus arkivyskupas.
+    </div>
+    <p class="small">Prie to prisideda dydis — ir ne tik tikinčiųjų. Pagal Šventojo Sosto skelbiamus 2022 m. duomenis <b>Vilniaus arkivyskupijoje 659 530 katalikų</b>, Kauno arkivyskupijoje — 342 100. O registrų duomenimis skirtumas dar didesnis: <b>Vilniaus arkivyskupijos ekonomo tarnybos 2025 m. pajamos — 6,45 mln. eurų ir 34 darbuotojai, Kauno — 1,31 mln. ir keturi darbuotojai</b>; pridėjus Vilniaus valdomą UAB „Laidojimo paslaugų centras“ (7,61 mln. eurų apyvartos, 1,79 mln. pelno), matoma apyvarta santykiauja maždaug <b>dešimt prieš vieną</b>. Vilnius yra stambiausia atskira vyskupija Lietuvoje, beveik dvigubai už Kauną — ir turtingiausia su gerokai didesniu atotrūkiu. Ir dar vienas ženklas iš 2026 m. rugpjūčio: kai Seimo Pirmininkas Juozas Olekas krizės metu paprašė susitikimo, jis kreipėsi <b>ne į Kauno, o į Vilniaus arkivyskupą</b>. Kai valstybei reikia kalbėtis su Bažnyčia, ji beldžiasi į Vilnių.</p>
+
     <h3>Ką iš tikrųjų turi Vilnius</h3>
     <p><b>Vilniaus arkivyskupijos „Caritas" — 119 darbuotojų</b> ir apie 700 savanorių keturiolikoje pagalbos centrų; tai didžiausias katalikiškas darbdavys šalyje. <b>Maltos ordino pagalbos tarnyba</b> — Gedimino pr. 56B, 201–300 darbuotojų, beveik <b>5 mln. eurų</b> apyvartos. „Bernardinai.lt" (353 tūkst. Eur), „Katalikų pasaulio leidiniai" (674 tūkst. Eur), „Magnificat leidiniai" (259 tūkst. Eur) — visi Vilniuje. Arkivyskupijos svetainė skelbia <b>40 organizacijų ir judėjimų</b>, 14 leidinių, 30 vienuolijų.</p>
     <p>Ir vienas dalykas, kurio Kaune nebėra: po 2020 m. seminarijų reformos <b>Vilniaus šv. Juozapo kunigų seminarija yra vienintelė Lietuvoje, vykdanti teologijos pakopą</b>, ir joje mokosi visų vyskupijų klierikai. Kaunui liko filosofijos etapas, Telšiams — parengiamasis kursas. Tai reiškia, kad kiekvienas būsimas Lietuvos kunigas ketverius metus praleidžia Vilniuje.</p>
     <p class="small">Tinklas Vilniuje matomas ne per pavadinimus, o per adresus. <b>Aušros Vartų g. 12</b> — devyni subjektai: Šeimos, Jaunimo, Katechetikos ir Akademinės sielovados centrai, Marijos legionas, Nacionalinė šeimų ir tėvų asociacija, ateitininkų padalinys, „Marijos radijo" Vilniaus studija, Šv. Pranciškaus Ksavero brolija. <b>Pilies g. 8</b> — Lietuvių katalikų mokslo akademija ir „Naujasis Židinys-Aidai". <b>M. K. Paco g. 4</b> — „Magnificat leidiniai" ir Laisvos visuomenės institutas. Vilniaus tinklas neturi bendro prekės ženklo, todėl atrodo, kad jo nėra.</p>
 
+    <div class="note" style="border-color:var(--warn); background:var(--gold-soft)">
+      <strong>Ir iš karto tai, kas šią pusę atsveria.</strong> Provincijos lygiu didesnis yra <b>Kaunas</b>: keturios vyskupijos prieš tris, apie 1,17 mln. katalikų prieš 0,97 mln., 419 parapijų prieš 276, 428 kunigai prieš 288. Pagrindinė katalikiška žiniasklaida — Katalikų interneto tarnyba, „Bažnyčios žinios“, „Marijos radijas“ — tebėra Kaune. <b>Formalios kanoninės pirmenybės tarp dviejų arkivyskupų nėra</b>: primo titulo Lietuvoje neturi niekas, o kan. 435–436 metropolitui svetimoje provincijoje jokios valdymo galios nesuteikia. Ir LVK pirmininkavimas istoriškai kaitaliojosi — nuo 1993 m. Vilniui teko apie dvidešimt metų, Kaunui apie dvylika.
+      <br><br>Dviejų metropolijų padalos amžius — 1991 m., kai Jonas Paulius II vieną 1926 m. provinciją padalijo į dvi. Panevėžys tada perėjo iš Kauno Vilniui. Kad tarp jų būtų viešai reikštos įtampos, <b>viešuose šaltiniuose nėra jokių pėdsakų</b>, ir šis puslapis tokios neteigia.
+    </div>
+
     <h3>Ką turi Kaunas, ko Vilnius neturi</h3>
     <p>Ne institucijų masę, o <b>kanalą ir formatą</b>. Kauno arkivyskupijos augziliaro postas yra pagrindinis įėjimas į vyskupų kolegiją: nuo 1991 m. per jį praėjo šeši asmenys, penki baigė kelią, ir <b>visi penki gavo aukštesnes pareigas</b> — Tamkevičius, Norvila, Ivanauskas, Kėvalas, Jurevičius. Vidutiniškai per 4,8 metų. Nė vienos išimties. Trys iš penkių naujų 2012–2026 m. vyskupų pradėjo būtent ten, ir nė vienas iš jų nebuvo Kauno arkivyskupijos žmogus.</p>
     <p>Antra — nacionalinių asociacijų sluoksnis: Lietuvos „Caritas", Katalikų interneto tarnyba, Ateitininkų federacija, „Artuma", Bažnyčios kronikos fondas, VDU Katalikų teologijos fakultetas ir „Marijos radijas". Ir trečia — <b>metinis viešas formatas</b>: Šiluvos konferencijų ciklas nuo 2023 m., į kurį susirenka abu metropolitai, viceministrai ir visų Seimo partijų atstovai. Vilniaus artimiausias atitikmuo, LKMA „Mažoji akademija", yra mokamas ir uždaresnis kursų ciklas. <b>Tai vienintelis punktas, kuriuo Kaunas Vilnių lenkia vienareikšmiai.</b></p>
     <p>Istorinis paaiškinimas paprastas: Lietuvos bažnytinę provinciją Pijus XI įsteigė <b>1926 m.</b> su metropolija Kaune, o Vilnius tuomet buvo Lenkijos jurisdikcijoje ir prisijungė tik <b>1991 m.</b> Visos nacionalinės asociacijos statytos tuos šešiasdešimt penkerius metus — Kaune, nes Vilniaus nebuvo. Prie to prisideda tai, kad <b>1946–1989 m. Lietuvoje veikė viena kunigų seminarija</b>, ir ji buvo Kaune.</p>
+
+    <div class="note">
+      <strong>Ir vienas kanalas, kurio kunigų biuleteniuose nėra.</strong> Abiejų arkivyskupijų turtą valdo ne kunigai, o <b>pasauliečiai ekonomai</b>: Vilniuje Mykolas Juozapavičius nuo 2014 m. vasario, Kaune Kęstutis Patašius nuo 2022 m. spalio. Vilniaus ekonomo tarnyba — 34 darbuotojai ir 6,45 mln. eurų pajamų, Kauno — keturi ir 1,31 mln. Tai reiškia, kad <b>naujas arkivyskupas paveldėtų ne tik sostą, bet ir stambiausią Bažnyčios ūkinį aparatą Lietuvoje</b>, kurio vadovybė su kunigų karjeros kanalais nesusijusi. Prognozei tai nekeičia pavardžių, bet keičia prizo dydį.
+    </div>
+
+    <h3>Pasauliečių sluoksnis ir valstybė</h3>
+    <p>Trečias dalykas, kurio šioje lentelėje nėra ir kuris veikia lygiagrečiai bažnytiniams kanalams: <b>pasauliečių organizacijos, dirbančios politiniame lauke.</b> Jų branduolys nedidelis ir gerai matomas. Kasmetinį Šiluvos konferencijų ciklą nuo 2023 m. rengia keturios organizacijos — <b>Lietuvos krikščionių darbuotojų profesinė sąjunga</b> (pirmininkas Audrius Globys), <b>VDU Katalikų teologijos fakultetas</b>, <b>Laisvos visuomenės institutas</b> (valdybos pirmininkas — tas pats Globys) ir nuo 2026 m. <b>Bažnyčios kronikos fondas</b>. Globėjai visais metais — abu metropolitai, Kėvalas ir Grušas.</p>
+    <p>Tas pats žmogus dviejose iš keturių rengiančių organizacijų yra faktas, o ne prielaida. Kaip ir tai, kad pranešėjų branduolys per ketverius metus beveik nekinta: Kėvalas kalbėjo visose keturiose konferencijose, prof. Alvydas Jokubaitis ir dr. Vygantas Malinauskas — po tris. <b>Į 2026 m. rugsėjo 3 d. konferenciją pakviesti visų Seime atstovaujamų partijų lyderiai</b>, o transliuoja Delfi.</p>
+    <div class="note" style="border-color:var(--accent); background:var(--accent-soft)">
+      <strong>Vienas dokumentuotas perėjimas iš šio sluoksnio į valstybės aparatą.</strong> <b>Kristina Zamarytė-Sakavičienė</b> 2016–2020 m. buvo Laisvos visuomenės instituto direktorė, 2018–2024 m. — valdybos narė, o nuo <b>2025 m. spalio 8 d. yra teisingumo viceministrė</b>. Tai skelbia ne kritikai, o pati Teisingumo ministerija savo tinklalapyje — abi LVI pareigybės įrašytos į oficialų jos gyvenimo aprašymą. 2026 m. Šiluvos konferencijoje ji skelbiama pranešėja jau kaip viceministrė. Antras atvejis: <b>Ramūnas Aušrotas</b>, kurio teisinius komentarus nuolat skelbia LVI, dirba Seimo nario patarėju.
+      <br><br><strong>Ir iš karto tai, ko šie faktai neįrodo.</strong> Viceministrus skiria ministras — šiuo atveju Rita Tamašunienė. Jokio šaltinio, kad LVI būtų teikęs ar derinęs kandidatūrą, nėra. Skirtumas esminis ir jį verta laikyti prieš akis skaitant bet kokį tekstą apie „tinklus“: <b>„tas pats žmogus ėjo pareigas abiejose vietose“ yra faktas, o „organizacija tas pareigas gavo“ — teiginys, kurio niekas nepatvirtina.</b>
+    </div>
+    <p class="small">Ta pati atsarga galioja ir Seimo <b>Laikinajai šeimos politikos grupei</b> (pirmininkė Aušrinė Norkienė, 25 nariai iš septynių frakcijų). Laikinoji grupė Seime yra savo iniciatyva susibūrusių narių būrelis, ne struktūrinis padalinys: ji neturi teisėkūros galių, neteikia komiteto išvadų ir nepriima saistančių sprendimų — įstatymų pataisas teikia atskiri Seimo nariai savo vardu. Narystė joje rodo deklaruojamą interesą, ne įtaką. Iš dvidešimt penkių narių su aprašytuoju sluoksniu viešai susietas <b>vienas</b>, ir tai per patarėją.</p>
+    <p class="small">Ką tai duoda prognozei: nedaug tiesiogiai ir šiek tiek netiesiogiai. Vyskupus skiria Roma, o ne šis sluoksnis, ir nė vienas jo veikėjas neturi jokio vaidmens ternos rengime. Bet <b>abu metropolitai yra nuolatiniai to paties ciklo globėjai</b>, taigi tai vieta, kurioje Vilnius ir Kaunas viešai stovi greta — ir vienintelė tokia reguliari vieta Lietuvoje.</p>
 
     <h3>Kanalai: kas realiai veda į vyskupystę</h3>
     <div class="scroller" style="margin:18px 0">
@@ -572,7 +623,7 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
     <div class="note" style="border-color:var(--accent); background:var(--accent-soft)">
       <strong>Vyriai tarp pasauliečių ir vyskupų.</strong> Jų du. <b>Bažnyčios kronikos fondas</b>, kurio dalininkai yra abi arkivyskupijos ir kard. Tamkevičius, o valdyboje greta Globio, Malinausko ir Karvelienės sėdi <b>vysk. Algirdas Jurevičius (pirmininkas)</b>, <b>vysk. Saulius Bužauskas</b> ir <b>kun. Mykolas Sotničenka</b>. Ir <b>Ateitininkų federacija</b>, į kurios tarybą 2026 m. balandį išrinktas <b>arkiv. Gintaras Grušas</b>.
     </div>
-    <p>Įtaka veikia ne per personalijas, o per darbotvarkę. <b>Šiluvos deklaraciją</b> (2021 09 12) parengė ne vyskupai, o pasauliečių maldos akcijos grupė, kurios autoriai neviešinami; viešai ją perskaitė ir bažnytinį autoritetą suteikė Kauno arkivyskupas Kėvalas. Prof. Paulius Subačius pavadino ją „klerikalizmas in a nutshell". O <b>„Marijos radijo"</b> atveju svertas yra eteryje: 2023 m. spalio 4 d. LRT paskelbė, kad radijas, kartodamas Vatikano radijo apžvalgą, iškirpo iš jos apklausos duomenis apie nepasitikėjimą Bažnyčios gebėjimu spręsti pedofilijos atvejus. Programų direktorių, beje, skiria Kauno arkivyskupas dekretu — personalijų srautas eina iš arkivyskupijos į radiją, ne atvirkščiai.</p>
+    <p>Įtaka veikia ne per personalijas, o per darbotvarkę. <b>Šiluvos deklaraciją</b> (2021 09 12) parengė ne vyskupai, o pasauliečių maldos akcijos grupė, kurios autoriai neviešinami; viešai ją perskaitė ir bažnytinį autoritetą suteikė Kauno arkivyskupas Kėvalas. Prof. Paulius Subačius pavadino ją „klerikalizmas in a nutshell". O <b>„Marijos radijo"</b> atveju svertas yra eteryje: 2023 m. spalio 4 d. LRT paskelbė, kad radijas, kartodamas Vatikano radijo apžvalgą, iškirpo iš jos apklausos duomenis apie nepasitikėjimą Bažnyčios gebėjimu spręsti pedofilijos atvejus. Programų direktoriaus paskyrimo dekretą pasirašo Kauno arkivyskupas: 2026 m. birželio 24 d. tokį dekretą Kauno arkikatedroje kun. dr. Nerijui Pipirui įteikė arkiv. Kėvalas, atleisdamas iš jų kun. Martyną Povylaitį SC. <b>Kaip kandidatas atsirenkamas iki dekreto, viešai neskelbiama</b> — matomas tik paskutinis žingsnis, ir vien iš jo spręsti apie viso kanalo kryptį negalima.</p>
 
     <h3>Grušo aplinka: koncentruota, bet be įpėdinio</h3>
     <p>Vilniaus arkivyskupija turi apie šimtą kunigų. Kurijos branduolį, kaip jį skelbia pati arkivyskupija, sudaro <b>keturi žmonės</b>: generalvikaras Poniškaitis, kancleris Šuškevič, ekonomas Juozapavičius ir koordinatorius Sotničenka. Valdymas koncentruotas ne per patikimų žmonių ratą, o per <b>pareigų kaupimą</b>. Šuškevič šešerius metus buvo seminarijos rektorius, dabar kancleris, parapijos rektorius, kunigų tarybos ir konsultorių kolegijos narys. Bernotavičius per penkerius metus perėjo penkias pakopas — visas Grušo dekretais — ir dabar valdo seminariją, sėdi tribunole ir abiejuose patariamuosiuose organuose. Sotničenka vienas kalba už arkivyskupiją žiniasklaidai, vienas atsako už nukentėjusiųjų apsaugą ir nuo 2026 m. liepos talkina nunciatūrai.</p>
@@ -582,16 +633,30 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
     </div>
 
     <h3>Trakų kontekstas</h3>
-    <p>Trakų bazilika turi tai, ko neturi nė viena kita Lietuvos šventovė: 1718 m. rugsėjo 4 d. Klemenso XI karūnomis vainikuotą paveikslą, <b>Lietuvos Globėjos</b> titulą, bazilikos titulą nuo 2017 m. ir Pranciškaus auksinę trirožę. <b>2018 m. vasario 11 d. Lietuva paaukota Marijai būtent Trakuose</b> — visų vyskupų kolegialiu aktu, ne Šiluvoje ir ne Aušros Vartuose.</p>
+    <p>Trakų bazilika turi tai, ko neturi nė viena kita Lietuvos šventovė: 1718 m. rugsėjo 4 d. Klemenso XI karūnomis vainikuotą paveikslą, <b>Lietuvos Globėjos</b> titulą, bazilikos titulą nuo 2017 m. ir <b>popiežiaus Aukso rožę</b> — vienintelę tokią dovaną Lietuvoje. <b>2018 m. vasario 11 d. Lietuva paaukota Marijai būtent Trakuose</b> — visų vyskupų kolegialiu aktu, ne Šiluvoje ir ne Aušros Vartuose.</p>
+    <p class="small">Aukso rožė („<em>Rosa aurea</em>“) yra viena seniausių popiežiškųjų dovanų, raštuose sutinkama nuo XI amžiaus; nuo XIX a. ji teikiama garsiems Marijos atvaizdams ir šventovėms. Ir čia yra detalė, kurią verta pastebėti: <b>Pranciškus ją įteikė 2018 m. rugsėjo 23 d. Mišiose Kauno Santakoje</b> — Trakų paveikslas tam buvo atvežtas į Kauną. Vienintelė popiežiaus Aukso rožė Lietuvoje atiteko Vilniaus arkivyskupijos šventovei, bet perduota buvo Kaune, nes ten vyko popiežiaus Mišios.</p>
     <p>Kaip karjeros kelias — tuščia vieta. Nė vienas iš keturiolikos tikrintų kandidatų ten netarnavo; per šešiasdešimt metų Trakuose buvo trys klebonai, nė vienas netapo vyskupu. Tas pats galioja Krekenavai: du klebonai per keturiasdešimt trejus metus. <b>Lietuvos didžiosios šventovės yra ekspozicijos, o ne trajektorijos vietos.</b></p>
+    <div class="note">
+      <strong>Bet kaip platforma Trakai nėra tušti — ir tai naujesnis dalykas.</strong> 2025 m. liepos 5 d. Trakų parapija kartu su <b>Lietuvos šaulių sąjunga</b> surengė nacionalinį renginį „Brandžios valstybės link“: Mišias aukojo ne vietos klebonas ir ne Vilniaus arkivyskupas, o <b>Kauno arkivyskupas Kėvalas</b>, popietės diskusijoje su juo sėdėjo Šaulių sąjungos vadas plk. ltn. Linas Idzelis ir <b>Prezidento vyriausioji patarėja Asta Skaisgirytė</b>, o transliavo Delfi. Tą pačią dieną Trakuose Lietuvai prisiekė šeši šimtai šaulių.
+      <br><br>Po aštuonių mėnesių — antras tokio pat pobūdžio įvykis, tik iš kitos pusės. <b>2026 m. „Laetare“ sekmadienį Trakų bazilikoje lankėsi apaštališkasis nuncijus arkiv. Georgas Gänsweinas ir atliko Aukso rožės palaiminimo apeigas.</b> Parapijos teigimu, tai buvo <b>pirmas kartas Lietuvos Katalikų Bažnyčios istorijoje</b>, kai šios apeigos atliktos; nepriklausomo patvirtinimo viešuose šaltiniuose nerasta, todėl teiginys nurodomas kaip parapijos, ne kaip patikrintas faktas.
+      <br><br>Prognozei tai reikšminga ne kaip karjeros kanalas, o kaip geografija: <b>per trylika mėnesių Vilniaus arkivyskupijos parapija du kartus tapo vieta, kurioje nacionalinio lygmens apeigas atlieka ne Vilniaus arkivyskupas</b> — pirmą kartą Kauno metropolitas su valstybės pareigūnais, antrą kartą popiežiaus atstovas. Faktas fiksuojamas, išvada apie ketinimus nedaroma.
+    </div>
+    <p class="small"><b>Ir iš karto — paprastas paaiškinimas, kurio nereikia ignoruoti.</b> Aukso rožė fiziškai yra Trakuose, o jos palaiminimo apeigos pagal tradiciją atliekamos ten, kur rožė saugoma. Nuncijus yra popiežiaus atstovas, tad popiežiaus dovanos laiminimas yra tiesiogiai jo vaidmuo. Kitaip tariant, įvykiui visiškai pakanka liturginės logikos ir jokios kitos prasmės jam priskirti nebūtina. Bet lieka du dalykai, kurių liturgija nepaaiškina: <b>kad apeigos atliktos pirmą kartą per visą laiką, kol rožė Lietuvoje yra</b>, ir kad tai padaryta praėjus aštuoneriems metams nuo dovanojimo. Kodėl būtent 2026 m., viešai neskelbta.</p>
     <div class="note">
       <strong>Vienas įrodymas iš Trakų svarus.</strong> Trakinių atlaiduose Mišias lenkų kalba aukoja pats arkivyskupas: 2025 m. rugsėjo 7 d. Grušas 10 val. lenkiškai ir 12 val. lietuviškai, kitą dieną tą patį darė Poniškaitis. Tai <b>dokumentuotas įrodymas, kad lenkų kalba Vilniaus arkivyskupui yra funkcinė pareiga</b>. Modelyje ta ašis sveria 10 %, ir dabar ji stovi ant fakto, o ne ant surašymo procento.
     </div>
 
     <h3>Ką tai reiškia kontekstui</h3>
-    <p>Įprasta išvada — „kas gaus Vilnių, gaus sostą be mašinos" — per stipri ir iš dalies klaidinga. Vilnius mašiną turi: didžiausią katalikišką darbdavį, stipriausias leidyklas, vienintelę teologijos seminariją, LVK sekretoriatą ir nunciatūrą. Ko jam trūksta, yra kai kas kita ir siauresnio.</p>
+    <p>Įprasta išvada — „kas gaus Vilnių, gaus sostą be mašinos" — per stipri ir iš dalies klaidinga. Vilnius mašiną turi: didžiausią katalikišką darbdavį, stipriausias leidyklas, vienintelę teologijos seminariją, LVK sekretoriatą, nunciatūrą ir kariuomenės ordinariatą. O svarbiausia — turi tai, ko Kaunas neturi ir negali turėti: <b>reguliarų, į valstybinį kalendorių įrašytą priėjimą prie valstybės.</b> Todėl klausimas „kas gaus Vilnių“ nėra bažnytinės buhalterijos klausimas. Tai <b>vienintelis Lietuvos Bažnyčios postas, kuriame religinė institucija reguliariai stovi šalia valstybės institucijų</b>, ir būtent dėl to jis yra geidžiamas. Ko Vilniui trūksta, yra kai kas kita ir siauresnio.</p>
     <p><b>Vilniui trūksta įpėdinystės mechanizmo.</b> Kaune veikia postas, kuris per trisdešimt penkerius metus pagamino penkis vyskupus iš penkių. Vilniuje tokio posto nėra: augziliaro kėdė duoda rezultatą maždaug pusėje atvejų ir lėtai, o šiuo metu ji viena ir užimta žmogaus, kuris joje sėdi šešioliktus metus. Antroji tuščia nuo 2024 m. Seminarija, per kurią eina visi Lietuvos klierikai, per trisdešimt trejus metus davė vieną vyskupą — ir tai netiesiogiai.</p>
-    <p>Todėl prognozei tai reiškia du dalykus. Pirma, <b>vietinio kandidato pranašumas Vilniuje mažesnis, nei būtų kitoje vyskupijoje</b>, nes nėra pakopos, iš kurios jį būtų natūralu paimti. Bet tai nereiškia, kad Vilnius atitenka Romos žmogui — reiškia, kad jis atitenka <b>vyskupui iš kitos Lietuvos vyskupijos</b>, ir būtent todėl lentelės viršūnėje stovi Jurevičius, Trijonis ir Bužauskas, o ne nuncijus ar kardinolas. Antra, tai paaiškina, kodėl Kėvalas lieka žemai, nors yra stipriausiai pozicionuotas Lietuvos hierarchas: <b>jam nereikia Vilniaus, kad vadovautų Lietuvos Bažnyčiai</b> — reikiamos struktūros jau jo pusėje.</p>
+    <p>Prognozei iš to seka mažiau, nei norėtųsi. Įpėdinystės mechanizmo trūkumas leidžia teigti tik vieną dalyką: <b>vietinio kandidato pranašumas Vilniuje mažesnis, nei būtų kitoje vyskupijoje</b>, nes nėra pakopos, iš kurios jį būtų natūralu paimti. Tai <em>pašalina</em> vieną variantą, bet nenurodo, kuris iš likusiųjų laimi. Iš „Vilnius neturi savo kopėčių“ vienodai gerai išplaukia ir vyskupas iš kitos Lietuvos vyskupijos, ir žmogus iš Romos, ir ilgas valdymas per administratorių.</p>
+    <p>Kad viršuje atsidūrė būtent Lietuvos ordinarai, lemia <b>kitas, nuo šio nepriklausomas įrodymas</b> — krizės ištiktų vyskupijų statistika, aprašyta prognozės skyriuje. Verta pasakyti tiesiai: dvi skirtingos linijos rodo ta pačia kryptimi, ir būtent tas nepriklausomumas, o ne kuri nors viena iš jų, daro išvadą kiek tvirtesnę. Sujungti jas į vieną priežastinę grandinę būtų per drąsu.</p>
+    <div class="note">
+      <strong>Trys išlygos prie tos pačios išvados.</strong> Pirma, <b>Bužauskas šios taisyklės pavyzdys nėra</b>: jis Kauno augziliaras ir generalvikaras, o ne kitos vyskupijos ordinaras. Lentelėje jis trečias dėl visai kito argumento — Kauno augziliaro kanalo, per kurį nuo 1991 m. penki žmonės iš penkių gavo paaukštinimą. Jo atitikties balas yra <em>žemiausias</em> visoje lentelėje, ir tai matoma prieštara, o ne apsirikimas.
+      <br><br>Antra, <b>romėniškas kelias neuždarytas</b>. Kulbokas ir Makrickas kartu sudaro 10 %, o dalis 15,9 % „kito kandidato“ eilutės irgi yra Romoje dirbantys lietuviai. Teisinga formuluotė — „mažiau tikėtina“, ne „ne“.
+      <br><br>Trečia, lentelės viršūnė nėra šios išvados <em>įrodymas</em>. Ji yra jos <em>pasekmė</em>: ašis „jau valdo vyskupiją Lietuvoje“ sveria 14 %, todėl ordinarai kyla į viršų pagal konstrukciją. Rodyti į lentelę kaip į patvirtinimą reikštų remtis savo paties prielaida.
+    </div>
+    <p>Atskiras ir su tuo nesusijęs klausimas — <b>kodėl žemai lieka Kėvalas</b>. Priežastis struktūrinė, ne asmeninė: metropolitas iš vienos Lietuvos metropolijos į kitą praktiškai neperkeliamas, nes tai judesys į šoną, o ne aukštyn. Ką jis pats norėtų ar manytų esant reikalinga, nežinoma ir prognozei nesvarbu — vyskupai savęs neskiria. Tiesa tik tiek, kad Lietuvos Bažnyčios svertai, kuriuos šis skyrius aprašė, didele dalimi yra Kaune, taigi Vilniaus sostas jam pridėtų mažiau, nei pridėtų bet kuriam kitam kandidatui.</p>
     <div class="note">
       <strong>Tikrinimo taškas.</strong> <b>LVK pirmininko rinkimai 2027 m. lapkritį.</b> Baigsis ketvirtoji Grušo kadencija ir paaiškės, ar formalus vadovavimas lieka Vilniuje. Penkta iš eilės būtų precedento neturinti: Tamkevičius pirmininkavo tris kadencijas iš eilės, Bačkis — dvi. Antrasis taškas paprastesnis ir gali įvykti anksčiau: <b>ar Vilnius gaus antrą augziliarą.</b> Jei gaus, tai bus pirmas ženklas, kad įpėdinystė pradedama tvarkyti.
     </div>
@@ -786,7 +851,7 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
 
 <section style="padding-bottom:28px">
   <details class="src">
-    <summary><span>Pagrindiniai šaltiniai (167)</span></summary>
+    <summary><span>Pagrindiniai šaltiniai (183)</span></summary>
     <div class="srcbody">
       <a href="https://vilnensis.lt/vilniaus-arkivyskupo-gintaro-gruso-kreipimasis-i-tikinciuosius/">Arkiv. Grušo kreipimasis į tikinčiuosius, 2026 08 11 — vilnensis.lt</a>
       <a href="https://vilnensis.lt/vilniaus-arkivyskupijos-informacija-del-teismui-perduotu-baudziamuju-bylu/">Arkivyskupijos informacija dėl teismui perduotų bylų, 2026 08 11</a>
@@ -907,6 +972,22 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
       <a href="https://laisvavisuomene.lt/konferencija-kaip-nesunaikinti-laisves-ir-demokratijos-siluvos-deklaracija-apmastant/">Šiluvos konferencija 2025 09 04 — programa su M. Kubiliaus pranešimu</a>
       <a href="https://vilniustech.lt/kurybiniu-industriju-fakultetas/mokslas-ir-inovacijos/kurybiniu-kompetenciju-centras/364196">M. Kubilius — VILNIUS TECH Kūrybinių kompetencijų centras</a>
       <a href="https://www.15min.lt/naujiena/aktualu/lietuva/g-nausedos-rinkimu-stabo-strategas-prezidenta-ir-nauja-krikdemu-partija-siejanti-gija-56-1200920">M. Kubilius G. Nausėdos rinkimų štabe, 2019 09 — 15min</a>
+      <a href="https://tm.lrv.lt/lt/kristinos-zamarytes-sakavicienes-gyvenimo-aprasymas/">Teisingumo viceministrės K. Zamarytės-Sakavičienės oficialus CV su LVI pareigomis</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/2705508/teisingumo-viceministremis-paskirtos-aliaseviciene-zamaryte-sakaviciene">Paskyrimas teisingumo viceministre, 2025 10 08 — LRT</a>
+      <a href="https://www.lrs.lt/sip/portal.show?p_r=41140&amp;p_k=1">Seimo Laikinoji šeimos politikos grupė — sudėtis</a>
+      <a href="https://www.infolex.lt/teise/DocumentSinglePart.aspx?AktoId=95049&amp;StrNr=26">Seimo statuto 26 str. — laikinosios grupės</a>
+      <a href="https://laisvavisuomene.lt/apie-mus/">Laisvos visuomenės instituto valdyba ir ekspertai</a>
+      <a href="https://www.brandivalstybe.lt/">„Brandžios valstybės link“, Trakai, 2025 07 05 — renginio programa</a>
+      <a href="https://sc.bns.lt/view/item/brandi-valstybe-prasideda-trakuose-lietuvai-prisieks-600-sauliu-510451">Trakuose Lietuvai prisiekė 600 šaulių, 2025 07 02 — BNS</a>
+      <a href="https://www.vatican.va/content/francesco/en/travels/2018/outside/documents/papa-francesco-paesi-baltici_2018.html">Popiežiaus Mišios Kauno Santakoje 2018 09 23, kuriose įteikta Aukso rožė — vatican.va</a>
+      <a href="https://www.vle.lt/straipsnis/traku-bazilika/">Trakų bazilika: vainikavimas 1718 m., Lietuvos Globėjos titulas — VLE</a>
+      <a href="https://www.vilnensis.lt/parapijos/traku-svc-m-marijos-apsilankymo-parapija/">Trakų Švč. M. Marijos Apsilankymo parapija — Vilniaus arkivyskupija</a>
+      <a href="https://www.vatican.va/content/francesco/en/travels/2018/outside/documents/papa-francesco-paesi-baltici_2018.html">Popiežiaus Pranciškaus vizito programa, 2018 09 22–23 — vatican.va</a>
+      <a href="https://lrkm.lrv.lt/lt/veiklos-sritys/lietuvos-valstybei-reiksmingu-kulturiniu-istoriniu-ivykiu-iprasminimas/vasario-16-oji-lietuvos-valstybes-atkurimo-diena/">Vasario 16-osios valstybinė programa: Mišias rengia Vilniaus arkivyskupija</a>
+      <a href="https://lrkm.lrv.lt/lt/veiklos-sritys/lietuvos-valstybei-reiksmingu-kulturiniu-istoriniu-ivykiu-iprasminimas/kovo-11-ajai-pamineti-skirti-renginiai/">Kovo 11-osios valstybinė programa — Kultūros ministerija</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/1073198/prezidentu-inauguracijos-uzverta-katedra-brazauskui-amerikietiski-adamkaus-pokyliai-ir-pakso-naikintuvai">Arkikatedros durys: Brazausko ir Adamkaus atvejai — LRT</a>
+      <a href="https://www.kariuomene.lt/pajegos-ir-kariniai-vienetai/kiti-pajegumai/ordinariatas/22952">Lietuvos kariuomenės ordinariatas, Vilnius — kariuomene.lt</a>
+      <a href="https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib2-cann431-459_en.html">Kanonų teisės kodeksas, kan. 435–438 — metropolito galios ir primo titulas</a>
       <a href="https://paneveziokrastas.pavb.lt/panevezio-sloves-aleja-zymiausieji-krastieciai/jankunas-gediminas/">Kun. dr. G. Jankūno biografija — Panevėžio apskrities biblioteka</a>
       <a href="https://www.vaticannews.va/lt/baznycia/news/2024-05/kun-g-jankunas-apie-klebonu-sinodini-susitikima.html">G. Jankūnas apie klebonų sinodinį susitikimą Romoje, 2024 05 — Vatican News</a>
       <a href="https://search.worldcat.org/title/746241947">G. T. Jankunas, „The Dictatorship of Relativism: Pope Benedict XVI’s Response", 2011</a>
@@ -959,8 +1040,704 @@ footer{padding:36px 0 0; border-top:1px solid var(--line); color:var(--muted); f
   </details>
 </section>
 
+</div><!-- /view-sostas -->
+
+<div id="view-galia" hidden>
+<header class="mast">
+  <div class="mast-top">
+    <span class="stamp">Analitinis tyrimas · 1918–2026</span>
+    <span class="eyebrow">Parengta 2026 09 01</span>
+  </div>
+  <div class="mast-grid">
+    <div class="stack">
+      <h1>Bažnyčia ir <em>valdžia</em></h1>
+      <p class="lede">Katalikų Bažnyčia Lietuvoje turi veto galią be iniciatyvos galios — ir ta veto galia veikia tik parlamente, ne teisme. Stambulo konvencija neratifikuota trylika metų, net Konstituciniam Teismui pasakius, kad ji Konstitucijai neprieštarauja. Bet nuo 2023 m. Bažnyčios pozicija pralaimėjo <b>kiekvieną</b> teisminę bylą. Tuo pat metu masinė bazė traukiasi greičiau nei bet kada, o institucinė padėtis nejuda. Šie du judesiai priešingomis kryptimis ir yra tikroji šio santykio būklė.</p>
+      <div class="note">
+        <strong>Kaip skaityti.</strong> Šis tyrimas skiria keturis dalykus, kurie viešojoje kalboje nuolat maišomi: <b>koreliaciją nuo priežastingumo</b>, <b>formalią teisinę galią nuo neformalios įtakos</b>, <b>elito tinklus nuo masinio religingumo</b> ir <b>istorinę inerciją nuo šiandienos atsitiktinumo</b>. Kur duomenų nėra, tai pasakyta atvirai — spragų sąrašas pabaigoje yra tyrimo dalis, ne jo trūkumas.
+      </div>
+    </div>
+    <div class="hero-figure">
+      <span class="eyebrow">Pagrindinis skaičius</span>
+      <div>
+        <div class="hero-num">1<span>iš 12</span></div>
+        <p class="small" style="margin-top:6px">Tiek vietų Lietuvos vyskupų konferencija turi vienintelėje valstybės institucijoje, kur įstatymas jai suteikia delegavimo teisę — LRT taryboje</p>
+      </div>
+      <p class="xs">Tai visa Bažnyčios formalioji galia Lietuvos valstybės valdyme. Visa kita — mokestinės lengvatos, tikybos mokytojų tvirtinimas, kapelionai, katalikiškų mokyklų finansavimas — remiasi ne nacionaliniu įstatymu, o <b>2000 m. tarptautine sutartimi su Šventuoju Sostu</b>.</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Periodizacija</span>
+    <h2>Keturi režimai per šimtą metų</h2>
+    <p class="lede small">Santykis keitėsi ne palaipsniui, o šuoliais, ir kiekvieną kartą jį perbraižė valstybė, ne Bažnyčia. Tai pirmoji svarbi asimetrija: per šimtą metų Bažnyčia nė karto nebuvo ta pusė, kuri nustatė naujas žaidimo taisykles.</p>
+  </div>
+  <div class="col">
+    <div class="sig">
+      <div class="sigrow"><span class="when">1918–1940</span><p><b>Konfesinė valstybė su konfliktu viduje.</b> Šventasis Sostas Lietuvą de jure pripažino 1922 11 10 — anksčiau nei Didžioji Britanija, Prancūzija ir Italija. 1926 04 04 bulė „Lituanorum gente“ įsteigė savarankišką bažnytinę provinciją su metropolija <b>Kaune</b> ir keturiomis naujomis vyskupijomis; apie Vilnių dokumentas tyli. 1927 09 27 pasirašytas konkordatas. Krikščionių demokratų blokas 1920–1926 m. vadovavo vyriausybėms, o kun. <b>Mykolas Krupavičius</b> ketverius metus buvo žemės ūkio ministras.</p></div>
+      <div class="sigrow"><span class="when">1926–1940</span><p><b>Ir iš karto — valstybės atsakas.</b> Krikščionys demokratai parėmė 1926 12 17 perversmą, o jau 1927 m. balandį buvo iš valdžios pašalinti. Toliau Smetonos režimas veikė nuosekliai: <b>1930 m. uždrausti moksleivių ateitininkai</b> vidurinėse mokyklose, 1931 m. vasarą <b>išsiųstas nuncijus Bartoloni</b>, 1931 m. vasarį grasinta denonsuoti konkordatą, 1932–1934 m. bandyta keisti kunigų algų mokėjimo tvarką, kad būtų galima spausti atskirus kunigus, 1936 m. Draugijų įstatymas suvaržė katalikiškas asociacijas. <b>1936 m. partijos veikla sustabdyta.</b></p></div>
+      <div class="sigrow"><span class="when">1940–1990</span><p><b>Represija, ir kartu — moralinio kapitalo sukaupimas.</b> 1944–1953 m. <b>364 kunigai</b> nuteisti mirties bausme arba kalėti; suimti keturi vyskupai. Uždarytos Telšių ir Vilkaviškio seminarijos, likusiai Kauno seminarijai nustatyti klierikų limitai: <b>150 → 75 → 60 → 45 → 25</b>. „Lietuvos Katalikų Bažnyčios kronika“ ėjo <b>1972 03 19 – 1989 03 19, 81 numeris</b>, 100–300 egzempliorių tiražu, ir per Maskvos disidentus pasiekdavo Vatikano radiją bei „Amerikos balsą“. Už jos platinimą 1973–1983 m. suimta 17 žmonių.</p></div>
+      <div class="sigrow"><span class="when">1990–2026</span><p><b>Atkūrimas ir naujas karkasas.</b> Bažnyčios teisinė padėtis pradėta atkurti <b>1990 02 14 — dar prieš Kovo 11-ąją</b>. 1992 m. Konstitucija, 1995 m. Religinių bendruomenių įstatymas su devyniomis tradicinėmis bendrijomis, <b>2000 05 05 trys sutartys su Šventuoju Sostu</b>, 2012 m. sutartis dėl kvalifikacijų. Nuo 2023 m. — nauja fazė: pralaimėjimai teismuose.</p></div>
+    </div>
+    <div class="note" style="margin-top:20px; border-color:var(--accent); background:var(--accent-soft)">
+      <strong>Kelio priklausomybė, kurią verta pamatyti.</strong> Trys svarbiausi šiandienos faktai yra 1926 m. sprendimo pasekmės, o ne šiandienos pasirinkimai. Pirma, <b>dvi metropolijos</b> — Kauno provincija liko didesnė (keturios vyskupijos, ~1,17 mln. katalikų), o Vilniaus arkivyskupija yra stambiausia atskira vyskupija (659 530 katalikų). Antra, <b>nacionalinės katalikiškos institucijos telkėsi Kaune</b>, nes 1926–1940 m. Vilniaus tiesiog nebuvo. Trečia, <b>sostinė yra Vilniaus arkivyskupijos teritorijoje</b> — dėl to valstybės iškilmių liturgija priklauso Vilniaus arkivyskupui pagal kan. 390, o ne pagal susitarimą. Nė vienas iš šių trijų dalykų nėra doktrininis; visi trys yra istorijos likučiai.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Teisinis karkasas</span>
+    <h2>Ką iš tikrųjų sako teisė</h2>
+    <p class="lede small">Čia daugiausia mitų, todėl pradedama nuo to, ko Konstitucijoje <em>nėra</em>.</p>
+  </div>
+  <div class="col stack">
+    <div class="note" style="border-color:var(--warn); background:var(--gold-soft)">
+      <strong>Konstitucijoje nėra Bažnyčios ir valstybės atskyrimo nuostatos.</strong> Yra tik 43 str. 7 dalis — <em>„Lietuvoje nėra valstybinės religijos“</em> — ir 40 str. 1 dalis dėl mokyklų pasaulietiškumo. <b>Atskirumo principą 2000 m. birželio 13 d. nutarimu suformulavo Konstitucinis Teismas</b>, aiškindamas Konstituciją sistemiškai. Tai reiškia, kad viena svarbiausių Lietuvos valstybės ir Bažnyčios santykio taisyklių yra teismo doktrina, ne konstitucinis tekstas — ir todėl ji gali būti plėtojama toliau.
+    </div>
+    <p>Trys statusai duoda skirtingas teises. <b>Tradicinė</b> (devynios bendrijos, įvardytos 1995 m. įstatymo 5 str.) — statusas <em>ex lege</em> ir neatšaukiamas. <b>Valstybės pripažinta</b> — Seimo nutarimu, ne anksčiau kaip po 25 metų nuo įregistravimo, ir <em>atšaukiama</em>. <b>Tik įregistruota</b> — vien juridinio asmens teisės. Praktinis skirtumas tarp pirmų dviejų nedidelis; esminis skirtumas yra tas, kad tradiciškumo atimti negalima.</p>
+    <p><b>Tikroji Bažnyčios galia glūdi ne įstatyme, o tarptautinėje sutartyje.</b> 2000 m. gegužės 5 d. pasirašytos, liepos 20 d. ratifikuotos ir rugsėjo 16 d. įsigaliojusios trys sutartys su Šventuoju Sostu duoda tai, ko nacionalinis įstatymas neduoda:</p>
+    <div class="scroller" style="margin:6px 0 4px">
+      <table class="mx" style="min-width:640px">
+        <thead><tr><th style="text-align:left">Nuostata</th><th style="text-align:left">Straipsnis</th><th style="text-align:left">Ką duoda</th></tr></thead>
+        <tbody>
+          <tr><th scope="row" style="white-space:normal">Tikybos mokytojo tvirtinimas</th><td style="text-align:left">Švietimo 3 str.</td><td style="text-align:left">Privalomas rašytinis vyskupo įgaliojimas (<em>missio canonica</em>); jį praradus, teisė mokyti pasibaigia</td></tr>
+          <tr><th scope="row" style="white-space:normal">Programos ir vadovėliai</th><td style="text-align:left">Švietimo 6 str.</td><td style="text-align:left">Rengia Vyskupų konferencija kartu su valstybe; vadovėlius tvirtina abi pusės</td></tr>
+          <tr><th scope="row" style="white-space:normal">Mokytojų atestacija</th><td style="text-align:left">Švietimo 7 str.</td><td style="text-align:left">LVK atstovai dalyvauja atestacijos komisijose</td></tr>
+          <tr><th scope="row" style="white-space:normal">Katalikiškos mokyklos</th><td style="text-align:left">Švietimo 9 str.</td><td style="text-align:left">Finansavimas iš biudžeto tokio pat dydžio kaip valstybinėms</td></tr>
+          <tr><th scope="row" style="white-space:normal">Mokestinė lengvata</th><td style="text-align:left">Teisinių aspektų 10 str.</td><td style="text-align:left">Turtui, naudojamam sielovados, karitatyvinei, socialinei, švietimo ir kultūros veiklai</td></tr>
+          <tr><th scope="row" style="white-space:normal">Vyskupų skyrimas</th><td style="text-align:left">Teisinių aspektų 6 str.</td><td style="text-align:left">Išimtinė Šventojo Sosto kompetencija; valstybė neturi jokio vaidmens</td></tr>
+          <tr><th scope="row" style="white-space:normal">Išpažinties paslaptis</th><td style="text-align:left">Teisinių aspektų 8 str.</td><td style="text-align:left">Absoliuti</td></tr>
+          <tr><th scope="row" style="white-space:normal">Kapelionai</th><td style="text-align:left">Teisinių aspektų 15 str.; Karių sielovados 4 str.</td><td style="text-align:left">Skiria vietos ordinaras arba kariuomenės ordinaras; valstybė finansuoja</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Kodėl tai svarbu: ratifikuota tarptautinė sutartis pagal Tarptautinių sutarčių įstatymo 11 str. 2 d. turi pirmenybę prieš jai prieštaraujantį įstatymą, nors dalis doktrinos su tuo ginčijasi. Praktinė pasekmė dvipusė. <b>Šių nuostatų negalima panaikinti paprastu Seimo balsavimu</b> — reikėtų denonsuoti sutartį. Bet jos <b>lieka pavaldžios Konstitucijai</b>, taigi pasiekiamos Konstituciniam Teismui. Bažnyčios teisinė pozicija yra tvirta prieš parlamentą ir pažeidžiama prieš teismą — ta pati asimetrija, kuri matyti ir teisėkūros balanse.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Pinigai ir svertai</span>
+    <h2>Kur baigiasi formali galia</h2>
+  </div>
+  <div class="col stack">
+    <div class="cards">
+      <div class="card"><span class="eyebrow">Biudžeto eilutė 2026</span><span class="k">1,9<span style="font-size:1rem"> mln. €</span></span><span class="xs">tradicinėms religinėms bendruomenėms</span></div>
+      <div class="card"><span class="eyebrow">Iš jų LVK</span><span class="k">92,2 %</span><span class="xs">1 751 000 € — kai katalikais save laiko 74,2 % gyventojų</span></div>
+      <div class="card"><span class="eyebrow">Delegavimo teisės</span><span class="k">1</span><span class="xs">LRT taryba, 1 vieta iš 12 — daugiau nė vienos</span></div>
+      <div class="card"><span class="eyebrow">Klierikų 2000 → 2018</span><span class="k">−81 %</span><span class="xs">nuo 235 iki 45</span></div>
+    </div>
+    <p><b>Formalių svertų yra mažiau, nei paprastai manoma.</b> LRT įstatymo 10 straipsnis suteikia Lietuvos vyskupų konferencijai teisę deleguoti vieną iš dvylikos tarybos narių — ir tai vienintelė įstatyme įtvirtinta delegavimo teisė visoje valstybės sistemoje. Biomedicininių tyrimų ekspertų grupėje religinių organizacijų atstovų nėra. Prie Teisingumo ministerijos veikianti komisija dėl religinių grupių yra tarpžinybinė valstybės institucijų struktūra, ne bendruomenių atstovavimo organas. Seimo etikos institucijose, Teisėjų taryboje ar VTEK delegavimo teisės nėra. Įstatymų vetavimo ar privalomos konsultacijos teisės — taip pat.</p>
+    <p class="small">Pinigų pusėje matyti kita asimetrija. LVK gauna 92,2 % visos tradicinėms bendruomenėms skirtos eilutės, nors katalikais save nurodo 74,2 % gyventojų. Skirtumas 18 procentinių punktų. Dvasininkų privalomasis sveikatos ir pensijų draudimas mokamas iš valstybės biudžeto. Tradicinės bendruomenės atleistos nuo nekilnojamojo turto mokesčio už <em>visą</em> turtą, įskaitant komercinės paskirties — 2021 m. duomenimis, biudžetas dėl to negauna 2,4–14,5 mln. eurų per metus. Tai reikšmingai daugiau nei pati biudžeto eilutė.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Turtas</span>
+    <h2>Kur pinigai iš tikrųjų yra</h2>
+    <p class="lede small">Ligšioliniai skyriai rėmėsi įstatymais ir balsavimais. Tai neapima svarbiausio: turto. O jis registruose <em>yra</em> — tik ne ten, kur paprastai ieškoma, ir tik ta dalis, kurią Bažnyčia pati perkėlė į komercines teisines formas.</p>
+  </div>
+  <div class="col stack">
+    <div class="note" style="border-color:var(--accent); background:var(--accent-soft)">
+      <strong>Vienas struktūrinis dėsnis paaiškina visą matomumą.</strong> Kurijos, parapijos ir „Caritas“ yra <b>tradicinės religinės bendruomenės</b> — Lietuvos teisė joms finansinių ataskaitų teikti nenustato, todėl registruose jos finansiškai tuščios. Ekonomo tarnybos, leidyklos ir radijas yra <b>VšĮ arba UAB</b> — ir jos privalo atsiskaityti iki euro. Iš 1 312 Lietuvoje registruotų religinių bendruomenių <b>902 yra Romos katalikų</b>, ir beveik visos jos yra pirmojoje kategorijoje.
+      <br><br>Todėl viskas, kas toliau, yra <b>tik matoma dalis</b> — ne todėl, kad kas nors slepia, o todėl, kad taip veikia teisinė forma.
+    </div>
+
+    <div class="scroller">
+      <table class="mx" style="min-width:680px">
+        <thead><tr><th style="text-align:left">2025 m.</th><th>Vilnius</th><th>Kaunas</th><th>Santykis</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Ekonomo tarnybos pajamos</th><td>6 446 035 €</td><td>1 306 402 €</td><td class="tot">4,9 : 1</td></tr>
+          <tr><th scope="row">Turtas</th><td>3 668 831 €</td><td>1 467 856 €</td><td class="tot">2,5 : 1</td></tr>
+          <tr><th scope="row">Darbuotojai</th><td>34</td><td>4</td><td class="tot">8,5 : 1</td></tr>
+          <tr><th scope="row">Komercinės dukterinės</th><td>7 611 765 €</td><td>21 627 €</td><td class="tot">352 : 1</td></tr>
+          <tr><th scope="row">Matoma apyvarta iš viso</th><td>≈14,06 mln. €</td><td>≈1,33 mln. €</td><td class="tot">≈10 : 1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><b>Didžiausias dokumentuotas Katalikų Bažnyčios komercinis srautas Lietuvoje yra Vilniuje.</b> VšĮ „Vilniaus arkivyskupijos ekonomo tarnyba“ (įsteigta 1992 m., S. Skapo g. 4 — tuo pačiu adresu kaip LVK sekretoriatas) 2025 m. turėjo 6,45 mln. eurų pajamų ir 34 darbuotojus; per penkerius metus jos pajamos išaugo <b>1,8 karto</b>. Jai priklauso <b>UAB „Laidojimo paslaugų centras“</b>, įregistruota 2013 m. vasario 12 d. prie Kalvarijų bažnyčios: 2025 m. — <b>7,61 mln. eurų apyvartos, 1,79 mln. eurų grynojo pelno, 75 darbuotojai</b>. Kauno ekonomo tarnyboje dirba keturi žmonės, o jos komercinis padalinys — muziejus su 21,6 tūkst. eurų pajamų.</p>
+    <p class="small">Vilniaus ekonomas — <b>Mykolas Juozapavičius</b>, pasaulietis; ekonomo tarnybai vadovauja <b>nuo 2014 m. vasario 7 d.</b>, t. y. pirmaisiais Grušo valdymo metais. Kauno ekonomas <b>Kęstutis Patašius</b> priesaiką davė 2022 m. spalio 4 d. Abu — pasauliečiai. Tai ta Bažnyčios valdymo dalis, kurios kunigų skyrimų biuleteniuose nėra.</p>
+
+    <div class="note" style="border-color:var(--warn); background:var(--gold-soft)">
+      <strong>Ir vienas skaičius, kurio niekas nelaukia.</strong> Registrų centro 2021 m. duomenimis, tradicinėms religinėms bendruomenėms Lietuvoje priklauso <b>7 997 religinės paskirties objektai — ir 8 187 nereliginės paskirties</b>: butai, parduotuvės, kavinės, viešbučiai, poilsio namai, garažai. <b>Komercinių ir kitų nereliginių objektų yra daugiau nei bažnyčių.</b> Mokestinės lengvatos taikomos abiem grupėms: valstybė dėl to per metus negauna <b>2,4–14,5 mln. eurų</b> nekilnojamojo turto mokesčio — tai daugiau nei visa 1,9 mln. eurų biudžeto eilutė religinėms bendruomenėms.
+      <br><br>Bendro ploto, verčių ar objektų sąrašo nėra: Registrų centras pjūvio pagal savininko tipą neskelbia. Šie skaičiai apskritai žinomi tik todėl, kad 2023 m. vienas žurnalistas pateikė atskirą užklausą.
+    </div>
+
+    <h3>Organas, kurio nežino niekas</h3>
+    <p>Stambiausius turto sandorius Bažnyčioje tvirtina ne vyskupas vienas. Pagal kan. 1277 ir 1292 neeiliniam valdymui ir turto perleidimui reikia <b>ekonomo tarybos ir konsultorių kolegijos sutikimo</b>, o virš tam tikros sumos — Šventojo Sosto leidimo. Konsultorių kolegijos sudėtį Vilnius skelbia: septyni kunigai. <b>Ekonomo tarybos sudėties neskelbia nei Vilnius, nei Kaunas.</b></p>
+    <p class="small">Prie to prisideda antra spraga: Lietuvos vyskupų konferencija neskelbia ribinių sumų, kurias pagal kan. 1292 privalo nustatyti — nuo kokios vertės sandoriui reikia tarybos sutikimo, o nuo kokios Romos leidimo. <b>Be šių dviejų skaičių iš išorės neįmanoma pasakyti, ar konkretus sandoris apskritai buvo kieno nors tikrintas.</b> Ne todėl, kad duomenys slepiami — jų tiesiog niekas neskelbia, nors kanonų teisė jų sukūrimo reikalauja.</p>
+
+    <div class="note">
+      <strong>Ataskaitos egzistuoja. Jos tiesiog neskelbiamos — ir vis siauriau.</strong> Kan. 494 įpareigoja ekonomą kasmet atsiskaityti ekonomo tarybai, kan. 1287 §2 — atsiskaityti tikintiesiems už jų aukas. Kaunas šią prievolę vykdo iš dalies, ir traukiasi: <b>už 2019 m.</b> paskelbė parapijų pajamas iki euro (5 177 643 €, iš jų rinkliavos 2 023 450 €, aukos 1 051 268 €); <b>už 2023 m.</b> — nė vienos sumos; <b>už 2025 m.</b> — apvalintus milijonus. <b>Vilnius neskelbia nieko.</b> Nė viena iš likusių penkių vyskupijų taip pat.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Žmonės</span>
+    <h2>Ką rodo pavardės, o ne institucijos</h2>
+    <p class="lede small">Institucijų žemėlapis rodė mažai. Žmonių — daugiau, ir kitaip. Toliau tik tai, kas viešai dokumentuota: kas kur buvo ir kada. Bendra vieta yra faktas; sąjunga — ne, ir apie ją čia nekalbama.</p>
+  </div>
+  <div class="col stack">
+    <p><b>Vilniaus kurija po Bačkio pasikeitė ne iš karto.</b> Grušo paskyrimas ir Bačkio atsistatydinimas — ta pati diena, 2013 m. balandžio 5-oji; ingresas po aštuoniolikos dienų. Bet generalvikaras <b>vysk. Arūnas Poniškaitis, kurį 2010 m. paskyrė dar Bačkis, liko</b> — ir tebeeina tas pačias pareigas šešioliktus metus. Pirmieji kurijos pokyčiai užfiksuoti tik 2014–2015 m., o didžiausias vienkartinis — <b>2015 m. birželio 10 d. biuletenis, kuriuo tą pačią dieną pakeisti ir kancleris, ir seminarijos rektorius</b>.</p>
+    <p class="small">Kanclerio pareigos nuo 2013 m. keitėsi keturis kartus: R. Šalaševičius → K. Latoža (2015) → K. Palikša (2015–2023) → vieni metai tuščios → A. Šuškevič (2024). Seminarijos rektoriaus — taip pat keturis: Ž. Vabuolas → H. F. Fischer CO (2015) → A. Šuškevič (2018) → M. Bernotavičius (2024). Priežastys skyrimų biuleteniuose nenurodomos — juose vartojama ta pati formuluotė „atleidžiamas iš pareigų“ ir savanoriškam, ir eiliniam perkėlimui, todėl iš jos nieko spręsti negalima.</p>
+    <div class="note">
+      <strong>Kaune kaita buvo mažesnė, ir tai patikrinama.</strong> Per abu Kauno perėjimus — Tamkevičius → Virbalas (2015) ir Virbalas → Kėvalas (2020) — oficiali arkivyskupijos kronika <b>neužfiksavo nė vieno kurijos pareigūno pakeitimo</b>. Kancleris mons. Adolfas Grušas dirbo per <b>tris ganytojus</b> ir pareigas perdavė tik 2026 m. rugsėjo 1 d. Vilniuje per dvejus metus po ingreso pasikeitė ir kancleris, ir rektorius; Kaune abu kartus tos pačios pareigybės išliko.
+    </div>
+
+    <h3>Marijos radijas: privati nuosavybė, vyskupo dekretas</h3>
+    <p>Ryškiausias atvejis, kurio institucijų žemėlapyje nesimato. VšĮ „Marijos radijas“ — 2025 m. 1,19 mln. eurų pajamų, 13 darbuotojų — <b>nepriklauso nei arkivyskupijai, nei vyskupų konferencijai</b>. Jos dalininkai yra <b>šeši Lietuvos ir trys užsienio fiziniai asmenys</b>. Įstaigos prezidentė — <b>Egidija Vaicekauskienė</b>, taip ji vadinama pačios įstaigos svetainėje.</p>
+    <p>Tuo pat metu <b>programų direktoriaus paskyrimo dekretą pasirašo Kauno arkivyskupas</b>: 2026 m. birželio 24 d. tokį dekretą kun. dr. Nerijui Pipirui įteikė arkiv. Kėvalas. Ir šios pareigos yra trumpiausias kelias į vyskupystę visoje Lietuvoje — Kėvalas (direktorius 2010–2012) ir Bužauskas (2019–2023) augziliarais tapo <b>eidami tas pareigas, be jokio tarpo</b>.</p>
+    <p class="small">Derinys neįprastas ir jį verta pasakyti tiksliai: <b>privačių asmenų valdoma įstaiga, kurios vadovą skiria arkivyskupas dekretu, ir kurios vadovavimas du kartus iš keturių baigėsi vyskupo šventimais.</b> Kaip kandidatas atsirenkamas iki dekreto, viešai neskelbiama.</p>
+
+    <h3>Maldos pusryčiai Prezidentūroje</h3>
+    <p>Nuo 2019 m., po devynerių metų pertraukos, Prezidentūroje kasmet vyksta Nacionaliniai maldos pusryčiai. Prezidentas dalyvavo <b>visais septyneriais metais</b>. Kviestinių svečių sąrašas <b>nė karto nebuvo paskelbtas</b> — skelbiami tik dvasininkai, liudytojai ir atlikėjai, o likusieji apibūdinami bendrai.</p>
+    <div class="scroller">
+      <table class="mx" style="min-width:600px">
+        <thead><tr><th style="text-align:left">Metai</th><th style="text-align:left">Įvardyti dvasininkai</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">2019</th><td style="text-align:left">kard. S. Tamkevičius · arkiv. G. Grušas</td></tr>
+          <tr><th scope="row">2020</th><td style="text-align:left">arkiv. G. Grušas · liut. vysk. M. Sabutis · stač. vysk. Ambrozijus</td></tr>
+          <tr><th scope="row">2022</th><td style="text-align:left">vysk. R. Norvila · kun. A. Saulaitis SJ</td></tr>
+          <tr><th scope="row">2023</th><td style="text-align:left">kun. R. Doveika · vysk. J. Ivanauskas</td></tr>
+          <tr><th scope="row">2024</th><td style="text-align:left">kun. G. Satkauskas · arkiv. G. Grušas</td></tr>
+          <tr><th scope="row">2025</th><td style="text-align:left">arkiv. G. Grušas · kard. R. Makrickas</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Iš šio sąrašo matyti tik viena: <b>Grušas kalbėjo keturiuose iš šešių renginių, kurių turinys paskelbtas</b>, o 2019 m. jam teko baigiamasis žodis po kard. Tamkevičiaus. 2025 m. baigiamąjį žodį sakė kard. Makrickas. Kun. Doveika ir kun. Satkauskas — abu iš šio puslapio kandidatų sąrašo — kalbėjo 2023 ir 2024 m. Daugiau iš to neišplaukia nieko: tai kvietimų, ne sprendimų vieta, ir Prezidentūra vyskupų neskiria.</p>
+
+    <div class="note">
+      <strong>Valstybės apdovanojimai: keturi atvejai per aštuonerius metus.</strong> Nuo 2019 m. rasti keturi apdovanojimai asmenims, susijusiems su katalikiškomis organizacijomis: <b>kard. S. Tamkevičius</b> — Vytauto Didžiojo ordino Didysis kryžius (2025 02 16); <b>kun. A. Barelli SDB</b> — ordino „Už nuopelnus Lietuvai“ Karininko kryžius (2025 02 16); <b>A. Kučikas</b>, Kauno „Caritas“ direktorius — to paties ordino medalis (2025 02 16); <b>E. Vaicekauskienė</b>, Marijos radijo prezidentė — to paties ordino medalis (2025 05 02), už nuopelnus motinystei.
+      <br><br>Laisvos visuomenės instituto, krikščionių profesinės sąjungos, ateitininkų federacijos, Nacionalinės šeimų ir tėvų asociacijos ir Bažnyčios kronikos fondo vadovybių valstybės apdovanojimų <b>nerasta nė vieno</b>. Išlyga: dalis dekretų automatinei paieškai neprieinami, todėl tai „nerasta“, o ne „nėra“.
+    </div>
+
+    <h3>Pavardės, kurios kartojasi</h3>
+    <p>Sudėjus visus patikrinimus, dalis žmonių pasirodo trijuose ir daugiau nesusijusių kontekstų. Toliau — tik dokumentuotos pareigos su datomis. <b>Bendra vieta yra faktas; ką nors daugiau iš jos daryti — jau ne.</b></p>
+    <div class="scroller">
+      <table class="mx" style="min-width:760px">
+        <thead><tr><th style="text-align:left">Asmuo</th><th style="text-align:left">Dokumentuoti kontekstai</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Kęstutis Kėvalas</th><td style="text-align:left">„Marijos radijo“ programų direktorius 2010–2012 → Kauno augziliaras 2012 <b>be tarpo</b> · Kauno arkivyskupas nuo 2020 · Šiluvos ciklo pranešėjas <b>visose keturiose</b> konferencijose ir visų globėjas · Šiluvos deklaracijos paskelbėjas ir vienintelis viešai su jos parengimu save siejantis asmuo · „Brandžios valstybės“ Mišios Trakuose 2025 07 05</td></tr>
+          <tr><th scope="row">Gintaras Grušas</th><td style="text-align:left">Vilniaus arkivyskupas nuo 2013 · LVK pirmininkas nuo 2014 · CCEE pirmininkas nuo 2021 · kariuomenės ordinariato apaštališkasis administratorius nuo 2013 · <b>Ateitininkų federacijos dvasios vadas nuo 2006</b> · Šiluvos ciklo globėjas · maldos pusryčiai 4 iš 6</td></tr>
+          <tr><th scope="row">Audrius Globys</th><td style="text-align:left">LVI valdybos pirmininkas · Lietuvos krikščionių darbuotojų profesinės sąjungos pirmininkas · per profsąjungą — Šiluvos ciklo organizatorius · 2023 m. konferencijos pranešėjas. <b>Du iš keturių ciklą rengiančių subjektų vadovauja tas pats žmogus</b></td></tr>
+          <tr><th scope="row">Vygantas Malinauskas</th><td style="text-align:left">LVI valdybos narys · Šiluvos pranešėjas 2023, 2024 ir 2025 · Ateitininkų federacijos valdymo organuose nuo 2024</td></tr>
+          <tr><th scope="row">Algirdas Toliatas</th><td style="text-align:left">Krikščionių profesinės sąjungos dvasios vadovas · <b>Lietuvos policijos kapelionas</b> · šio puslapio kandidatų sąraše · 2018 m. viešai ragino pasirašyti peticiją prieš Stambulo konvenciją</td></tr>
+          <tr><th scope="row">Kristina Zamarytė-Sakavičienė</th><td style="text-align:left">LVI direktorė 2016–2020 ir valdybos narė 2018–2024 · LVŽS sąraše 2024 · <b>teisingumo viceministrė nuo 2025 10 08</b> · Šiluvos 2026 pranešėja jau kaip viceministrė</td></tr>
+          <tr><th scope="row">Asta Skaisgirytė</th><td style="text-align:left">Prezidento vyriausioji patarėja nuo 2019 · Šiluvos konferencijos diskusija 2025 09 04 · „Brandžios valstybės“ diskusija Trakuose 2025 07 05 — <b>du katalikiškų organizacijų renginiai per du mėnesius</b></td></tr>
+          <tr><th scope="row">Saulius Bužauskas</th><td style="text-align:left"><b>Vilniaus arkivyskupijos kunigas, inkardinuotas 2008 m.</b> · „Marijos radijo“ programų direktorius 2019–2023 → Kauno augziliaras 2023 <b>be tarpo</b> · Kauno generalvikaras nuo 2023 · šio puslapio kandidatas, 13 %</td></tr>
+          <tr><th scope="row">Gintaras Blužas OFS</th><td style="text-align:left">„Marijos radijo“ programų direktorius nuo 2012 · Vilniaus seminarijos dvasios tėvas nuo 2020 · Kauno arkivyskupijos komunikacijos koordinatorius — <b>perėjo Vilnių ir Kauną abiem kryptimis</b></td></tr>
+          <tr><th scope="row">Mykolas Sotničenka</th><td style="text-align:left">Vilniaus kurijos komunikacijos koordinatorius nuo 2024 06 04 · krizės metu arkivyskupijos atstovas spaudai · <b>nuo 2026 06 03 išleistas talkinti Apaštališkajai nunciatūrai</b> · šio puslapio kandidatų sąraše</td></tr>
+          <tr><th scope="row">Andžej Šuškevič</th><td style="text-align:left">Vilniaus seminarijos rektorius 2018–2024 · kurijos kancleris nuo 2024 06 04 · lenkakalbių Juodšilių rektorius · konsultorių kolegijoje · kandidatų sąraše</td></tr>
+          <tr><th scope="row">Ričardas Doveika</th><td style="text-align:left">Kunigų tarybos pirmininkas · konsultorių kolegijoje · maldos pusryčiai Prezidentūroje 2023 12 07 (pradžios malda) · kandidatų sąraše, 3 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="border-color:var(--accent); background:var(--accent-soft)">
+      <strong>Tankiausias mazgas nėra nei kurija, nei institutas — tai radijas.</strong> Per „Marijos radijo“ programų direktoriaus pareigas praėjo <b>Kėvalas</b> (2010–2012), <b>Blužas</b> (nuo 2012), <b>Bužauskas</b> (2019–2023) ir <b>Pipiras</b> (nuo 2026). Du iš keturių tapo vyskupais <b>eidami tas pareigas, be jokio tarpo</b>. Įstaiga priklauso devyniems privatiems asmenims, direktorių skiria Kauno arkivyskupas dekretu, o rezultatas — trumpiausias dokumentuotas kelias į vyskupystę Lietuvoje.
+      <br><br>Antras mazgas siauresnis ir aiškesnis: <b>vienas žmogus vadovauja dviem iš keturių Šiluvos ciklą rengiančių organizacijų</b>, o trečias asmuo tuo pat metu sėdi LVI valdyboje, kalba trijose iš keturių konferencijų ir yra ateitininkų valdymo organuose. Tai ne prielaida — tai trys viešai skelbiami sąrašai, sudėti greta.
+    </div>
+
+    <p class="small"><b>Ir vienas radinys, atsiradęs tik iš sugretinimo.</b> Maldos pusryčiuose Prezidentūroje pradžios maldą 2023 m. kalbėjo <b>kun. Ričardas Doveika</b>, 2024 m. — <b>kun. Gabrielius Satkauskas</b>. Abu yra šio puslapio kandidatų sąraše. Iš to neišplaukia niekas apie skyrimus — Prezidentūra vyskupų neskiria, o kvietimas nėra rekomendacija. Bet tai vienintelė reguliari vieta Lietuvoje, kur Vilniaus arkivyskupijos kunigas kalba prieš valstybės vadovą, ir per dvejus metus iš eilės ten stovėjo du žmonės iš to paties vienuolikos pavardžių sąrašo.</p>
+
+    <p class="small"><b>Ir sąžininga išvada apie patį metodą.</b> Šis skyrius rado daugiau nei visi institucijų skyriai kartu — 14 mln. eurų apyvartos ten, kur institucijų žemėlapis rodė vieną vietą LRT taryboje. Bet jis nerado to, ko ieškoma dažniausiai: <b>nė vieno įrodymo, kad kas nors ką nors dėl ko nors susitarė.</b> Registruose yra pareigos, sumos ir datos. Pokalbių juose nėra ir nebus. Kur šiame puslapyje parašyta „nerasta“, tai reiškia nerasta — ne „nėra“, bet ir ne „yra, tik slepiama“.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Empirika</span>
+    <h2>Dauguma be praktikos</h2>
+    <p class="lede small">Čia svarbiausia neatsargiai nesumaišyti tapatybės su praktika ir praktikos su politine galia. Duomenys rodo, kad tai trys skirtingi dydžiai, judantys skirtingais greičiais.</p>
+  </div>
+  <div class="col stack">
+    <div class="scroller">
+      <table class="mx" style="min-width:560px">
+        <thead><tr><th style="text-align:left">Surašymas</th><th>Katalikai</th><th>Dalis</th><th>Netikintys</th><th>Nenurodė</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">2001</th><td>2 752 447</td><td class="tot">79,0 %</td><td>9,5 %</td><td>5,4 %</td></tr>
+          <tr><th scope="row">2011</th><td>2 350 478</td><td class="tot">77,2 %</td><td>6,1 %</td><td>10,1 %</td></tr>
+          <tr><th scope="row">2021</th><td>2 085 000</td><td class="tot">74,2 %</td><td>6,1 %</td><td>13,7 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><b>Pirmas dėsningumas priešingas intuicijai: žmonės neina į ateizmą.</b> Netikinčiųjų dalis per dvidešimt metų nepadidėjo — ji net sumažėjo nuo 9,5 % iki 6,1 %. Beveik patrigubėjo tik <b>nenurodžiusiųjų</b> dalis: nuo 5,4 % iki 13,7 %. Tai ne sekuliarizacija klasikine prasme, o pasitraukimas iš klausimo. VDU tyrėja Aušra Pažėraitė šiam deriniui siūlo <b>„religinio pragmatizmo“</b> sąvoką: formali katalikiška tapatybė reikalauja minimalaus įsipareigojimo ir todėl leidžia daugumai apeiti religinį klausimą išsaugant socialinį respektabilumą.</p>
+    <div class="note" style="border-color:var(--warn); background:var(--gold-soft)">
+      <strong>Apie praktiką patikimų duomenų Lietuvoje nėra, ir tai reikia pasakyti garsiai.</strong> Lietuvos vyskupijos neskelbia sekmadienio Mišių dalyvių skaičiavimo — Lenkijoje įprasto <em>dominicantes</em> rodiklio čia tiesiog nėra. Apklausos prieštarauja viena kitai tiek, kad jomis remtis negalima: Europos vertybių tyrimas rodo 41,8 % einančių bent kartą per mėnesį, o savaitinę praktiką tarp jaunų suaugusiųjų — 5 %. Toks skirtumas amžiaus struktūra nepaaiškinamas; tikėtina, veikia socialinio pageidaujamumo šališkumas.
+      <br><br>Patikimi yra tik <b>netiesioginiai elgsenos rodikliai, ir jie krenta greičiau nei tapatybė</b>. Kauno arkivyskupijoje krikštų 2022–2024 m. sumažėjo 26,5 %, santuokų — 27,3 %; gimstamumo kritimas tokio masto nepaaiškina. Vilkaviškio vyskupijoje 2022 m. buvo 2 937 krikštai ir 5 009 laidotuvės.
+    </div>
+    <p><b>Griežčiausiai dokumentuotas nuosmukis — pašaukimai.</b> Klierikų 2000 m. buvo 235, 2018 m. — 45. Tai 81 % kritimas per aštuoniolika metų. Naujų kunigų 1999 m. — 32, 2002 m. — 19. Seminarijų rektoriai nurodo, kad kunigais tampa apie trečdalis įstojusiųjų. Tai vienintelis rodiklis, kurio negalima paaiškinti nei apklausos metodika, nei emigracija.</p>
+    <div class="note">
+      <strong>Pasitikėjimo skaičius be bendrovės pavadinimo yra beprasmis.</strong> 2023 m. „Vilmorus“ fiksavo 42,7 % — žemiausią rodiklį per 25 metus. 2026 m. liepą „Baltijos tyrimai“ fiksavo 69 %. Skirtumas — <b>26 procentiniai punktai</b>, ir jis kyla iš klausimo formuluotės: „Vilmorus“ siūlo tarpinę „nei pasitikiu, nei nepasitikiu“ poziciją, „Baltijos tyrimai“ — ne. Abiejose eilutėse Bažnyčia stovi toje pačioje vietoje santykinai: gerokai aukščiau už Seimą, Vyriausybę ir partijas, gerokai žemiau už kariuomenę ir ugniagesius.
+      <br><br><b>2026 m. rugpjūčio bylos poveikio išmatuoti greičiausiai nebus įmanoma.</b> Paskutinė apklausa buvo lauke iki liepos 31 d. — dvi savaites prieš bylų perdavimą teismui. O 2026 m. rugpjūčio 28 d. „Vilmorus“, turėjęs ilgiausią Lietuvos pasitikėjimo institucijomis laiko eilutę, paskelbė bankrotą.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Koreliacija</span>
+    <h2>Kur ryšio nėra, nors visi jį mato</h2>
+  </div>
+  <div class="col stack">
+    <p>Jei katalikiška tapatybė būtų politinė jėga, ji turėtų matytis rinkėjų pažiūrose. Nesimato. 2024 m. rugpjūčio „Baltijos tyrimų“ apklausa dėl Civilinės sąjungos įstatymo suskirstė atsakymus pagal partijų elektoratus, ir rezultatas paneigia įprastą schemą.</p>
+    <div class="scroller">
+      <table class="mx" style="min-width:520px">
+        <thead><tr><th style="text-align:left">Partijos rinkėjai</th><th>Pritaria civilinei sąjungai</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Laisvės partija</th><td class="tot">86 %</td></tr>
+          <tr><th scope="row">Liberalų sąjūdis</th><td class="tot">52 %</td></tr>
+          <tr><th scope="row">TS-LKD (krikščionys demokratai)</th><td class="tot">50 %</td></tr>
+          <tr><th scope="row">LSDP</th><td class="tot">33 %</td></tr>
+          <tr><th scope="row">LLRA-KŠS</th><td class="tot">14 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><b>Partija, kurios pavadinime yra „krikščionys demokratai“, turi trečią liberaliausią elektoratą iš devynių</b> — septyniolika procentinių punktų liberalesnį už socialdemokratų. Moralinis konservatyvumas Lietuvoje neina išilgai kairės ir dešinės ašies. O vienintelė partija, kurios rinkėjai atitinka Bažnyčios mokymą, yra <b>etninė mažumos partija LLRA-KŠS</b>, kurios elektoratą apibrėžia tautybė, ne tikyba. Tai vadovėlinis atvejis, kai koreliacija yra, bet priežastis kita.</p>
+    <p><b>Antras įrodymas — grynai konfesinės partijos likimas.</b> Krikščionių sąjunga įsteigta 2020 02 08, Seimo rinkimuose tų pačių metų rudenį gavo <b>nulį vietų</b>, 2023 m. savivaldos rinkimuose — nulį iš 1 498, o 2024 02 03 susijungė su Lietuvos šeimų sąjūdžiu ir savarankiškai nustojo egzistuoti. Katalikiška tapatybė į balsus nekonvertuojama.</p>
+    <div class="note">
+      <strong>Ir patys vyskupai partijų nepalaiko.</strong> Nuo 1997 m. LVK yra paskelbusi bent šešis kreipimusis prieš rinkimus — 1997, 2000, 2002, 2014, ir du 2024 m. <b>Nė viename neįvardyta partija ar kandidatas.</b> 2024 10 08 kreipimesi raginama dalyvauti rinkimuose kaip konstitucinė pareiga, o kandidatus vertinti pagal darbus, cituojant Mt 7, 16 „iš vaisių pažinsite juos“. Ribą peržengia atskiri kunigai, ne konferencija.
+    </div>
+    <p class="small"><b>Trečias, stipriausias koreliacijos paneigimas.</b> Abortų Lietuvoje 1989 m. buvo 50 100, 2010 m. — 6 989. Tai 86 % kritimas per dvidešimt vienerius metus <b>be jokio teisinio ribojimo</b>: abortas iki šiol reguliuojamas sveikatos apsaugos ministro įsakymu, ne įstatymu, ir nė vienas ribojimo projektas nuo 2005 m. įstatymu netapo. Elgsena pasikeitė nepriklausomai ir nuo Bažnyčios, ir nuo teisės. Kas skaičiuoja Bažnyčios įtaką pagal rezultatus, čia priskirtų jai laimėjimą, kurio ji nelaimėjo.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Teisėkūros balansas</span>
+    <h2>Veto galia be iniciatyvos galios</h2>
+    <p class="lede small">Sudėjus, kas per pastarąjį dešimtmetį laimėta ir pralaimėta, išryškėja labai tiksli taisyklė.</p>
+  </div>
+  <div class="col stack">
+    <div class="detail-grid" style="margin-top:4px">
+      <div><h4>Kas laimėta</h4><ul class="plus">
+        <li><b>Stambulo konvencija.</b> Pasirašyta 2013 06 07, neratifikuota iki šiol — trylika metų. LVK kreipimasis 2018 06 13. <b>Konstitucinis Teismas 2024 03 14 pasakė, kad konvencija Konstitucijai neprieštarauja, ir ji vis tiek neratifikuota.</b> Latvija ir Estija ratifikavo</li>
+        <li><b>Pagalbinio apvaisinimo įstatymas 2016 06 28.</b> Priimtas griežčiausias variantas: embrionų šaldymas draudžiamas, kuriama ne daugiau kaip trys embrionai. Už ribojimą — 59, prieš 19, susilaikė 15</li>
+        <li><b>Abortų teisinis režimas</b> iki šiol neįtvirtintas įstatyme — nors tai veikiau inercija nei laimėjimas</li>
+      </ul></div>
+      <div><h4>Kas pralaimėta</h4><ul class="minus">
+        <li><b>Šeimos konstitucinė pataisa.</b> Bandymai nuo 2011 m., LVK pareiškimas 2011 10 25 — pataisa niekada nepriimta, o 2019 01 11 KT išaiškino šeimos sąvoką kaip lyties atžvilgiu neutralią</li>
+        <li><b>Macatė prieš Lietuvą,</b> EŽTT Didžioji kolegija 2023 01 23 — Konvencijos 10 str. pažeidimas; Nepilnamečių apsaugos įstatymo nuostata šalinama</li>
+        <li><b>Pagalbinio apvaisinimo ribojimai.</b> 2022 05 24 parlamentas juos susilpnino (68:28:20), o KT 2025 04 10 panaikino likusius — nuo 2026 04 10</li>
+        <li><b>Partnerystė.</b> KT 2025 04 17: apribojimas skirtingos lyties poroms prieštarauja Konstitucijai. Teismas nurodė, kad normos Civiliniame kodekse egzistuoja 24 metus be įgyvendinimo, ir tai pavadino netoleruotina padėtimi</li>
+        <li><b>Reprodukcinės sveikatos įstatymas</b> perėjo pateikimą 2025 05 13 (56:44:10), nepaisant bendro katalikų, liuteronų ir stačiatikių vadovų kreipimosi</li>
+      </ul></div>
+    </div>
+    <div class="note" style="margin-top:20px; border-color:var(--accent); background:var(--accent-soft)">
+      <strong>Taisyklė, kurią rodo šis balansas.</strong> Bažnyčia laimi ten, kur pakanka <b>blokuoti</b> — neratifikuoti, nepriimti pataisos, neįtvirtinti normos. Ir pralaimi visur, kur reikia <b>apginti</b> jau įtvirtintą normą teisme. <b>Nuo 2023 m. nėra nė vieno laimėjimo prieš teismą</b>: Macatė 2023, dvi Konstitucinio Teismo bylos 2025 m.
+      <br><br>Priežastis struktūrinė, ne atsitiktinė. Parlamente veikia balsų aritmetika, kurioje užtenka mažumos ir inercijos. Konstitucinėje jurisprudencijoje veikia argumentas iš Konstitucijos teksto, o ten Bažnyčios pozicija atramos neturi — 43 str. sako, kad valstybinės religijos nėra. <b>Politinis svertas persikėlė iš Seimo į teismą, ir tai vienpusis judesys.</b> Paskutinis kartas, kai katalikiška pozicija ne sustabdė, o <em>suformavo</em> įstatymą, buvo 2016 m.; per devynerius metus jį išardė parlamentas ir teismas.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Mechanizmas</span>
+    <h2>Elito padėtis ir masinė bazė juda priešingomis kryptimis</h2>
+  </div>
+  <div class="col stack">
+    <p>Jei reikėtų viena eilute pasakyti, kas iš tikrųjų vyksta: <b>Bažnyčios masinė bazė traukiasi sparčiai, o jos institucinė padėtis nejuda.</b> Klierikų −81 %, krikštų Kaune −26,5 % per dvejus metus, palaidojama beveik dvigubai daugiau nei krikštijama — ir tuo pat metu 92,2 % religinės biudžeto eilutės, vieta LRT taryboje, <em>missio canonica</em> valstybinėse mokyklose, kapelionai kariuomenėje ir kalėjimuose, valstybės mokamas dvasininkų draudimas, mokestinė lengvata visam turtui.</p>
+    <p>Šios dvi kreivės nesusitinka todėl, kad jas laiko skirtingi dalykai. Masinę bazę laiko demografija ir praktika. Institucinę padėtį laiko <b>1926 m. teritorinė struktūra, 2000 m. tarptautinė sutartis ir sovietmečiu sukauptas moralinis kapitalas</b>. Pirmieji du yra teisiniai artefaktai, veikiantys nepriklausomai nuo to, kiek žmonių eina į Mišias. Trečiasis — istorinis, ir jis vienintelis gali būti prarastas greitai.</p>
+    <div class="note">
+      <strong>Kur tai lūžta.</strong> Moralinis kapitalas, sukauptas 1972–1989 m. „Kronikos“ metais, yra Bažnyčios stipriausias neformalus turtas ir vienintelis, kurio negina nei sutartis, nei Konstitucija. Jis remiasi teiginiu, kad Bažnyčia gynė žmones, kai jų negynė niekas. <b>2026 m. rugpjūčio byla puola būtent šį teiginį</b> — ne doktriną, ne finansus ir ne teisinį statusą. Todėl ji institucinei padėčiai gali pasirodyti nepavojinga, o iš tikrųjų taiko į vienintelę vietą, kurios teisinis karkasas neapsaugo.
+    </div>
+    <p class="small"><b>Priešinga kryptis irgi dokumentuota, ir ji senesnė.</b> Valstybė Bažnyčią ne tik remia — ji ją ir riboja, kai nusprendžia. 1930 m. uždrausti moksleivių ateitininkai; 1931 m. išsiųstas nuncijus; 1936 m. Draugijų įstatymas. Ir šiuolaikinis atitikmuo: <b>Konstitucinis Teismas 2017 07 04 pripažino, kad dvasininkų atleidimas nuo karo prievolės prieštarauja Konstitucijos 29 ir 139 straipsniams</b> — dvasininko statusas nėra objektyvi aplinkybė, dėl kurios pareigos negalima atlikti. O 2021 06 08 EŽTT byloje dėl „Romuvos“ konstatavo, kad Seimo sprendimas nebuvo neutralus ir nešališkas. Privilegijuota daugumos padėtis yra teisiškai pasiekiama, ir per pastarąjį dešimtmetį ji buvo pasiekta du kartus.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Mitai</span>
+    <h2>Šeši teiginiai, kurių duomenys nepatvirtina</h2>
+  </div>
+  <div class="col">
+    <div class="gloss">
+      <div class="grow"><div class="gstep"><span class="n">01</span><span class="lvl"><i style="width:100%"></i></span></div><div>
+        <div class="gterm"><h4>„Konstitucija atskiria Bažnyčią nuo valstybės“</h4><span class="chip">nėra tekste</span></div>
+        <p>Tokios nuostatos Konstitucijoje nėra. Yra „Lietuvoje nėra valstybinės religijos“ (43 str. 7 d.) ir mokyklų pasaulietiškumas (40 str. 1 d.). Atskirumo principą 2000 m. suformulavo Konstitucinis Teismas.</p></div></div>
+      <div class="grow"><div class="gstep"><span class="n">02</span><span class="lvl"><i style="width:100%"></i></span></div><div>
+        <div class="gterm"><h4>„Bažnyčia turi daug formalių svertų“</h4><span class="chip">turi vieną</span></div>
+        <p>Įstatymo lygmeniu — viena delegavimo teisė, LRT taryboje, 1 iš 12. Bioetikos komitete religinių atstovų nėra. Vetavimo ar privalomos konsultacijos teisės nėra. Tikrieji svertai yra tarptautinėje sutartyje, ne įstatyme.</p></div></div>
+      <div class="grow"><div class="gstep"><span class="n">03</span><span class="lvl"><i style="width:100%"></i></span></div><div>
+        <div class="gterm"><h4>„Katalikai balsuoja katalikiškai“</h4><span class="chip">paneigta</span></div>
+        <p>TS-LKD elektoratas — trečias liberaliausias iš devynių. Grynai konfesinė partija 2020 m. gavo nulį vietų ir per ketverius metus išnyko. Vienintelis atitikimas — etninėje mažumos partijoje, kur veikia tautybė.</p></div></div>
+      <div class="grow"><div class="gstep"><span class="n">04</span><span class="lvl"><i style="width:100%"></i></span></div><div>
+        <div class="gterm"><h4>„Lietuva sekuliarėja“</h4><span class="chip">netikslu</span></div>
+        <p>Netikinčiųjų dalis per dvidešimt metų nepadidėjo. Beveik patrigubėjo nenurodžiusiųjų dalis. Tai pasitraukimas iš klausimo, ne perėjimas į ateizmą — Pažėraitės „religinis pragmatizmas“.</p></div></div>
+      <div class="grow"><div class="gstep"><span class="n">05</span><span class="lvl"><i style="width:100%"></i></span></div><div>
+        <div class="gterm"><h4>„Kaimas pamaldus, miestas sekuliarus“</h4><span class="chip">priešingai</span></div>
+        <p>Mildos Ališauskienės ir Apolonijaus Žilio tyrimas rado priešingą rezultatą: <b>provincijoje gyvenantys kunigams kritiškesni nei miestiečiai</b>. Aiškinama socialiniu artumu — mažoje bendruomenėje kunigo gyvenimas matomas.</p></div></div>
+      <div class="grow"><div class="gstep"><span class="n">06</span><span class="lvl"><i style="width:100%"></i></span></div><div>
+        <div class="gterm"><h4>„Bažnytinė santuoka galioja savaime“</h4><span class="chip">nuo 2001 m. ne</span></div>
+        <p>Reikia įtraukimo į civilinę apskaitą per dešimt dienų. Praleidus terminą, teisinės pasekmės kyla tik nuo įregistravimo dienos, ne nuo santuokos.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Ribos</span>
+    <h2>Ko šis tyrimas negali pasakyti</h2>
+  </div>
+  <div class="col stack">
+    <p>Spragos čia nėra formalumas. Trys iš jų tokios didelės, kad riboja bet kokią išvadą apie religinės praktikos ir politikos ryšį Lietuvoje.</p>
+    <p><b>Pirma, apie faktinę praktiką duomenų nėra.</b> Vyskupijos neskelbia Mišių lankomumo skaičiavimo, o apklausos skiriasi aštuonis kartus. Antra, <b>valstybė neskelbia tikybos ir etikos pasirinkimo statistikos</b> — nei Švietimo valdymo informacinėje sistemoje, nei Oficialiosios statistikos portale nėra nacionalinio pjūvio. Vadinasi, kaip naudojamasi Konstitucijos 40 straipsnio teise, nežino niekas. Trečia, <b>bažnytinių ir civilinių santuokų santykio niekas neskelbia</b>, todėl teiginiai apie bažnytinės santuokos populiarumą — abiem kryptimis — yra be pagrindo.</p>
+    <p class="small">Toliau — smulkesnės, bet realios: grąžinto Bažnyčios turto apimtis niekur nesuvesta; kapelionų skaičius kariuomenėje, kalėjimuose ir ligoninėse neskelbiamas; <b>policijos kapelionatas veikia be viešai prieinamo teisinio pagrindo</b>, skirtingai nei kariuomenės; 1927 m. konkordato tekstas Lietuvos viešojoje erdvėje tinkamai nepublikuotas ir nekomentuotas, todėl dalis jo nuostatų — dėl santuokos, vyskupų skyrimo, kunigų algų — akademinėje apyvartoje neprieinamos; Bažnyčios institucinė pozicija dėl 1926 m. perversmo nedokumentuota, nors partijos vaidmuo ištirtas; o KGB infiltracijos į dvasininkiją mastas žinomas tik bendrais bruožais — <b>kunigų agentų pavardės niekada nebuvo oficialiai paskelbtos, o prisipažinusiųjų duomenys įslaptinti 75 metams</b>.</p>
+    <div class="note">
+      <strong>Ir viena metodinė riba, kurią verta turėti galvoje visą laiką.</strong> Šis tyrimas remiasi tuo, kas užrašyta: įstatymais, balsavimais, apklausomis, biudžeto eilutėmis. Neformali įtaka — pokalbiai, pažintys, tai, kas nusprendžiama iki dokumento — pagal apibrėžimą į šiuos šaltinius nepatenka. Tai reiškia, kad <b>šis tekstas greičiausiai neįvertina neformalios įtakos ir tiksliai įvertina formalią</b>. Kur trūksta įrodymų, čia rašoma „nerasta“, o ne „nėra“ — tai du skirtingi teiginiai.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Išvada</span>
+    <h2>Dauguma be praktikos, veto be iniciatyvos</h2>
+  </div>
+  <div class="col stack">
+    <p>Lietuvos katalikybė nėra nei stipri masinė religija su politiniu svoriu, nei politiškai bejėgė mažuma. Ji yra <b>daugumos tapatybė be praktikos, turinti veto galią ir praradusi iniciatyvos galią</b>.</p>
+    <p>Šešios eilutės, ant kurių ši išvada stovi: klierikų sumažėjo 81 %; grynai krikščioniška partija gavo nulį vietų ir išnyko per ketverius metus; partijos su „krikščionys demokratai“ pavadinime elektoratas yra trečias liberaliausias iš devynių; vyskupai nė karto nepalaikė partijos ar kandidato; nuo 2023 m. pralaimėta kiekviena teisminė byla; ir tuo pat metu Stambulo konvencija neratifikuota trylika metų, net po palankaus jai Konstitucinio Teismo sprendimo.</p>
+    <p><b>Kryptis, kuria tai juda, yra numatoma, ir ne dėl nuomonių kaitos.</b> Parama tos pačios lyties poroms per septyniolika metų pakilo nuo 17 % iki 39 %, bet lemiamas dalykas kitas: tarp 18–29 metų amžiaus pritaria 57 %, tarp 50+ nepritaria 63 %. Vadinasi, <b>net jei nė vienas žmogus nepakeistų nuomonės, atrama Bažnyčios pozicijai mažėtų kasmet vien dėl kartų kaitos.</b> Veto galia priklauso nuo Seimo balsų aritmetikos, o ta aritmetika yra demografijos funkcija su maždaug dešimtmečio vėlavimu.</p>
+    <p class="small">Lieka du dalykai, kurių šis dėsningumas neapima ir kurie gali jį perbraižyti. Pirmas — <b>tarptautinė sutartis</b>: 2000 m. susitarimų nuostatos nepriklauso nuo Seimo daugumos ir galioja, kol nedenonsuotos. Antras — <b>Vilniaus arkivyskupo sostas</b>: kol sostinė yra Vilniaus arkivyskupijos teritorijoje, valstybės iškilmių liturgija priklauso jam pagal kanoną, o ne pagal pakvietimą. Abu šie svertai nepriklauso nuo to, kiek žmonių eina į Mišias — ir būtent todėl jie yra svarbesni už bet kurį šio tyrimo apklausų skaičių.</p>
+  </div>
+</section>
+
+<section style="padding-bottom:28px">
+  <details class="src">
+    <summary><span>Šaltiniai: teisė, statistika, istoriografija</span></summary>
+    <div class="srcbody">
+      <a href="https://www.lrs.lt/home/Konstitucija/Konstitucija.htm">Lietuvos Respublikos Konstitucija — 26, 27, 38, 40, 43 straipsniai</a>
+      <a href="https://www.e-tar.lt/portal/lt/legalAct/TAR.B4DBBD7C388A/asr">Religinių bendruomenių ir bendrijų įstatymas Nr. I-1057, konsoliduota redakcija</a>
+      <a href="https://eis.katalikai.lt/vb/romos_kurija/valstybes_sekretoriatas/2000-05-05_sventojo-sosto-ir-lietuvos-respublikos-sutartis-del-santykiu-tarp-kataliku-baznycios-ir-valstybes-teisiniu-aspektu">2000 05 05 sutartis dėl santykių teisinių aspektų — pilnas tekstas</a>
+      <a href="https://eis.katalikai.lt/vb/romos_kurija/valstybes_sekretoriatas/2000-05-05_sventojo-sosto-ir-lietuvos-respublikos-sutartis-del-bendradarbiavimo-svietimo-ir-kulturos-srityje">2000 05 05 sutartis dėl bendradarbiavimo švietimo ir kultūros srityje</a>
+      <a href="https://eis.katalikai.lt/vb/romos_kurija/valstybes_sekretoriatas/2000-05-05_sventojo-sosto-ir-lietuvos-respublikos-sutartis-del-kariuomeneje-tarnaujanciu-kataliku-sielovados">2000 05 05 sutartis dėl kariuomenėje tarnaujančių katalikų sielovados</a>
+      <a href="https://www.e-tar.lt/portal/lt/legalAct/TAR.9AA5138C5DF7">2012 06 08 sutartis dėl kvalifikacijų pripažinimo</a>
+      <a href="https://www.e-tar.lt/portal/it/legalAct/TAR.1559303036A8/asr">LRT įstatymo 10 str. — tarybos sudarymas ir LVK delegavimo teisė</a>
+      <a href="https://www.lrkt.lt/lt/teismo-aktai/paieska/135/ta159">KT 2011 09 28 nutarimas dėl Valstybinės šeimos politikos koncepcijos</a>
+      <a href="https://www.lrkt.lt/lt/teismo-aktai/paieska/135/ta1728/pressrelease">KT 2017 07 04 nutarimas dėl dvasininkų atleidimo nuo karo prievolės</a>
+      <a href="https://lrkt.lt/lt/apie-teisma/naujienos/1331/istatymo-nuostata-pagal-kuria-religines-bendrijos-del-valstybes-pripazinimo-gali-kreiptis-praejus-25-metams-nuo-pirminio-ju-iregistravimo-nepriestarauja-konstitucijai:367">KT 2021 09 07 nutarimas dėl 25 ir 10 metų terminų</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/2539250/konstitucinio-teismo-verdiktas-tos-pacios-lyties-poros-savo-partneryste-registruoti-gali">KT 2025 04 17 nutarimas dėl partnerystės — LRT</a>
+      <a href="https://ve.lt/aktualijos/lietuva/konstitucinis-teismas-pagalbinio-apvaisinimo-ribojimai-priestarauja">KT 2025 04 10 nutarimas dėl pagalbinio apvaisinimo ribojimų</a>
+      <a href="https://www.teise.pro/index.php/2021/06/08/eztt-nustate-konvencijos-pazeidima-del-apribotos-religijos-laisves/">EŽTT 2021 06 08, „Romuva“ prieš Lietuvą, Nr. 48329/19</a>
+      <a href="https://www.teise.pro/index.php/2023/01/23/eztt-didzioji-kolegija-paskelbe-sprendima-kuriuo-konstatavo-kad-lietuva-pazeide-zmogaus-teisiu-ir-pagrindiniu-laisviu-apsaugos-konvencijos-10-straipsni/">EŽTT DK 2023 01 23, Macatė prieš Lietuvą, Nr. 61435/19</a>
+      <a href="https://www.lrt.lt/en/news-in-english/19/2222282/istanbul-convention-is-in-line-with-lithuanian-constitution-court-rules">KT 2024 03 14: Stambulo konvencija Konstitucijai neprieštarauja</a>
+      <a href="https://osp.stat.gov.lt/2021-gyventoju-ir-bustu-surasymo-rezultatai/tautybe-gimtoji-kalba-ir-tikyba">2021 m. surašymas: tautybė, gimtoji kalba ir tikyba — OSP</a>
+      <a href="https://religija.lt/straipsnis/lietuvos-gyventojai-pagal-tikyba-2001-ir-2011-m-surasymu-duomenis/">2001 ir 2011 m. surašymų duomenys pagal tikybą — religija.lt</a>
+      <a href="https://lmaleidykla.lt/ojs/index.php/filosofija-sociologija/article/download/4154/3065?inline=1">V. Gaidys, Pasitikėjimo institucijomis dinamika Lietuvoje 1998–2018</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/2046200/pasitikejimas-baznycia-zemiausias-per-25-metus">„Vilmorus“ 2023: pasitikėjimas Bažnyčia žemiausias per 25 metus</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/3024279/apklausa-ugtelejo-gyventoju-pasitikejimas-teismais-ir-ziniasklaida">„Baltijos tyrimai“ 2026 07: pasitikėjimo institucijomis eilutė</a>
+      <a href="https://laikmetis.lt/apklausu-bendrove-vilmorus-skelbia-bankrota/">„Vilmorus“ bankrotas, 2026 08 28 — Laikmetis</a>
+      <a href="https://katalikai.lt/kbl/vyskupijos/index.html">Katalikų Bažnyčios Lietuvoje statistika: klierikai, kunigai, sakramentai</a>
+      <a href="https://kaunoarkivyskupija.lt/statistika/">Kauno arkivyskupijos statistika 2022–2024</a>
+      <a href="https://vilkaviskiovyskupija.lt/vyskupija/statistika/">Vilkaviškio vyskupijos statistika</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/1096755/gali-pritrukti-kunigu-stojanciuju-i-seminarijas-mazeja-o-ne-visi-baigusieji-nori-dirbti-baznyciose">Klierikų skaičiaus kritimas, 2019 — LRT</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/2360779/apklausa-civilines-sajungos-istatymo-nepalaikytu-3-is-4-kairiuju-paziuru-rinkeju">„Baltijos tyrimai“ 2024 08: parama civilinei sąjungai pagal elektoratus</a>
+      <a href="https://lvk.lcn.lt/naujienos/,591">LVK kreipimasis artėjant 2024 m. Seimo rinkimams</a>
+      <a href="https://lvk.lcn.lt/archyvas/pk/">LVK kreipimųsi archyvas 1997–2024</a>
+      <a href="https://lvk.lcn.lt/naujienos/,615">Trijų konfesijų vadovų kreipimasis dėl Reprodukcinės sveikatos įstatymo, 2025 05 07</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/2560490/seimas-linkes-pritarti-reprodukcines-sveikatos-istatymui-perzenge-pirmaja-kartele">Reprodukcinės sveikatos įstatymo pateikimas, 2025 05 13</a>
+      <a href="https://www.15min.lt/naujiena/aktualu/lietuva/vyskupai-stambulo-konvencijos-ratifikavimas-nepadetu-sumazinti-smurto-pries-moteris-56-986568">LVK kreipimasis dėl Stambulo konvencijos, 2018 06 13</a>
+      <a href="https://m.kauno.diena.lt/naujienos/lietuva/politika/ar-bus-padetas-taskas-arsioje-kovoje-del-pagalbinio-apvaisinimo-757517">Pagalbinio apvaisinimo įstatymo priėmimas 2016 06 28 ir balsavimai</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/2945130/tradicinems-religinems-bendruomenems-paskirstyta-1-9-mln-euru">Biudžeto lėšų paskirstymas tradicinėms bendruomenėms 2026</a>
+      <a href="https://www.tv3.lt/naujiena/verslas/zemiski-baznycios-turtai-nuo-butu-parduotuviu-ir-kaviniu-iki-viesbuciu-ar-poilsio-namu-ir-jokiu-mokesciu-n1278424">Nekilnojamojo turto mokesčio lengvatos ir negaunamos biudžeto pajamos</a>
+      <a href="https://www.lrs.lt/sip/getFile3?p_fid=70030">Seimo kanceliarijos analitinė apžvalga dėl religinių bendrijų turto restitucijos</a>
+      <a href="https://siauliuvyskupija.lt/popieziaus-pijaus-apastaliskoji-konstitucija-lituanorum-gente-baznytines-provincijos-isteigimas-ir-naujas-vyskupiju-sutvarkymas-lietuvos-respublikoje-acta-apostolicae-sedis-1926-m-balandzio-6-d/">„Lituanorum gente“, 1926 04 04 — pilnas tekstas lietuviškai</a>
+      <a href="https://www.lkma.lt/site/archive/metrastis/XXIII/lkma_t23_p295-379_Kasparavicius.pdf">A. Kasparavičius, Lietuvos ir Šventojo Sosto santykiai 1925 m. — LKMA Metraštis, t. XXIII</a>
+      <a href="https://www.lkma.lt/site/archive/studijos/III/bis_t3_visas.pdf">LKMA „Studijos“ III: Religija ir visuomenė nepriklausomoje Lietuvoje</a>
+      <a href="https://www.vle.lt/straipsnis/konkordatas/">1927 09 27 konkordatas — VLE</a>
+      <a href="https://www.vle.lt/straipsnis/lietuvos-krikscioniu-demokratu-partija/">Lietuvos krikščionių demokratų partija: rinkimai ir vyriausybės — VLE</a>
+      <a href="https://journals.lnb.lt/parliamentary-studies/article/download/327/283/548">Krikščionių demokratų vaidmuo rengiant 1926 12 17 perversmą — „Parlamento studijos“</a>
+      <a href="https://www.vle.lt/straipsnis/ateitininkai/">Moksleivių ateitininkų draudimas 1930 m. — VLE</a>
+      <a href="https://lkbkronika.lt/files/pdf/antibaznytinepolitika.pdf">A. Streikus, Sovietų valdžios antibažnytinė politika Lietuvoje 1944–1990 — LGGRTC, 2002</a>
+      <a href="https://lkbkronika.lt/index.php/apie-kronikas2/lietuvos-katalik-baznycios-kronika">„Lietuvos Katalikų Bažnyčios kronika“ — visas 81 numerio korpusas</a>
+      <a href="https://www.vle.lt/straipsnis/tikinciuju-teisems-ginti-kataliku-komitetas">Tikinčiųjų teisėms ginti katalikų komitetas, 1978 — VLE</a>
+      <a href="https://www.vle.lt/straipsnis/julijonas-steponavicius/">Julijonas Steponavičius: tremtis 1961–1988 — VLE</a>
+      <a href="https://www.vle.lt/straipsnis/lietuvos-kataliku-baznycia/">Represijos skaičiais 1940–1953 — VLE</a>
+      <a href="https://www.vle.lt/straipsnis/kauno-kunigu-seminarija/">Kauno kunigų seminarijos klierikų limitai sovietmečiu — VLE</a>
+      <a href="https://www.cambridge.org/core/journals/church-history/article/abs/between-the-vatican-and-moscow-the-lithuanian-imprint-on-the-death-throes-of-the-soviet-union-19791989/7AAB8C6BE5EE9CD60295BD9F904F3275">A. Streikus, Between the Vatican and Moscow — „Church History“, 2022</a>
+      <a href="https://www.lituanistika.lt/content/109288">K. Burinskaitė, Slaptieji KGB bendrininkai — LGGRTC</a>
+      <a href="https://va.mfa.lt/va/lt/dvisalis-bendradarbiavimas/lietuva-ir-sventasis-sostas">Lietuvos ir Šventojo Sosto santykiai: pripažinimas, atstovai — URM</a>
+      <a href="https://culturesociety.vdu.lt/wp-content/uploads/2015/03/4_Ausra_pazeraite_Katalikiskoji-dauguma_Lietuvoje_kintancios_religines_situacijos_kontekste.pdf">A. Pažėraitė, Katalikiškoji dauguma Lietuvoje: „religinio pragmatizmo“ sąvoka</a>
+      <a href="https://culturesociety.vdu.lt/wp-content/uploads/2012/01/7.-M_Alisauskiene_I_Samuilova_Modernizacija-ir-religija.pdf">M. Ališauskienė, I. Samuilova, Modernizacija ir religija sovietinėje ir posovietinėje Lietuvoje</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/1305799/religijotyrininke-provincijoje-gyvenantys-lietuviai-kritiskesni-kunigams-negu-miestieciai">M. Ališauskienė ir A. Žilys: provincijos gyventojai kunigams kritiškesni</a>
+      <a href="https://ki.vdu.lt/2025/01/16/tyrimas-apie-religijos-politizavimo-ir-politikos-religizavimo-praktikas-lietuvoje/">LMT projektas „Religijos politizavimo ir politikos religizavimo praktikos“, 2025–2027</a>
+      <a href="https://en.wikipedia.org/wiki/Abortion_in_Lithuania">Abortų statistika 1989–2010 — apžvalga su šaltiniais</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/2749293/sukritikavo-nausedienes-kalba-nesantuokiniu-vaiku-lietuvoje-nedaugeja">Ne santuokoje gimusių vaikų dalis 1990–2024 — Valstybės duomenų agentūra per LRT</a>
+      <a href="https://www.lrs.lt/sip/getFile3?p_fid=85535">2024 m. Seimo rinkimų rezultatai — Seimo suvestinė</a>
+      <a href="https://en.wikipedia.org/wiki/Christian_Union_(Lithuania)">Krikščionių sąjunga 2020–2024: rezultatai ir susijungimas</a>
+      <a href="https://www.svis.smm.lt/bendrasis-ugdymas-2/">ŠVIS bendrojo ugdymo rodikliai — dorinio ugdymo pjūvio nėra</a>
+      <a href="https://okredo.com/lt-lt/imone/viesoji-istaiga-vilniaus-arkivyskupijos-ekonomo-tarnyba-121736145">VšĮ „Vilniaus arkivyskupijos ekonomo tarnyba“ — registro ir finansiniai duomenys</a>
+      <a href="https://okredo.com/lt-lt/imone/viesoji-istaiga-kauno-arkivyskupijos-ekonomo-tarnyba-234935550">VšĮ „Kauno arkivyskupijos ekonomo tarnyba“ — registro duomenys</a>
+      <a href="https://okredo.com/lt-lt/imone/uab-laidojimo-paslaugu-centras-302998508">UAB „Laidojimo paslaugų centras“ — apyvarta, pelnas, darbuotojai</a>
+      <a href="https://www.tv3.lt/naujiena/verslas/zemiski-baznycios-turtai-nuo-butu-parduotuviu-ir-kaviniu-iki-viesbuciu-ar-poilsio-namu-ir-jokiu-mokesciu-n1278424">Registrų centro 2021 m. duomenys: 7 997 religinės ir 8 187 nereliginės paskirties objektai</a>
+      <a href="https://vilnensis.lt/kurija/">Vilniaus arkivyskupijos kurija: ekonomas ir konsultorių kolegija</a>
+      <a href="https://kaunoarkivyskupija.lt/ekonomo-tarnyba/">Kauno arkivyskupijos ekonomo tarnyba</a>
+      <a href="https://www.laikmetis.lt/kauno-arkivyskupija-turi-nauja-ekonoma/">Kauno arkivyskupijos ekonomo priesaika, 2022 10 04 — Laikmetis</a>
+      <a href="https://kaunoarkivyskupija.lt/index.php?id=140&amp;nid=7966">Kauno arkivyskupijos 2019 m. finansinė ataskaita su sumomis</a>
+      <a href="https://kaunoarkivyskupija.lt/index.php?id=140&amp;ncid=2&amp;nid=12873">Kauno arkivyskupijos 2023 m. ataskaita — be sumų</a>
+      <a href="https://tm.lrv.lt/lt/veiklos-sritys-1/religiniu-bendruomeniu-ir-bendriju-reguliavimas/religiniu-bendruomeniu-ir-bendriju-registravimas/">Teisingumo ministerija: 1 312 religinių bendruomenių, iš jų 902 katalikų</a>
+      <a href="https://www.vatican.va/archive/cod-iuris-canonici/lt/documents/">Kanonų teisės kodeksas, kan. 492–494, 1277, 1287, 1292 — ekonomas ir turto valdymas</a>
+      <a href="https://tax.lt/imones/240786-viesoji-istaiga-marijos-radijas">VšĮ „Marijos radijas“ — pajamos ir dalininkai</a>
+      <a href="https://www.marijosradijas.lt/transliacijos/302646-2025-02-08-10-30-speciali-laida.html">E. Vaicekauskienė įvardyta Lietuvos Marijos radijo prezidente — marijosradijas.lt</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/2551883/motinos-dienos-proga-nauseda-apdovanojo-52-mamas-ir-globejas">Motinos dienos apdovanojimai, 2025 05 02 — LRT</a>
+      <a href="https://www.lrt.lt/naujienos/lietuvoje/2/2489526/valstybes-apdovanojimai-kardinolui-vsd-vadovui-vokieciu-generolams">Valstybės apdovanojimai 2025 02 16, tarp jų kard. S. Tamkevičiui — LRT</a>
+      <a href="https://www.propatria.lt/2019/12/po-9-metu-pertraukos-prezidenturoje.html">Nacionaliniai maldos pusryčiai atnaujinti 2019 12 05</a>
+      <a href="https://www.lrt.lt/naujienos/laisvalaikis/13/2759257/prezidenturoje-surengti-tradiciniai-maldos-pusryciai">Maldos pusryčiai Prezidentūroje 2025 11 28 — LRT</a>
+      <a href="https://sc.bns.lt/view/item/tradiciniai-maldos-pusryciai-prezidenturoje-tavo-artume-dziaugsmo-pilnatve-497152">Maldos pusryčiai 2024 11 29 — BNS</a>
+      <a href="https://vilnensis.lt/vilniaus-arkivyskupijos-kunigu-skyrimai-2015-06-10/">Vilniaus kunigų skyrimai 2015 06 10 — kancleris ir seminarijos rektorius</a>
+      <a href="https://laikmetis.lt/kunigu-paskyrimai-vilniaus-arkivyskupijoje/">Vilniaus kunigų paskyrimai 2024 06 04</a>
+      <a href="https://vilnensis.lt/kunigu-paskyrimai-vilniaus-arkivyskupijoje-2026-m/">Vilniaus kunigų paskyrimai 2026 06 03 — kun. M. Sotničenka išleidžiamas talkinti nunciatūrai</a>
+      <a href="https://kaunoarkivyskupija.lt/?id=380">Kauno arkivyskupijos kronika „Datos ir faktai 2020–2011“</a>
+      <a href="https://laikmetis.lt/paskirtas-naujas-kauno-arkivyskupijos-kurijos-kancleris/">Naujas Kauno kurijos kancleris, 2026 09 01 — Laikmetis</a>
+    </div>
+  </details>
+</section>
+
+</div><!-- /view-galia -->
+
+<div id="view-priests" hidden>
+
+<header class="mast">
+  <div class="mast-top">
+    <span class="stamp">Registras ir trajektorijos · 2026</span>
+    <span class="eyebrow">Duomenys 2026 09 02</span>
+  </div>
+  <div class="mast-grid">
+    <div class="stack">
+      <h1>Septyni šimtai <em>penkiasdešimt vienas</em></h1>
+      <p class="lede">Tiek kunigų pavardžių skelbia septynių Lietuvos vyskupijų ir kariuomenės ordinariato svetainės. Šis rodinys yra jų sąrašas ir bandymas pamatyti, kaip atrodo tipinė karjera — o paskui rasti tuos, kurie į ją netelpa. Anomalija yra tik tada, kai yra su kuo lyginti, todėl pradedama nuo bazės: visų penkiolikos dabartinių ir emeritų vyskupų kelio.</p>
+      <div class="note">
+        <strong>Ką šis sąrašas yra ir ko nėra.</strong> Tai <b>ne</b> pilnas Lietuvos kunigų registras — tai viskas, ką vyskupijos skelbia viešai, surinkta tą pačią dieną. Keturios vyskupijos šventimų metų neskelbia iš viso, todėl karjeros ilgį galima skaičiuoti tik daliai. Kur duomenų nėra, rašoma „neskelbiama“, ir tai dažnai pati įdomiausia eilutė.
+      </div>
+    </div>
+    <div class="hero-figure">
+      <span class="eyebrow">Kelias į vyskupus</span>
+      <div>
+        <div class="hero-num">47<span>metai</span></div>
+        <p class="small" style="margin-top:6px">mediana, kurio amžiaus paskiriami Lietuvos vyskupai; intervalas 38–61</p>
+      </div>
+      <p class="xs">Nuo kunigystės šventimų iki vyskupystės — <b>mediana 20 metų</b>, intervalas 6–29. Bet po 1990 m. įšventintų mediana yra <b>44 metai ir 16 metų</b>: karta pasikeitė, ir kartu pasikeitė tempas.</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Bazė</span>
+    <h2>Kaip atrodo kelias į vyskupus</h2>
+    <p class="lede small">Penkiolika žmonių — devyni einantys pareigas ir šeši emeritai. Tai visa populiacija, ne imtis, todėl skaičiai tikslūs.</p>
+  </div>
+  <div class="col stack">
+    <div class="scroller">
+      <table class="mx" style="min-width:820px">
+        <thead><tr><th style="text-align:left">Vyskupas</th><th>Gim.</th><th>Šv.</th><th>Vyskupu</th><th>Amžius</th><th>Metų nuo šv.</th><th style="text-align:left">Pareigos prieš pat</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">L. Vodopjanovas OFM</th><td>1973</td><td>2000</td><td>2012</td><td class="tot">38</td><td>12</td><td style="text-align:left">Kretingos klebonas</td></tr>
+          <tr><th scope="row">R. Norvila</th><td>1957</td><td>1991</td><td>1997</td><td class="tot">39</td><td class="tot">6</td><td style="text-align:left">Kauno kancleris</td></tr>
+          <tr><th scope="row">K. Kėvalas</th><td>1972</td><td>2000</td><td>2012</td><td class="tot">40</td><td>12</td><td style="text-align:left">„Marijos radijo“ programų vadovas</td></tr>
+          <tr><th scope="row">A. Poniškaitis</th><td>1966</td><td>1992</td><td>2010</td><td class="tot">43</td><td>17</td><td style="text-align:left">Vilkaviškio generalvikaras</td></tr>
+          <tr><th scope="row">J. Ivanauskas</th><td>1960</td><td>1985</td><td>2003</td><td class="tot">43</td><td>18</td><td style="text-align:left">Kauno generalvikaras</td></tr>
+          <tr><th scope="row">D. Trijonis</th><td>1973</td><td>1997</td><td>2017</td><td class="tot">44</td><td>20</td><td style="text-align:left">LVK gen. sekretoriaus pavaduotojas</td></tr>
+          <tr><th scope="row">A. Jurevičius</th><td>1972</td><td>1996</td><td>2018</td><td class="tot">46</td><td>22</td><td style="text-align:left">Kaišiadorių generalvikaras</td></tr>
+          <tr><th scope="row">E. Bartulis</th><td>1949</td><td>1976</td><td>1997</td><td class="tot">47</td><td>21</td><td style="text-align:left">Kauno seminarijos rektorius</td></tr>
+          <tr><th scope="row">G. Grušas</th><td>1961</td><td>1994</td><td>2010</td><td class="tot">48</td><td>16</td><td style="text-align:left">LVK generalinis sekretorius</td></tr>
+          <tr><th scope="row">S. Bužauskas</th><td>1972</td><td>2008</td><td>2023</td><td class="tot">50</td><td>14</td><td style="text-align:left">„Marijos radijo“ direktorius</td></tr>
+          <tr><th scope="row">A. J. Bačkis</th><td>1937</td><td>1961</td><td>1988</td><td class="tot">51</td><td>27</td><td style="text-align:left">Vatikano valstybės sekretoriatas</td></tr>
+          <tr><th scope="row">L. Virbalas SJ</th><td>1961</td><td>1991</td><td>2013</td><td class="tot">51</td><td>22</td><td style="text-align:left">Popiež. rusų kolegijos Romoje rektorius</td></tr>
+          <tr><th scope="row">S. Tamkevičius SJ</th><td>1938</td><td>1962</td><td>1991</td><td class="tot">52</td><td class="tot">29</td><td style="text-align:left">Kauno seminarijos rektorius</td></tr>
+          <tr><th scope="row">J. Matulaitis</th><td>1936</td><td>1964</td><td>1989</td><td class="tot">53</td><td>25</td><td style="text-align:left">Merkinės dekanas</td></tr>
+          <tr><th scope="row">J. Kauneckas</th><td>1938</td><td>1977</td><td>2000</td><td class="tot">61</td><td>23</td><td style="text-align:left">Telšių seminarijos dvasios tėvas</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note" style="border-color:var(--accent); background:var(--accent-soft)">
+      <strong>Vienuolika iš penkiolikos prieš paskyrimą ėjo tas pačias keturias pareigas.</strong> Seminarijos vadovybė (rektorius, viceREKTORIUS, dvasios tėvas) — penkis kartus. Generalvikaras arba kancleris — keturis. LVK sekretoriatas — tris. „Marijos radijo“ vadovybė — du. <b>Grynai parapinis kelias be kurijos ar seminarijos grandies — tik du iš penkiolikos</b>, ir abu senesnės kartos: Vodopjanovas ir Matulaitis.
+      <br><br>Antras dėsnis — kartų lūžis. Sovietmečiu įšventintų penkių vyskupų mediana: <b>52 metai ir 25 metai nuo šventimų</b>. Po 1990 m. įšventintų devynių: <b>44 metai ir 16 metų</b>. Skirtumas apie aštuonerius metus abiem matais. Kelias sutrumpėjo, o ne pailgėjo.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Registras</span>
+    <h2>Septyni šimtai penkiasdešimt viena pavardė</h2>
+    <p class="lede small">Sąrašai atverčiami paspaudus. Pateikta taip, kaip skelbia vyskupijos — jei jos nerašo pareigų ar datų, čia jų irgi nėra.</p>
+  </div>
+  <div class="col stack">
+    <div class="cards">
+      <div class="card"><span class="eyebrow">Vilniaus arkivyskupija</span><span class="k">171</span><span class="xs">tik pavardės; pareigos ir datos — po vieną asmenį</span></div>
+      <div class="card"><span class="eyebrow">Telšių vyskupija</span><span class="k">160</span><span class="xs">pavardė ir vietovė; be pareigų ir datų</span></div>
+      <div class="card"><span class="eyebrow">Kauno arkivyskupija</span><span class="k">127</span><span class="xs">pareigos išsamiai; datų nėra</span></div>
+      <div class="card"><span class="eyebrow">Vilkaviškio vyskupija</span><span class="k">95</span><span class="xs">pilni duomenys visiems, atnaujinta 2026 08 24</span></div>
+      <div class="card"><span class="eyebrow">Panevėžio vyskupija</span><span class="k">80</span><span class="xs">parapijos; datos tik 14 kunigų</span></div>
+      <div class="card"><span class="eyebrow">Šiaulių vyskupija</span><span class="k">58</span><span class="xs">pareigos; datos tik 8 kunigams</span></div>
+      <div class="card"><span class="eyebrow">Kaišiadorių vyskupija</span><span class="k">47</span><span class="xs">pareigos; datų nėra</span></div>
+      <div class="card"><span class="eyebrow">Kariuomenės ordinariatas</span><span class="k">13</span><span class="xs">12 kapelionų ir diakonas; svetainė neveikia</span></div>
+    </div>
+
+    <details class="src"><summary><span>Vilniaus arkivyskupija — 171</span></summary><div class="srcbody" style="grid-template-columns:1fr; font-size:.84rem; line-height:1.7; color:var(--ink-2)">
+      Aleknavičius Justinas · Aleksandrovič Tadeuš · Andrzejewski Andrzej · Anuškevič Miroslav · Apriško Marijan · Aškielovič Juzef · Augaitis Bernardas · Bačkis Audrys Juozas · Balčius Vidas · Barelli Alessandro · Belickas Aušvydas · Bernotavičius Mindaugas · Bogdanovič Marek · Bogdevičius Viktoras · Bogdziewicz Andrzej · Bouts Paul-Francois · Braukyla Linas · Braziulis Deimantas · Brilius Vytautas · Cebulski Michal · Čeponis Aldas Antanas · Čeponis Medardas · Černiavski Jan · Černius Gintaras · Česnulevičius Virginijus · Čiurinskas Vygintas · Czarniawski Jurgis · Dailydė Kęstutis · Davainis Tomas Darius · Dettlaff Marek Adam · Dikevič Danel · Dobrovolskas Andrius · Domanskij Miroslav Jonas · Domeikis Antanas · Doveika Ričardas · Dukel Edvard · Dulko Valentin · Dvareckas Kęstutis · Fischer Hans Friedrich · Gaičauskas Aleksandr · Gaičauskas Robert · Garro Alexis Danilo · Girdžiušas Valdas · Godovanets Tadej Volodymyr · Gonzalez Julian Marcelo · Górlicki Wojciech · Goštautas Jokūbas Marija · Grabovski Miroslav · Graževič Darius · Grigaliūnas Dovydas · Grigas Sigitas · Grušas Gintaras · Gucevičius Petras · Gudaitis Aldonas · Gurklys Kazimieras Kęstutis · Guščius Kristijonas · Jasinskas Andžejus Ryšardas · Jasinski Tadeuš · Jóźwiak Grzegorz OFM Cap. · Jundo Tomas Liucijanas · Jurgutis Edvinas OFM · Jurolaitis Raimundas · Jusiel Franciszek · Kalmatavičius Rimas · Kalpakovas Arūnas · Kandratavičius Martynas · Kazlauskas Algis · Kesilis Arūnas · Kibirkštis Almantas · Kindurys Kazimieras · Kirstukas Eduardas · Kisel Vitalij · Krakevičius Bronius · Kučko Renald · Kudriašov Viktor · Kuzinas Žydrius · Kuzmickas Donatas SJ · Kuzmickas Ronald · Kužulis Valdas · Latoža Kęstutis · Lisovski Valdemar · Liutkevičius Liudvikas · Mačiulis Jonas · Mackevič Jan · Makarczyk Józef · Maksvytis Simas · Makut Juzef · Marcinkevičius Darius · Markauskas Elijas Anatolijus · Martyniuk Artur · Masevičius Kęstutis · Maslianikas Ernestas · Matiukevič Stanislav · Matsiushonak Siarhei · Matulianec Tadeuš · Matusevičius Jonas · Merkys Eitvydas · Michalovski Vitold · Minderis Juozapas · Mitkevičius Arūnas · Mitkevičius Mozė · Mizgiris Ramūnas · Mykosovskyi Mykolaj Ruslan OSBM · Narbekovas Andrius · Narijauskas Povilas · Narkun Daniel · Naujokaitis Jonas · Naumovič Henryk · Nenėnas Andrius · Nguyen Kim Hoan Vincent · Paliul Pavel · Paukšto Pavel · Paulionis Edmundas · Peciun Ryšard · Peškaitis Arūnas · Peternal John Farrell · Petronis Gintaras · Poniškaitis Arūnas · Popovych Yosafat Ostap Andrii OSBM · Pūkas Vytautas · Ragaišis Mindaugas · Ralys Kęstutis · Rapalis Vytautas · Rekwardt Jaroslaw · Romanovski Aleksandr · Rudis Vytautas · Rudokas Eigantas · Rudokas Vidmantas · Rydzikas Edvardas · Rynkevič Edvard · Sadauskas Vytautas · Sasnauskas Julius OFM · Satkauskas Gabrielius · Savickas Marijonas · Smagurauskas Vidas · Smalstys Arnoldas · Smilgevičius Kęstutis · Solovej Vladimiras · Sotničenka Mykolas · Spiridovič Jaroslav · Stankevičius Deividas · Šimkūnas Vidmantas · Šimkus Algirdas · Širvinski Valdemar · Šiūlys Rimgaudas · Šiuša Valentinas · Šostak Edgar Jan · Šuškevič Andžej · Švedavičius Tadas · Švenčionis Renatas · Toliatas Algirdas · Tunaitis Steponas · Ulčukevič Valdemar · Ulevič Miroslav · Vabuolas Žydrūnas · Vaickūnas Algis · Vaišvilas Vaidas · Valančauskas Domas · Valiukevič Stanislav · Valskys Rolandas · Varaneckas Jonas · Varaneckas Raimundas · Vilkel Ruslan · Vinčaitis Rokas Jonas · Vitkovskij Jurij · Voičan Robert · Volodkovič Vaclav · Wiklo Szymon · Wisniewski Miroslaw · Žitkauskas Marius · Žukauskas Juozapas Marija
+    </div></details>
+
+    <details class="src"><summary><span>Kauno arkivyskupija — 127</span></summary><div class="srcbody" style="grid-template-columns:1fr; font-size:.84rem; line-height:1.7; color:var(--ink-2)">
+      <b>Parapijose ir institucijose (87):</b> Alekna Mindaugas · Alminas Andrius · Auglys Darius · Balčaitis Vidmantas · Birbilas Ričardas · Birjotas Virginijus · Bitkauskas Sigitas · Blinstrubis Stasys · Boreiša Marius · Bujokas Jonas · Bulotas Alfonsas · Čičirka Juozas · Dulskis Romualdas · Geresionis Gražvydas · Grabauskas Kęstutis · Gražulis Kazys · Grigaravičius Vytautas · Grigas Robertas · Grigonis Julius · Grikietis Laurynas · Grušas Adolfas · Gurkšnys Rytis · Indriūnas Juozas · Jagelavičius Artūras · Jankauskas Gintautas · Janšauskas Ramutis · Jotkus Emilis · Jurkštas Sigitas · Kabašinskas Gintautas · Kaknevičius Juozas · Kaknevičius Vitas · Kandratavičius Skaidrius · Karklys Tomas · Kaščiukaitis Arvydas · Kazaitis Raimundas · Kazlauskas Artūras · Končius Andrius · Kuprys Remigijus · Lenktaitis Virginijus · Leskauskas Šarūnas · Lukonaitis Dainius · Mačiulskis Rimas · Martusevičius Benas Audrius · Maskolaitis Giedrius · Mikitiukas Audrius · Misevičius Titas · Murauskas Erastas · Naudžiūnas Gintautas · Pabrinkis Virginijus · Paukštis Vytautas · Paulauskas Augustinas · Paulauskas Žydrūnas · Paulikas Domas · Pavalkis Saulius · Periokas Egidijus · Petrauskas Šarūnas · Povylaitis Martynas SC · Pukštys Mindaugas · Pūras Gintaras · Rimavičius Edvinas · Rugevičius Kęstutis · Rumševičius Gintas · Rutkūnas Virgilijus · Skrinskas Robertas Gedvydas · Smetonis Mindaugas · Stanevičius Artūras · Stankevičius Jonas · Stanulis Albertas · Stumbras Gytis Petras · Šideikis Mantas · Šidlauskas Valdas · Šipavičius Linas · Šumbrauskis Renaldas · Trečiokas Tomas · Urbonavičius Robertas · Vaičiūnas Vytautas Steponas OFS · Vaitiekūnas Andrius · Valkauskas Arnoldas · Vasiliauskas Emilis · Vaškelis Vytenis · Veprauskas Virginijus · Vilėniškis Liutauras · Vitulskis Evaldas · Vyšniauskas Nerijus · Volskis Oskaras Petras · Zinkevičius Žilvinas · Žakys Eligijus
+      <br><br><b>Vienuoliai (24):</b> Baniulis Algis SJ · Biniek Andrzej OFM Cap. · Bojko Emilian Wladyslaw OCD · Chmielewski Stanislaw Sebastian OCD · Dluhý Rastislav CSsR · Ferenc Michal OFM Cap. · Gorowski Ryszard MIC · Gražulis Antanas SJ · Hertel Peter CSsR · Jurevičius Matas OFM · Kazėnas Stasys SJ · Komorniczak Piotr OFM Cap. · Labanauskas Vidas OCD · Leise Leonas SJ · Malinauskas Mindaugas SJ · Markovas Eugenijus SJ · Michalovič Lukáš CSsR · Michalovski Valdemar OFM Cap. · Mileris Mantas SJ · Paliokas Algirdas SJ · Paura Valdas OCD · Puidokas Stanislovas MIC · Taučius Rolandas OFM · Žymantas Tomas OFM
+      <br><br><b>Institucijose, studijose ir už arkivyskupijos ribų (16):</b> Blužas Gintaras OFS · Lizdenis Vincentas (Roma) · Giedraitis Audrius · Kaczmarowski Piotr Henryk · Laniauskas Rimantas · Pipiras Nerijus · Martinkus Norbertas · Gil Nogués Pablo · Pich Petras · Ramašauskas Romualdas · Arštikaitis Audrius (Romos Šv. Kazimiero kolegijos rektorius) · Luzgauskas Vladas · Purlys Petras · Šmerauskas Nerijus (Torontas) · Šulčius Kastytis (Almata) · Žukauskas Aurelijus (Šiaulių vyskupija)
+    </div></details>
+
+    <details class="src"><summary><span>Telšių vyskupija — 160</span></summary><div class="srcbody" style="grid-template-columns:1fr; font-size:.84rem; line-height:1.7; color:var(--ink-2)">
+      <b>Parapijose (131):</b> Ačas Jonas · Ačas Viktoras · Adomavičius Rimvydas · Anužis Stanislovas · Baginskas Jonas · Bakstys Andrius · Balčiūnas Kęstutis · Bartasūnas Pranas · Beniušis Antanas · Bridikis Alvydas · Bučinskas Jonas · Budreckas Antanas · Buivydas Vaidas · Būta Virginijus · Damašius Saulius · Daugėla Vidmantas · Daugėla Viktoras · Daujotis Viktoras · Degutis Česlovas · Degutis Zenonas · Dirvonskis Viktoras · Domarkas Tomas · Dvaržeckis Vytautas · Eidintas Andrius · Gadeikis Vaidas · Gečas Romualdas · Gedgaudas Vladas · Gedvainis Vytautas · Genutis Algis · Gricius Vidmantas · Gudeliūnas Vygintas · Gudlinkis Rimantas · Jaraminas Klemensas · Jaraminas Paulius · Jazbutis Gediminas · Jonauskas Boleslovas · Jonauskas Raimondas · Jucys Jonas · Jurevičius Olijandas · Karpavičius Rolandas · Katkus Saulius · Kazlauskas Rolandas · Keršys Audrius · Kumža Egidijus · Latakas Bronislovas · Lazarevas Andrejus · Lengvinas Gintaras · Leščiauskas Arvydas · Lesčiauskas Kazys · Liesis Vytautas · Lingevičius Rimas · Liuberskis Renatas · Lukšas Algirdas · Mačiulis Arvydas · Mačius Antanas · Marozas Rimvydas · Maziliauskis Rokas · Meškauskas Julius · Motiejaitis Kęstutis · Nausėda Mindaugas · Norbutas Vytautas · Norkus Ramūnas · Norvilas Gediminas · Pajaujis Kęstutis · Palionis Virginijus · Palubinskas Justinas · Paulauskas Jonas · Paulikas Dovydas · Petkevičius Edgaras · Petrauskas Vytautas · Petravičius Karolis · Petrikas Narsutis · Pocius Virgilijus · Poškus Virgilijus · Povilaitis Darius · Pudžiuvelis Aivaras · Putramentas Antanas · Ramanauskas Modestas · Ramonas Arvydas · Romanowski Robert · Sabaliauskas Andriejus · Saunorius Remigijus · Skaivydas Mantas · Smilgys Petras · Starkutis Romas · Styra Saulius · Stonys Mindaugas · Striukis Antanas · Stukas Petras Vincentas · Stulpinas Donatas · Šeputis Tadas · Šiaudvytis Vytautas · Šidlauskas Vidmantas · Šimkus Antanas · Šiurys Juozas · Šlaustas Mindaugas · Šlepavičius Stasys · Timofejevas Kęstutis · Toleikis Stasys · Turauskas Zenonas · Undraitis Audrius · Vaičius Juozas · Vainorius Kęstutis · Vaitkevičius Alvydas · Vaitkevičius Andrius · Vėlavičius Romualdas · Venskus Marius · Vitė Vaidotas · Zybartas Kęstutis · Zulcas Egidijus · Žąsytis Kazys · Židackas Dainoras · Žilys Ferdinandas · Žilys Sigitas · Žygaitis Aloyzas · Žlibinas Tomas · Žukauskas Donatas · Žutautas Kazys
+      <br><br><b>Kurijoje (3):</b> Viktoravičius Vilius (generalvikaras) · Šneideraitis Haroldas (kancleris) · Stumbra Saulius (vyskupo sekretorius)
+      <br><br><b>Už vyskupijos ribų (11):</b> Bartkus Algimantas · Deveikis Juozas (Australija) · Gerdauskas Ramūnas (Dublinas) · Linkevičius Petras (Kaišiadorių vyskupija) · Litvinas Donatas (Vilnius) · Liutika Donatas (ordinariatas) · Monstvilas Remigijus (ordinariatas) · Tverijonas Petras (Londonas) · Venckus Rimas (ordinariatas) · Volskis Aloyzas (Vilnius, rezidentas)
+      <br><br><b>Pranciškonai (15):</b> Bytautas Paulius Saulius OFM · Dobrovolskas Andrius OFM · Dunst Adam OFM Conv. · Grabnickas Antanas OFM · Kasparavičius Kazimieras Aurelijus OFM · Kungys Astijus · Letkauskas Mykolas OFM · Levicki Tomaš OFM Conv. · Numgaudis Gediminas OFM · Pudžemys Adolfas OFM · Scheifele Leopoldas Helmutas OFM · Stroceń Piotr Marcin OFM Conv. · Švaikovskij Stanislav OFM Conv. · Vaineikis Paulius OFM · Virbalis Alvydas OFM
+    </div></details>
+
+    <details class="src"><summary><span>Vilkaviškio vyskupija — 95 (vienintelė su pilnais duomenimis)</span></summary><div class="srcbody" style="grid-template-columns:1fr; font-size:.84rem; line-height:1.7; color:var(--ink-2)">
+      Formatas: pavardė (gimimo — šventimų metai), parapijų skaičius.
+      <br><br>Abraitis Arnas (1968—1995) 1 · Bakūnas Giedrius MIC (1973—2018) 1 · Baliūnas Jonas (1960—1987) 1 · Baltrušaitis Linas (1983—2008) 1 · Baltrušaitis Rimantas (1970—1995) 1 · Baltrušaitis Rytis (1977—2001) 2 · Baumila Deividas (1987—2013) 3 · Bekasovas Kęstutis (1955—1978) 1 · Brogys Deimantas (1960—1986) 1 · Budrevičius Romas (1978—2007) 2 · Budrius Arnas (1985—2014) 2 · Bulevičius Gediminas (1957—1983) 1 · Burnys Žydrūnas (1976—2000) 2 · Cikana Jonas (1974—2002) 1 · Černauskas Gintautas (1970—1996) 3 · Dovda Miroslav (1968—2001) 2 · Dvareckas Alvydas (1967—1993) 2 · Fakėjavas Juozas (1976—2001) 3 · Gražulevičius Virginijus (1975—1999) 2 · Gurevičius Dainius (1976—2003) 2 · Gustaitis Vytautas (1954—1981) 1 · Insoda Vytautas Juozas (1954—1980) 2 · Jakimavičius Leonas (1961—1991) 2 · Janušauskas Renaldas (1976—2001) 1 · Judeikis Rolandas (1969—<b>2025</b>) 1 · Jasulaitis Donatas (1958—1983) 2 · Juravičius Egidijus (1973—2000) 2 · Kanapka Algirdas Petras (1960—1993) 1 · Kalinovskij Jaroslav (1985—2016) 1 · Klimavičius Juozas (1958—1985) 1 · <b>Kmitas Ričardas (1972—1996) 5</b> · Kražauskas Petras (1942—1974) 1 · Kulpys Žydrūnas (1975—2000) 1 · Kurapka Audrius (1974—2000) 3 · Labašauskas Vaidotas (1968—1997) 2 · Liepa Arvydas (1965—1991) 2 · Lukoševičius Arminas (1984—2010) 1 · Maceina Remigijus (1970—1995) 2 · Mačys Valdemaras (1988—2018) 1 · Marčiulionis Paulius (1972—1995) 2 · Martinaitis Mindaugas (1978—2004) 2 · Matusevičius Vytautas Antanas (1965—1992) 1 · Mazirskas Vytautas (1979—2004) 1 · Mickevičius Antanas (1963—1991) 2 · Naujalis Eugenijus (1964—1991) 3 · Nėnius Alfredas (1964—1988) 1 · Pečiukonis Juozas (1950—1978) 1 · Pilypaitis Rimas (1976—2004) 1 · Povilaitis Jonas (1957—1999) 1 · Rolskis Donatas (1979—2005) 1 · Rudzinskas Marius (1980—2006) 1 · Sakalauskas Gracijus (1955—1979) 1 · Sakavičius Vytautas (1965—1993) 2 · Sikorskas Vilius (1970—2001) 1 · Simanaitis Valdas (1970—2001) 1 · Simanavičius Rimantas (1968—2005) 1 · Simonavičius Arūnas (1976—2001) 1 · Skinkaitis Rimas (1969—1995) rezidentas · Skomantas Saulius (duomenų nėra) 1 · Skroblas Lukas (1978—<b>2025</b>) 1 · Smulskis Valdemaras (1984—2011) 3 · Sprangauskas Kęstutis (1974—1998) 1 · Stakėnas Vaclovas (<b>1934</b>—1970) 1 · Stankevičius Kęstutis (1959—2001) 1 · Stepanauskas Zenonas (1961—1988) 2 · Steponaitis Gintautas Romualdas (1947—1975) 1 · Striokas Vidmantas (1962—1993) 1 · Urbštas Gintaras (1973—1997) 1 · Užupis Arūnas (1961—1995) 2 · Vaitkus Virginijus (1962—1990) 2 · Vaitkūnas Andrius (1982—2007) 2 · Vasiliauskas Darius (1971—1995) 2 · Vaškevičius Artūras (1979—2006) 2 · Venslova Rimantas (1971—1995) 2 · Veprauskas Remigijus (1965—1994) 1 · Vitkovskis Romualdas (1977—2005) 1 · Volodkovič Vitalij (1983—2012) 1 · Vosylius Kęstutis (1964—1991) 2 · Zubavičius Valius OP (1959—1987) 1 · Žemaitis Kęstutis (1960—1989) rezidentas · Žukauskas Algirdas (1967—1993) 1 · Žukauskas Raimundas (1959—1985) 1 · Žvirblys Nerijus (1978—2002) 1
+      <br><br><b>Be paskyrimo (7):</b> Kazlauskas Jordanas (1965—1995) · Kuliešius Gintautas (1970—1995), generalvikaras · Paltanavičius Albinas (1955—1982) · Plioraitis Ignas (<b>1932—1960</b>) · Vallian Tadeus (1957—1985) · Rudzinskas Valerijus (1960—1985) · Kajokas Vytautas (1971—1995)
+      <br><br><b>Už vyskupijos ribų (5):</b> Butkevičius Remigijus (1975—2000), kariuomenės kapelionas · Jakušovas Arvydas (1975—2001), Roma · Kapcevičius Tautvydas (1989—2020) · Kelpšas Jaunius (1960—1994), Čikaga · Keršys Gediminas (1984—2008), Čikaga
+    </div></details>
+
+    <details class="src"><summary><span>Panevėžio vyskupija — 80</span></summary><div class="srcbody" style="grid-template-columns:1fr; font-size:.84rem; line-height:1.7; color:var(--ink-2)">
+      Skaičius skliaustuose — aptarnaujamų parapijų kiekis.
+      <br><br>Andžejevski Pavel (1, ekonomas, dekanas) · Balsys Kostas (2) · <b>Baniulis Petras (4)</b> · <b>Banys Ričardas (4)</b> · Bloškis Vidmantas (2) · Bučelis Jonas (2) · Charue Gilles (1) · Coduti Juan Marcos IVE (2) · Dabužinskas Dovydas (1) · Dagelis Vytautas (3) · Dauknys Algirdas (1) · Figurinas Normundas (1) · Filipavičius Saulius (1) · Gudelis Rimantas (2) · Gurklys Kazimieras Kęstutis (1) · Jankūnas Gediminas (3) · Janulis Juozas (2) · Jasėnas Justas (1) · Juozėnas Povilas (1) · Juškėnas Vydas (2) · <b>Kalpokas Henrikas (4)</b> · Kalvaitis Saulius (3) · Kareckas Vidmantas (1) · <b>Kasperavičius Albertas (4)</b> · Kaunietis Rimantas (1) · Kaunietis Dainius (1) · Kavaliauskas Remigijus (3) · Kazlauskas Raimondas (3) · <b>Kecorius Aivaras (4)</b> · Keras Saulius (1) · Krumpliauskas Stanislovas (2) · Kučinskas Mindaugas (3) · Kumelis Saulius (3) · Kuodis Juozapas (1) · Liuima Virgilijus (2) · Maksvytis Simas (1) · Matiukas Dainius (1) · <b>Morkvėnas Jonas (6)</b> · Nedveckas Laimonas (3) · Neverauskas Algis (2) · Novikas Eimantas (2) · Palepšys Kęstutis (1) · Paliukėnas Tomas (3) · Papirtis Nerijus (3) · Petkūnas Algimantas (3) · Puško Alfredas (3) · Rabašauskas Vladas (1) · Ruzgus Martynas (1) · Rimkus Rimantas (3) · Simonaitis Aurelijus (1) · Simonavičius Raimundas (2) · Staleronka Eugenijus (2) · Šakinis Mindaugas (3) · Šimukėnas Virginijus (2) · Šukys Andrius (2) · Tamošiūnas Jonas (2) · Tamulionis Pranas Benediktas (1) · Tamulionis Stasys (3) · Taučkėla Virginijus (1) · Treinys Žilvinas (1) · Valionis Vilius (1) · <b>Vijeikis Egidijus (4)</b> · Vogulis Audrius (2) · Zdanys Romualdas (1, oficiolas) · Zimka Raimundas (1) · Zulonas Antanas (1) · Želvys Ernestas (1)
+      <br><br><b>Už vyskupijos ribų (7):</b> Jackūnas Vladas (1955—1985) · Mališka Paulius (1959—1988, Kanada) · Pranskūnas Salvijus (1964—1990, Vilnius) · Pukenis Robertas (1955—1979, Kaunas) · Staškevičius Vytautas (1945—2001, Kanada) · Veilentas Virginijus (1961—1985, ordinariatas) · Tubelis Egidijus (1981—2013, Roma)
+      <br><br><b>Be paskyrimo (6):</b> Cukuras Vilnis Viktoras (1946—1975) · Linda Leonas (1958—1988) · Styra Eugenijus (1967—1993), generalvikaras · <b>Svirskis Povilas (1924—1948)</b> · Kodis Vitalijus (1982—2011), kancleris · Sudentas Sigitas (1964—1989)
+    </div></details>
+
+    <details class="src"><summary><span>Šiaulių vyskupija — 58</span></summary><div class="srcbody" style="grid-template-columns:1fr; font-size:.84rem; line-height:1.7; color:var(--ink-2)">
+      Alūza Evaldas (1) · Bagdonas Jonas (3) · Baliūnas Feliksas (1) · Čekavičius Remigijus (2, dekanas) · Dyglys Marius (2) · Grabažis Donatas (3) · Grigalius Donatas (2) · Grigalius Mindaugas (1) · Jonikas Gintaras Antanas (2, dekanas) · Jurevičius Remigijus (2, dekanas) · Jurgilas Aivaras (3, dekanas) · Kadys Vytautas (1, vicedekanas) · Kasparas Matas (1) · Kasperavičius Gediminas (1) · Katilius Remigijus (2) · Kazaitis Virginijus (1) · Kedušis Tomas (1) · Klimašauskas Donatas (2) · Kryževičius Donatas (3) · Kurtinaitis Vytautas (rezidentas) · Marcinkevičius Eimutis (3) · Matulis Saulius (rezidentas) · Mikalčius Vaidas (2) · Pranskaitis Rimantas (2) · Reinys Tomas (1) · Ripinskis Vytautas (2) · Rudys Tadas (1, dekanas) · Sakavičius Gintas (1) · <b>Sausdravas Saulius (4)</b> · Semaška Eduardas (2) · Šnapštys Raimundas (3) · Švabinskas Kęstutis (2) · Ūksas Tomas (3) · Urbelis Arūnas (2) · Urbonas Jordanas (1) · Valčiukas Andrius (3) · Venckus Egidijus (2) · Vinclovas Aldas (1) · Zeidotas Edvardas (1) · Žaromskis Rimantas (2) · Žibėnas Algimantas (1) · Žukauskas Aurelijus (1) · Žukauskis Stanislovas (2) · Žvirzdinas Vytautas (2)
+      <br><br><b>Nepriskirti ir už vyskupijos ribų (8):</b> Karanauskas Tomas (1973—1999, Los Andželas) · Rutkauskas Ričardas (1965—1991, Niurnbergas) · Vaitiekūnas Vidas (1972—1996, Oberhauzenas) · <b>Kapučinskas Vidmantas (1983—2009, vyskupijos skelbiamas kaip suspenduotas)</b> · Budrius Alionidas (1962—1988) · Jankauskis Arūnas (1976—2007) · Janavičius Tomas (1982—2007) · Černiauskas Marija Elijas (1960—2019)
+      <br><br><b>Vienuoliai (6):</b> Bertagnin Carlo OFM · Holocher Severin OFM · Letkauskas Mykolas Marija OFM · Vaineikis Paulius OFM · Lukoševičius Vaidas SJ · Milaševičius Kazimieras OSB
+    </div></details>
+
+    <details class="src"><summary><span>Kaišiadorių vyskupija — 47</span></summary><div class="srcbody" style="grid-template-columns:1fr; font-size:.84rem; line-height:1.7; color:var(--ink-2)">
+      Sargelis Audrius (1) · Akelaitis Algirdas (1) · Ananis Algis (1, dekanas) · Avižienis Petras (2) · Bakšys Juozas (3) · Balnys Virgilijus (2) · Baltuškonis Algimantas (2) · Baublys Vincas (1, dekanas) · Beleckas Valdas (2) · Bičkauskas Rolandas (1, generalvikaras) · Bučinskas Vytas (2) · Čiupalas Stasys (1, viceoficiolas) · Čivilis Pranciškus (3) · Dabravolskas Juozas (1) · Dalinevičius Jonas (2) · Dikčius Tautvydas (1) · Gaidukevičius Algimantas (2) · Grenda Mindaugas (1) · Jančiauskas Dainius (2) · Jančiauskas Gintautas (3) · Jarukas Bronius (1) · Jasionis Antanas (1) · <b>Jelinskas Vidas (4)</b> · Jurkevičius Rimvydas (2, dekanas) · Kazlauskas Kęstutis (2) · Kazlauskas Jurgis (2) · Kelmelis Alfonsas (2) · Klimas Leonas (1) · Linkevičius Petras (1) · Mieldažis Gediminas (2) · Mikalauskas Robertas (3) · Miliauskas Ąžuolas (3) · Petkevičius Gintas (nuo 2024 studijos Romoje) · Piktelis Tadas (nuo 2021 ordinariate) · Puzonas Rokas (2) · Rumšas Robertas (2, oficiolas) · Sabaliauskas Jonas (2) · Sabaliauskas Vytas (1) · Sajeta Vidas Bernardas (3) · Slaminis Povilas (1) · Talutis Marius (2) · Tamošiūnas Gediminas (1, kancleris) · Tekorius Povilas (1) · Vėlyvis Darius (2, notaras) · Visockas Laurynas (3) · <b>Voronovič Viktor (nuo 2004 reziduoja Vilniaus arkivyskupijoje)</b> · Zavalskij Anton (1)
+    </div></details>
+
+    <details class="src"><summary><span>Lietuvos kariuomenės ordinariatas — 13</span></summary><div class="srcbody" style="grid-template-columns:1fr; font-size:.84rem; line-height:1.7; color:var(--ink-2)">
+      Apaštališkasis administratorius — arkiv. Gintaras Grušas.
+      <br><br>plk. ltn. Rimas Venckus (generalvikaras, vyr. kapelionas; Telšių vyskupija) · plk. ltn. Remigijus Butkevičius (Sausumos pajėgos; Vilkaviškio vyskupija) · mjr. Remigijus Monstvilas (Karinės jūrų pajėgos, Klaipėdos įgula; Telšių vyskupija) · kpt. dr. Mindaugas Sabonis (kurijos kancleris, Karo akademija, Vilniaus įgula) · kpt. Saulius Kristapavičius (Tauragės įgula) · plk. ltn. dr. Virginijus Veilentas (Karinės oro pajėgos; Panevėžio vyskupija) · mjr. dr. Arnoldas Valkauskas (Ruklos I įgula) · mjr. Saulius Kasmauskas (Karo mokykla, Alytaus įgula) · mjr. Edvardas Baniulis (Marijampolės įgula) · mjr. Saulius Noretas (Ruklos II įgula) · mjr. Tomas Karklys (Kauno įgula; Kauno arkivyskupija) · kun. Vytautas Langas · vyr. srž. diak. Audrius Jesinskas
+      <br><br>Ordinariatas neturi savo inkardinuotų kunigų — visi kapelionai tarnauja būdami inkardinuoti teritorinėse vyskupijose. Daugiausia duoda Telšių vyskupija (3).
+    </div></details>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Anomalijos</span>
+    <h2>Kas netelpa į vidurkį</h2>
+    <p class="lede small">Tik tai, ką galima suskaičiuoti. Kiekviena eilutė yra faktas apie pareigas, ne apie žmogų.</p>
+  </div>
+  <div class="col stack">
+    <h3>Parapijų krūvis</h3>
+    <p>Tipinis Lietuvos kunigas aptarnauja <b>vieną ar dvi</b> parapijas. Vienuolika aptarnauja keturias ir daugiau.</p>
+    <div class="scroller">
+      <table class="mx" style="min-width:600px">
+        <thead><tr><th style="text-align:left">Kunigas</th><th>Parapijų</th><th style="text-align:left">Vyskupija</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Jonas Morkvėnas</th><td class="tot">6</td><td style="text-align:left">Panevėžio — Biržai, Suostas, Nemunėlio Radviliškis, Papilys, Kupreliškis, Kvetkai</td></tr>
+          <tr><th scope="row">Ričardas Kmitas</th><td class="tot">5</td><td style="text-align:left">Vilkaviškio — Lekėčiai, Kretkampis, Žemoji Panemunė, Braziūkai, Paežerėliai</td></tr>
+          <tr><th scope="row">Petras Baniulis</th><td class="tot">4</td><td style="text-align:left">Panevėžio</td></tr>
+          <tr><th scope="row">Ričardas Banys</th><td class="tot">4</td><td style="text-align:left">Panevėžio</td></tr>
+          <tr><th scope="row">Henrikas Kalpokas</th><td class="tot">4</td><td style="text-align:left">Panevėžio</td></tr>
+          <tr><th scope="row">Albertas Kasperavičius</th><td class="tot">4</td><td style="text-align:left">Panevėžio</td></tr>
+          <tr><th scope="row">Aivaras Kecorius</th><td class="tot">4</td><td style="text-align:left">Panevėžio</td></tr>
+          <tr><th scope="row">Egidijus Vijeikis</th><td class="tot">4</td><td style="text-align:left">Panevėžio</td></tr>
+          <tr><th scope="row">Vidas Jelinskas</th><td class="tot">4</td><td style="text-align:left">Kaišiadorių</td></tr>
+          <tr><th scope="row">Saulius Sausdravas</th><td class="tot">4</td><td style="text-align:left">Šiaulių</td></tr>
+          <tr><th scope="row">Žydrūnas Paulauskas</th><td class="tot">4</td><td style="text-align:left">Kauno — ir dar policijos kapelionas</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note" style="border-color:var(--warn); background:var(--gold-soft)">
+      <strong>Bet tikroji anomalija yra ne žmogus, o vyskupija.</strong> Iš vienuolikos sunkiausiai apkrautų kunigų <b>šeši yra Panevėžio vyskupijoje</b>. Ten <b>39 iš 67</b> parapijų kunigų aptarnauja dvi ir daugiau, o septyni — keturias ir daugiau. Šiauliuose dviejų ir daugiau parapijų turi 59 % kunigų, Vilkaviškyje — 41 %. <b>Kunigų trūkumas nėra tolygus: jis susitelkęs šiaurės ir rytų Lietuvoje</b>, ir matomas ne statistikoje, o parapijų sąrašuose prie pavardžių.
+    </div>
+
+    <h3>Pareigų krūvis</h3>
+    <p class="small">Penkias ir daugiau atskirų pareigų vienu metu eina: <b>Tomas Karklys</b> (Kaunas — rektoratas ir keturi kapelionatai) · <b>Andrius Končius</b> (Kaunas — parapija, dvi postulatoriaus pareigos, seminarija, užsienio lietuvių sielovada) · <b>Linas Šipavičius</b> (Kaunas — trys parapijos ir du kapelionatai) · <b>Ričardas Kmitas</b> (Vilkaviškis — penkios parapijos) · <b>Donatas Jasulaitis</b> (Vilkaviškis — dekanas, ekonomas, kultūros centro rektorius ir dvi parapijos) · <b>Vaidotas Labašauskas</b> (Vilkaviškis — dekanas, kapelionas, sielovados moderatorius ir dvi parapijos). Vilkaviškio vyskupijoje trejas ir daugiau pareigų eina <b>25 kunigai iš 83</b>.</p>
+
+    <h3>Amžiaus kraštai</h3>
+    <p class="small">Vyriausias sąraše skelbiamas kunigas — <b>Povilas Svirskis</b>, Panevėžio vyskupija: gimęs <b>1924 m.</b>, įšventintas <b>1948 m.</b>, gyvena globos namuose. <b>Ignas Plioraitis</b> (Vilkaviškis) — 1932 m. gimimo, šventimai 1960 m. <b>Vaclovas Stakėnas</b> (Vilkaviškis) — 1934 m. gimimo, tebedirba altaristu Kybartuose.
+    <br><br>Kitame gale — vėlyvieji pašaukimai. Vilkaviškio vyskupijoje 2025 m. įšventinti du kunigai: <b>Rolandas Judeikis</b>, gimęs 1969 m., šventimų metu <b>56-erių</b>, ir <b>Lukas Skroblas</b>, gimęs 1978 m., 47-erių. Palyginimui, tipinis šventimų amžius Lietuvoje yra 25–28 metai.</p>
+
+    <h3>Kirtimai per vyskupijų ribas</h3>
+    <p class="small">Devyni dokumentuoti atvejai, kai kunigas tarnauja ne toje vyskupijoje, kurioje inkardinuotas. <b>Telšių vyskupija duoda daugiausia — tris kariuomenės ordinariatui</b> (Venckus, Monstvilas, Liutika) ir dar du Vilniui (Litvinas, Volskis). Kaišiadorių kunigas <b>Viktor Voronovič nuo 2004 m. reziduoja Vilniaus arkivyskupijoje</b> — dvidešimt antri metai. Panevėžio kunigas <b>Robertas Pukenis</b> reziduoja Kaune. <b>Gintaras Blužas OFS</b> vienu metu yra Kauno arkivyskupijos komunikacijos koordinatorius ir Vilniaus seminarijos dvasios tėvas.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head col">
+    <span class="eyebrow">Skaidrumas</span>
+    <h2>Didžiausia anomalija yra pačiuose sąrašuose</h2>
+  </div>
+  <div class="col stack">
+    <p>Renkant šiuos duomenis paaiškėjo tai, ko nesitikėjau: <b>vyskupijos skiriasi ne tik dydžiu, bet ir tuo, ką apskritai laiko viešu.</b> Skirtumas didesnis nei bet kuris kitas šio rodinio skaičius.</p>
+    <div class="scroller">
+      <table class="mx" style="min-width:720px">
+        <thead><tr><th style="text-align:left">Vyskupija</th><th>Pareigos</th><th>Šventimų metai</th><th>Gimimo metai</th><th style="text-align:left">Duomenų data</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Vilkaviškio</th><td>taip</td><td>taip, 94/95</td><td>taip, 94/95</td><td style="text-align:left">2026 08 24</td></tr>
+          <tr><th scope="row">Šiaulių</th><td>taip</td><td>tik 8/58</td><td>tik 8/58</td><td style="text-align:left">nenurodyta</td></tr>
+          <tr><th scope="row">Kauno</th><td>taip, išsamiai</td><td>ne</td><td>ne</td><td style="text-align:left">nenurodyta</td></tr>
+          <tr><th scope="row">Kaišiadorių</th><td>taip</td><td>ne</td><td>ne</td><td style="text-align:left">nenurodyta</td></tr>
+          <tr><th scope="row">Panevėžio</th><td>taip</td><td>tik 14/80</td><td>tik 14/80</td><td style="text-align:left">2025</td></tr>
+          <tr><th scope="row">Vilniaus</th><td><b>ne</b> rodyklėje</td><td><b>ne</b> rodyklėje</td><td><b>ne</b> rodyklėje</td><td style="text-align:left">nenurodyta</td></tr>
+          <tr><th scope="row">Telšių</th><td><b>ne</b></td><td><b>ne</b></td><td><b>ne</b></td><td style="text-align:left">2024 10 01</td></tr>
+          <tr><th scope="row">Ordinariatas</th><td>iš dalies</td><td>ne</td><td>ne</td><td style="text-align:left">nenurodyta</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><b>Vilniaus atvejis atskiras ir įdomiausias.</b> Arkivyskupija duomenis <em>turi</em> ir juos <em>skelbia</em> — gimimo datą, šventimų datą ir pareigas. Bet tik <b>atskiruose 171 asmens puslapyje</b>; suvestinės nėra. Vieša rodyklė yra tik pavardžių abėcėlė. Tai reiškia, kad vieno kunigo biografiją rasti lengva, o <b>visos kunigijos struktūrą pamatyti — praktiškai neįmanoma</b>, nors visi dėmenys skelbiami.</p>
+    <p class="small">Telšių vyskupija, antra pagal dydį, neskelbia nei pareigų, nei datų — tik pavardę ir vietovę, o duomenys datuoti <b>2024 m. spalio 1 d.</b> Kariuomenės ordinariato svetainė didžiąja dalimi neveikia: iš vienuolikos bandytų adresų devyni grąžino serverio klaidą, o išlikęs kontaktų sąrašas <b>prieštarauja kariuomene.lt</b> dėl to, kas yra vyriausiasis kapelionas.</p>
+    <div class="note" style="border-color:var(--warn); background:var(--gold-soft)">
+      <strong>Ir dvi vyskupijos skelbia skaičius, kurių jų pačių sąrašai nepatvirtina.</strong> Kauno arkivyskupijos puslapio antraštėje nurodyta „107“, o abėcėliškai nuoseklus sąrašas nuo <em>Aleknos</em> iki <em>Žakio</em> duoda <b>87</b> įrašus. Kaišiadorių vyskupija deklaruoja 61, sąraše — <b>47</b>. Abu skirtumai patikrinti dviem nepriklausomais nuskaitymais. Priežastis neskelbiama; tai gali būti tiesiog neatnaujinti skaičiai.
+    </div>
+    <p class="small"><b>Viena palyginimo eilutė, kurią verta pasakyti tiksliai.</b> Šiaulių vyskupija savo viešame sąraše prie vieno kunigo nurodo statusą <em>suspenduotas</em>. Vilniaus arkivyskupijos rodyklėje abu 2026 m. rugpjūtį teismui perduotose bylose kaltinami kunigai <b>tebėra įrašyti be jokios žymos</b>. Kanoniškai tai teisinga — nušalintas kunigas lieka kunigu, kol Šventasis Sostas nenusprendžia kitaip, o kaltė nenustatyta. Bet praktika tarp vyskupijų skiriasi, ir tai faktas apie skelbimo tvarką, ne apie asmenis.</p>
+  </div>
+</section>
+
+<section style="padding-bottom:28px">
+  <div class="sec-head col">
+    <span class="eyebrow">Ribos</span>
+    <h2>Ko šis registras nepasako</h2>
+  </div>
+  <div class="col stack">
+    <p><b>Trajektorijų čia beveik nėra, ir tai ne apsileidimas.</b> Karjeros kelią galima atkurti tik ten, kur skelbiami šventimų metai ir ankstesnės pareigos — o abu kartu skelbia <b>viena vyskupija iš septynių</b>. Todėl vienintelė pilna trajektorijų aibė šiame rodinyje yra penkiolikos vyskupų, ir būtent ji naudojama kaip bazė.</p>
+    <p>Ko trūksta konkrečiai: 171 Vilniaus kunigo pareigų ir datų suvestinės (duomenys yra, bet išsklaidyti); Telšių 160 kunigų pareigų ir datų; Kauno ir Kaišiadorių šventimų metų; Šiaulių 44 parapijų kunigų datų. Praktiškai tai reiškia, kad <b>klausimas „kiek metų šis kunigas kyla“ Lietuvoje viešai atsakomas maždaug penktadaliui dvasininkijos</b>.</p>
+    <div class="note">
+      <strong>Ir metodinė riba, galiojanti visam šiam rodiniui.</strong> Sąrašas rodo pareigas, ne įtaką. Kunigas, aptarnaujantis šešias parapijas, nėra galingesnis už kunigą su viena — greičiausiai atvirkščiai. Šeši Panevėžio vyskupijos kunigai su keturiomis ir daugiau parapijų nėra elitas; tai perkrovos požymis. <b>Anomalija čia reiškia nukrypimą nuo vidurkio, ne ženklą apie žmogų</b>, ir kur nors tarp šių eilučių gali būti visiškai paprastas paaiškinimas, kurio viešuose šaltiniuose tiesiog nėra.
+    </div>
+  </div>
+</section>
+
+  <details class="src">
+    <summary><span>Registro šaltiniai (10)</span></summary>
+    <div class="srcbody">
+      <a href="https://www.vilnensis.lt/dvasininkai/">Vilniaus arkivyskupijos dvasininkų rodyklė</a>
+      <a href="https://kaunoarkivyskupija.lt/kunigai/">Kauno arkivyskupijos kunigai</a>
+      <a href="https://www.telsiuvyskupija.lt/kunigai/">Telšių vyskupijos kunigai</a>
+      <a href="https://vkvyskupija.lt/kunigai/">Vilkaviškio vyskupijos kunigai — vienintelis sąrašas su gimimo ir šventimų metais</a>
+      <a href="https://www.panevezio.lcn.lt/dvasininkai/">Panevėžio vyskupijos dvasininkai</a>
+      <a href="https://siauliuvyskupija.lt/kunigai/">Šiaulių vyskupijos kunigai</a>
+      <a href="https://kaisiadorys.lcn.lt/dvasininkai/">Kaišiadorių vyskupijos dvasininkai</a>
+      <a href="https://www.kariuomene.lt/kariuomenes-ordinariatas/">Lietuvos kariuomenės ordinariatas — kariuomene.lt</a>
+      <a href="https://www.katalikai.lt/index.php?id=8">Lietuvos vyskupai — katalikai.lt</a>
+      <a href="http://www.catholic-hierarchy.org/country/blt2.html">Lietuvos vyskupų gimimo, šventimų ir konsekracijos datos — Catholic-Hierarchy</a>
+    </div>
+  </details>
+
+</div><!-- /view-priests -->
+
 <footer>
-  <p>Analizė parengta 2026 m. rugpjūčio 31 d. Visi faktiniai teiginiai tikrinti bent dviejuose nepriklausomuose šaltiniuose. Tikimybės — autorinis vertinimas, ne prognozės rinka.</p>
+  <p>Prognozė parengta 2026 m. rugpjūčio 31 d., tyrimas apie Bažnyčią ir valdžią — rugsėjo 1 d., kunigų registras — rugsėjo 2 d. Visi faktiniai teiginiai tikrinti bent dviejuose nepriklausomuose šaltiniuose. Tikimybės — autorinis vertinimas, ne prognozės rinka.</p>
 </footer>
 
 </div>
@@ -1026,7 +1803,7 @@ const CAND = [
     key:"kevalas", name:"Arkiv. Kęstutis Kėvalas", role:"Kauno arkivyskupas metropolitas", prob:4,
     facts:["g. 1972 02 17","2031 m. — 59 m.","metropolitas nuo 2020","VDU, dr."],
     s:{c1:10,c2:10,c3:3,c4:3,c5:4,c6:8,c7:5,c8:8,c9:9,c10:8,c11:7,c12:9},
-    take:"Aukštas balas, maža tikimybė — ir tai nėra prieštaravimas. Jis yra stipriausiai pozicionuotas Lietuvos hierarchas: Saugios aplinkos komitetas Kaune veikia nuo 2025 m. lapkričio, dar prieš bylų perdavimą teismui, o jo kreipimasis krizės metu buvo aiškesnis nei Vilniaus. Bet metropolitas iš vienos Lietuvos metropolijos į kitą praktiškai neperkeliamas, o jo realus prizas greičiausiai ne Vilniaus sostas, o LVK pirmininkavimas 2027 m.",
+    take:"Aukštas balas, maža tikimybė — ir tai nėra prieštaravimas. Profilis stiprus: Saugios aplinkos komitetas Kaune veikia nuo 2025 m. lapkričio, dar prieš bylų perdavimą teismui, o jo kreipimasis krizės metu buvo aiškesnis nei Vilniaus. Tikimybę nuleidžia vienas struktūrinis filtras, ne profilio trūkumas: metropolitas iš vienos Lietuvos metropolijos į kitą praktiškai neperkeliamas, nes tai judesys į šoną. Ko jis pats siektų, nežinoma ir čia nevertinama.",
     plus:["Rugpjūčio 19 d. viešas pareiškimas tiesos ir atsakomybės tema — vienintelis metropolitas, aiškiai pasisakęs krizės metu","Kauno arkivyskupijoje Saugios aplinkos komitetas įsteigtas 2025 m. lapkritį, dar iki skandalo","Jau metropolitas; trijų vyskupijų patirtis; teologijos daktaras, formacija JAV","Aukštas viešas matomumas ir „Marijos radijo“ patirtis"],
     minus:["Kaunas ir Vilnius — lygiaverčiai metropoliniai sostai; horizontalus perkėlimas Lietuvoje neturi precedento","Perkėlimas išspręstų vieną vakansiją sukurdamas kitą — krizės metu tai dviguba rizika","Jokių duomenų apie ryšį su Vilniaus krašto lenkakalbe bendruomene"]
   },
@@ -1056,7 +1833,7 @@ const CAND = [
   }
 ];
 
-const OTHER = {key:"other", name:"Kitas kandidatas", role:"Nė viename sąraše nefigūruojantis asmuo", prob:17.4, other:true,
+const OTHER = {key:"other", name:"Kitas kandidatas", role:"Nė viename sąraše nefigūruojantis asmuo", prob:15.9, other:true,
   take:"Antra pagal svorį eilutė visame modelyje, ir tai nėra atsargumo formulė. Krizės vyskupijų patikra parodė, kad dažniausias artimiausių metų rezultatas apskritai nėra naujas arkivyskupas: <b>tai ilgas valdymas per apaštališkąjį administratorių</b> — nuo penkių mėnesių iki beveik ketverių metų, o Kelne po penkerių metų įpėdinio taip ir nėra. Toje pačioje eilutėje: nelietuvis, apsaugos srities specialistas iš išorės arba Romoje dirbantis lietuvis, kurio pavardė viešai nefigūruoja."};
 
 const PRIESTS = [
@@ -1075,10 +1852,10 @@ const PRIESTS = [
     minus:["Studijų vieta, laipsniai ir paskyrimo rektoriumi metai viešai nedokumentuoti","Nėra parapinės ar vyskupijos valdymo patirties Lietuvoje","Nėra ryšio su Vilniaus kraštu ar lenkakalbe bendruomene","Kolegijos rektorius nėra kurijos pareigūnas — Romos svoris mažesnis, nei atrodo"]
   },
   {
-    key:"sotnicenka", name:"Kun. Mykolas Sotničenka", role:"Vilniaus arkivyskupijos komunikacijos ir apsaugos koordinatorius", prob:1,
+    key:"sotnicenka", name:"Kun. Mykolas Sotničenka", role:"Vilniaus arkivyskupijos komunikacijos ir apsaugos koordinatorius", prob:2.5,
     facts:["g. 1983 03 03","2031 m. — 48 m.","kunigas nuo 2011","lietuvių, lenkų, anglų, italų"],
     take:"Vienintelis Vilniaus arkivyskupijos kunigas, kuris nuo 2026 m. liepos dirba ir nunciatūroje — t. y. toje pačioje įstaigoje, kuri renka informaciją apie kandidatus. Ir tuo pat metu vienintelis, kurio pareigų derinys viešai pavadintas interesų konfliktu.",
-    plus:["Nuo 2026 07 talkina Apaštališkajai nunciatūrai kaip konsultantas, liekant arkivyskupijos kunigu — tiesioginis darbinis kanalas su Šventojo Sosto atstovybe","Vienintelis viešai dokumentuotas keturkalbis Vilniaus kurijos pareigūnas: lietuvių, lenkų, anglų, italų — tiksliai Vilniaus kalbinis profilis","Nepilnamečių apsaugos koordinatorius — formaliai būtent ta kompetencija, kurios svoris po rugpjūčio išaugo","Labai aukštas viešas matomumas: arkivyskupijos atstovas spaudai krizės metu"],
+    plus:["Nuo 2026 06 03 išleistas talkinti Apaštališkajai nunciatūrai — vienintelis sąrašo žmogus, dirbantis ternos rengimo įstaigoje","Nuo 2026 07 talkina Apaštališkajai nunciatūrai kaip konsultantas, liekant arkivyskupijos kunigu — tiesioginis darbinis kanalas su Šventojo Sosto atstovybe","Vienintelis viešai dokumentuotas keturkalbis Vilniaus kurijos pareigūnas: lietuvių, lenkų, anglų, italų — tiksliai Vilniaus kalbinis profilis","Nepilnamečių apsaugos koordinatorius — formaliai būtent ta kompetencija, kurios svoris po rugpjūčio išaugo","Labai aukštas viešas matomumas: arkivyskupijos atstovas spaudai krizės metu"],
     minus:["Kun. G. Satkauskas 2026 08 20 viešai kritikavo, kad vienas asmuo vadovauja ir komunikacijai, ir nukentėjusiųjų apsaugai — tai struktūrinis priekaištas, kurį tyrimas kels pirmiausia","Buvimas krizės komunikacijos priešakyje reiškia, kad jo vardas susietas su arkivyskupijos gynybine linija","Nėra aukštojo bažnytinio laipsnio kanonų teisėje ar teologijoje (religijos mokslų magistras, komunikacijos licenciatas)","2031 m. jam 48 — jaunesnis nei dabartinė skyrimų kreivė"]
   },
   {
@@ -1092,8 +1869,8 @@ const PRIESTS = [
     key:"gostautas", name:"Br. kun. Jokūbas Marija Goštautas OP", role:"Vilniaus dominikonų vienuolyno prioras", prob:0.3,
     facts:["g. 1990 03 23","2031 m. — 41 m.","kunigas nuo 2021","teologijos licenciatas"],
     take:"Juodoji gulbė tikrąja prasme: viskas, kas kalba už jį, yra netipiška, ir viskas, kas kalba prieš, yra struktūriška. Bet jo 2026 08 17 tekstas „Skandalas mirčiai ir atgimimui“ yra bene stipriausias, ką Lietuvos Bažnyčia parašė apie savo pačios krizę.",
-    plus:["Prioras — vadovavimo patirtis, nors ir mažoje bendruomenėje; dėstytojas Vilniaus kunigų seminarijoje","2026 08 17 „Bernardinuose“ paskelbtas tekstas, analizuojantis iškreiptus galios santykius, tylos kultūrą ir reputacijos prioritetą prieš sužeistuosius — sisteminė, ne gynybinė krizės analizė","Prahos precedentas 2026 02: redemptoristas Přibylas gavo metropoliją po vos dvejų vyskupavimo metų — ordino narys Leonui XIV priimtinas","Nuo 2026 m. — Paryžiaus lietuvių kapelionas: tarptautinė pareigybė ir platesnis matomumas","Nuolatinis autorius nacionalinėje katalikų žiniasklaidoje; LRT pokalbių laidos"],
-    minus:["2031 m. jam 41, kunigystės stažas 10 metų — o faktinė Lietuvos skyrimų kreivė kyla (38,7 → 40,6 → 44,4 → 46,3 → 50,6) ir paskutinis skyrimas buvo 50,6","Nėra jokios vyskupijos administracinės patirties: nebuvo nei kancleris, nei generalvikaras, nei tribunolo narys","Nėra patvirtintų studijų Romoje ir jokių pareigų Šventojo Sosto įstaigose","Nuo 2026 m. rudens tikėtinas fizinis buvimas Paryžiuje, ne Vilniuje","Nuncijaus Gänsweino archetipas — ratzingeriškas kanonistas, viešai vadinantis vokiškąjį Sinodinį kelią „klystkeliu“ — nėra palankus jaunam reformistiniam vienuoliui"]
+    plus:["Prioras — vadovavimo patirtis, nors ir mažoje bendruomenėje; dėstytojas Vilniaus kunigų seminarijoje","2026 08 17 „Bernardinuose“ paskelbtas tekstas, analizuojantis iškreiptus galios santykius, tylos kultūrą ir reputacijos prioritetą prieš sužeistuosius — sisteminė, ne gynybinė krizės analizė","Prahos precedentas 2026 02: redemptoristas Přibylas gavo metropoliją po vos dvejų vyskupavimo metų — ordino narys Leonui XIV priimtinas","Nuo 2026 m. rudens trejiems metams — Paryžiaus lietuvių kapelionas; pareigybė ne rezidencinė (keli vizitai per mėnesį), todėl prideda tarptautinio matomumo neatitraukdama nuo Vilniaus","Nuolatinis autorius nacionalinėje katalikų žiniasklaidoje; LRT pokalbių laidos"],
+    minus:["2031 m. jam 41, kunigystės stažas 10 metų — o faktinė Lietuvos skyrimų kreivė kyla (38,7 → 40,6 → 44,4 → 46,3 → 50,6) ir paskutinis skyrimas buvo 50,6","Nėra jokios vyskupijos administracinės patirties: nebuvo nei kancleris, nei generalvikaras, nei tribunolo narys","Nėra patvirtintų studijų Romoje ir jokių pareigų Šventojo Sosto įstaigose","Vienuolis: inkardinuotas ne arkivyskupijoje, o dominikonų provincijoje — vertinant kandidatūrą būtų atskirai konsultuojamasi su ordino vadovybe, ir tai dar viena grandis procese","Nuncijaus Gänsweino archetipas — ratzingeriškas kanonistas, viešai vadinantis vokiškąjį Sinodinį kelią „klystkeliu“ — nėra palankus jaunam reformistiniam vienuoliui"]
   },
   {
     key:"toliatas", name:"Kun. Algirdas Toliatas", role:"Švč. M. Marijos Ramintojos koplyčios rektorius", prob:0.3,
@@ -1203,9 +1980,9 @@ document.querySelectorAll(".seg button").forEach(b=>{
     const mode = b.dataset.sort;
     render(mode);
     const hints = {
-      prob: "Įskaitytas ir „kitas kandidatas“ likutis — 8,1 %.",
+      prob: "Įskaitytas ir „kitas kandidatas“ likutis — 15,9 %.",
       score: "Balas matuoja tik profilio atitiktį — struktūriniai filtrai neįskaityti.",
-      priests: "Dešimt asmenų be vyskupo šventimų; iš viso 13,9 % (kartu su kun. R. Doveika, kuris yra ir pagrindiniame sąraše)."
+      priests: "Dešimt asmenų be vyskupo šventimų — iš viso 7,1 %; su kun. R. Doveika, kuris yra ir pagrindiniame sąraše, — 10,1 %."
     };
     document.getElementById("sortHint").textContent = hints[mode];
   });
@@ -1227,6 +2004,25 @@ mx.innerHTML = `
       <td class="tot">${String(c.score.toFixed(1)).replace(".",",")}</td>
     </tr>`).join("")}
   </tbody>`;
+
+/* ---------- view switcher ---------- */
+(function(){
+  const sw = document.querySelector(".vswitch");
+  if(!sw) return;
+  const views = {sostas: document.getElementById("view-sostas"), galia: document.getElementById("view-galia"), priests: document.getElementById("view-priests")};
+  const HASH = {sostas:"#vilniaus-sostas", galia:"#baznycia-ir-valdzia", priests:"#kunigu-registras"};
+  function show(name){
+    Object.keys(views).forEach(k => { if(views[k]) views[k].hidden = (k !== name); });
+    sw.querySelectorAll("button").forEach(b => b.setAttribute("aria-current", String(b.dataset.view === name)));
+    try { history.replaceState(null, "", HASH[name] || "#vilniaus-sostas"); } catch(e){}
+    window.scrollTo({top:0, behavior:"instant"});
+  }
+  sw.addEventListener("click", e => {
+    const b = e.target.closest("button[data-view]");
+    if(b) show(b.dataset.view);
+  });
+  Object.keys(HASH).forEach(k => { if(location.hash === HASH[k] && k !== "sostas") show(k); });
+})();
 </script>
 
 </body>
