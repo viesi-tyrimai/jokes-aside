@@ -66,7 +66,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:1080px; margin:0 auto; padding:0 clamp(14px,4vw,24px) clamp(56px,10vw,96px)}
-.col{max-width:66ch}
+.col{max-width:min(99ch,100%)}
 
 h1,h2,h3,h4{font-family:Newsreader,Georgia,"Times New Roman",serif; text-wrap:balance; margin:0}
 h1{font-size:clamp(1.95rem,7.4vw,4.1rem); font-weight:500; line-height:1.04; letter-spacing:-.02em}
@@ -131,7 +131,7 @@ section:last-of-type{border-bottom:none}
 }
 .note strong{color:var(--ink)}
 
-.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(215px,100%),1fr)); gap:12px}
+.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(198px,100%),1fr)); gap:12px}
 .card{
   background:var(--surface); border:1px solid var(--line); border-radius:3px;
   padding:15px clamp(13px,3vw,18px); display:flex; flex-direction:column; gap:8px;
